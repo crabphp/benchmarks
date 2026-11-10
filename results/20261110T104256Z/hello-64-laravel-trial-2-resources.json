@@ -1,0 +1,560 @@
+[
+  {
+    "time": 383632.013328073,
+    "laravel": {
+      "cpu_ns": 11100047000,
+      "memory_bytes": 110972928,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12175219000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97253066000,
+      "memory_bytes": 17481728,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383632.517903008,
+    "laravel": {
+      "cpu_ns": 12029874000,
+      "memory_bytes": 111595520,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12212775000,
+      "memory_bytes": 602411008,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97358976000,
+      "memory_bytes": 32215040,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383633.022071795,
+    "laravel": {
+      "cpu_ns": 13033436000,
+      "memory_bytes": 111316992,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12213717000,
+      "memory_bytes": 602402816,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97383836000,
+      "memory_bytes": 32854016,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383633.525961834,
+    "laravel": {
+      "cpu_ns": 14030368000,
+      "memory_bytes": 111742976,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12214711000,
+      "memory_bytes": 602402816,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97409410000,
+      "memory_bytes": 32866304,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383634.035796497,
+    "laravel": {
+      "cpu_ns": 15030485000,
+      "memory_bytes": 111570944,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12215665000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97438573000,
+      "memory_bytes": 32927744,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383634.540228709,
+    "laravel": {
+      "cpu_ns": 16035370000,
+      "memory_bytes": 111407104,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12252844000,
+      "memory_bytes": 602660864,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97466682000,
+      "memory_bytes": 32870400,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383635.044244597,
+    "laravel": {
+      "cpu_ns": 17044524000,
+      "memory_bytes": 111415296,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12253800000,
+      "memory_bytes": 602148864,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97494981000,
+      "memory_bytes": 33140736,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383635.548821359,
+    "laravel": {
+      "cpu_ns": 18059966000,
+      "memory_bytes": 111050752,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12254777000,
+      "memory_bytes": 602148864,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97522079000,
+      "memory_bytes": 32927744,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383636.053364774,
+    "laravel": {
+      "cpu_ns": 19060654000,
+      "memory_bytes": 110948352,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12255640000,
+      "memory_bytes": 602148864,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97547172000,
+      "memory_bytes": 32931840,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383636.557702258,
+    "laravel": {
+      "cpu_ns": 20079939000,
+      "memory_bytes": 111460352,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12293029000,
+      "memory_bytes": 602361856,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97573792000,
+      "memory_bytes": 33095680,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383637.062103473,
+    "laravel": {
+      "cpu_ns": 21091604000,
+      "memory_bytes": 110866432,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12293960000,
+      "memory_bytes": 602148864,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97599997000,
+      "memory_bytes": 32890880,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383637.566422816,
+    "laravel": {
+      "cpu_ns": 22105074000,
+      "memory_bytes": 111284224,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12294852000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97625569000,
+      "memory_bytes": 33017856,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383638.070548987,
+    "laravel": {
+      "cpu_ns": 23113295000,
+      "memory_bytes": 110915584,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12295906000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97650576000,
+      "memory_bytes": 33210368,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383638.575273335,
+    "laravel": {
+      "cpu_ns": 24114184000,
+      "memory_bytes": 110497792,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12334226000,
+      "memory_bytes": 602738688,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97675747000,
+      "memory_bytes": 33333248,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383639.0796153,
+    "laravel": {
+      "cpu_ns": 25117649000,
+      "memory_bytes": 110915584,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12335097000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97701086000,
+      "memory_bytes": 33640448,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383639.584173592,
+    "laravel": {
+      "cpu_ns": 26141886000,
+      "memory_bytes": 111013888,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12336089000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97726527000,
+      "memory_bytes": 33800192,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383640.089090238,
+    "laravel": {
+      "cpu_ns": 27147740000,
+      "memory_bytes": 111349760,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12336960000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97753675000,
+      "memory_bytes": 33570816,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383640.593362023,
+    "laravel": {
+      "cpu_ns": 28151552000,
+      "memory_bytes": 111403008,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12375154000,
+      "memory_bytes": 602202112,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97778713000,
+      "memory_bytes": 33861632,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383641.097696596,
+    "laravel": {
+      "cpu_ns": 29165658000,
+      "memory_bytes": 111140864,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12376039000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97804347000,
+      "memory_bytes": 33665024,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383641.601972141,
+    "laravel": {
+      "cpu_ns": 30177466000,
+      "memory_bytes": 111374336,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12376968000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97829625000,
+      "memory_bytes": 34373632,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383642.106108641,
+    "laravel": {
+      "cpu_ns": 31181899000,
+      "memory_bytes": 110604288,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12377853000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97854903000,
+      "memory_bytes": 34500608,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383642.610376159,
+    "laravel": {
+      "cpu_ns": 32194276000,
+      "memory_bytes": 111644672,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12415576000,
+      "memory_bytes": 602402816,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97881914000,
+      "memory_bytes": 34693120,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383643.115024679,
+    "laravel": {
+      "cpu_ns": 33207148000,
+      "memory_bytes": 111837184,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12416551000,
+      "memory_bytes": 602390528,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97908697000,
+      "memory_bytes": 34906112,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383643.619326398,
+    "laravel": {
+      "cpu_ns": 34217613000,
+      "memory_bytes": 111316992,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12417511000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97934193000,
+      "memory_bytes": 35028992,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383644.123166491,
+    "laravel": {
+      "cpu_ns": 35218126000,
+      "memory_bytes": 110972928,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12418374000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97959715000,
+      "memory_bytes": 35819520,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383644.626893329,
+    "laravel": {
+      "cpu_ns": 36220082000,
+      "memory_bytes": 111738880,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12455229000,
+      "memory_bytes": 602542080,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 97986257000,
+      "memory_bytes": 35602432,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383645.13083894,
+    "laravel": {
+      "cpu_ns": 37220591000,
+      "memory_bytes": 111202304,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12456144000,
+      "memory_bytes": 602247168,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 98010976000,
+      "memory_bytes": 35778560,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383645.634522031,
+    "laravel": {
+      "cpu_ns": 38219277000,
+      "memory_bytes": 111501312,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12457055000,
+      "memory_bytes": 602148864,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 98037601000,
+      "memory_bytes": 35794944,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383646.138855536,
+    "laravel": {
+      "cpu_ns": 39234036000,
+      "memory_bytes": 111751168,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12457960000,
+      "memory_bytes": 602148864,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 98063513000,
+      "memory_bytes": 36204544,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383646.642899324,
+    "laravel": {
+      "cpu_ns": 40235981000,
+      "memory_bytes": 111362048,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12495889000,
+      "memory_bytes": 602431488,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 98089618000,
+      "memory_bytes": 36651008,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383647.147406188,
+    "laravel": {
+      "cpu_ns": 41250320000,
+      "memory_bytes": 111747072,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 12496845000,
+      "memory_bytes": 602148864,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 98118637000,
+      "memory_bytes": 36569088,
+      "memory_limit": 536870912
+    }
+  }
+]

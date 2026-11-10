@@ -1,0 +1,14 @@
+Running 15s test @ http://crab:8080
+  4 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.13ms  302.18us   7.47ms   87.59%
+    Req/Sec    14.22k     1.12k   27.15k    84.74%
+  Latency Distribution
+     50%    1.09ms
+     75%    1.19ms
+     90%    1.31ms
+     99%    2.38ms
+  853364 requests in 15.08s, 161.30MB read
+Requests/sec:  56575.62
+Transfer/sec:     10.69MB
+BENCH_JSON {"workload":"validate","bad_body":0,"bad_response":0,"requests":853364,"duration_us":15083599,"rps":56575.622303,"p50_us":1087.000000,"p99_us":2384.000000,"bad_status":0,"errors":{"connect":0,"read":0,"write":0,"timeout":0,"status":0}}

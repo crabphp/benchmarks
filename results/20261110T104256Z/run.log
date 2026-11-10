@@ -1,0 +1,309 @@
+PREFLIGHT hello-64 crab
+PREFLIGHT hello-64 webman
+PREFLIGHT hello-64 hyperf
+PREFLIGHT hello-64 symfony
+PREFLIGHT hello-64 spiral
+PREFLIGHT hello-64 laravel
+PREFLIGHT hello-64 tempest
+RUN hello-64-crab-trial-1 2026-11-10T10:43:59.633218+00:00
+DONE hello-64-crab-trial-1: 106016 req/s; errors=0
+RUN hello-64-webman-trial-1 2026-11-10T10:44:22.326360+00:00
+DONE hello-64-webman-trial-1: 73282 req/s; errors=0
+RUN hello-64-hyperf-trial-1 2026-11-10T10:44:46.107402+00:00
+DONE hello-64-hyperf-trial-1: 40872 req/s; errors=0
+RUN hello-64-symfony-trial-1 2026-11-10T10:45:08.672588+00:00
+DONE hello-64-symfony-trial-1: 6125 req/s; errors=0
+RUN hello-64-spiral-trial-1 2026-11-10T10:45:31.366579+00:00
+DONE hello-64-spiral-trial-1: 3108 req/s; errors=0
+RUN hello-64-laravel-trial-1 2026-11-10T10:45:54.908170+00:00
+DONE hello-64-laravel-trial-1: 2179 req/s; errors=0
+RUN hello-64-tempest-trial-1 2026-11-10T10:46:17.557319+00:00
+DONE hello-64-tempest-trial-1: 997 req/s; errors=0
+RUN hello-64-webman-trial-2 2026-11-10T10:46:40.163516+00:00
+DONE hello-64-webman-trial-2: 72391 req/s; errors=0
+RUN hello-64-hyperf-trial-2 2026-11-10T10:47:03.954543+00:00
+DONE hello-64-hyperf-trial-2: 41887 req/s; errors=0
+RUN hello-64-symfony-trial-2 2026-11-10T10:47:26.526560+00:00
+DONE hello-64-symfony-trial-2: 6095 req/s; errors=0
+RUN hello-64-spiral-trial-2 2026-11-10T10:47:49.347165+00:00
+DONE hello-64-spiral-trial-2: 3157 req/s; errors=0
+RUN hello-64-laravel-trial-2 2026-11-10T10:48:12.996626+00:00
+DONE hello-64-laravel-trial-2: 2213 req/s; errors=0
+RUN hello-64-tempest-trial-2 2026-11-10T10:48:35.763012+00:00
+DONE hello-64-tempest-trial-2: 993 req/s; errors=0
+RUN hello-64-crab-trial-2 2026-11-10T10:48:58.472733+00:00
+DONE hello-64-crab-trial-2: 106925 req/s; errors=0
+RUN hello-64-hyperf-trial-3 2026-11-10T10:49:21.197810+00:00
+DONE hello-64-hyperf-trial-3: 41713 req/s; errors=0
+RUN hello-64-symfony-trial-3 2026-11-10T10:49:43.981138+00:00
+DONE hello-64-symfony-trial-3: 5954 req/s; errors=0
+RUN hello-64-spiral-trial-3 2026-11-10T10:50:06.894807+00:00
+DONE hello-64-spiral-trial-3: 3083 req/s; errors=0
+RUN hello-64-laravel-trial-3 2026-11-10T10:50:30.650622+00:00
+DONE hello-64-laravel-trial-3: 2179 req/s; errors=0
+RUN hello-64-tempest-trial-3 2026-11-10T10:50:53.508727+00:00
+DONE hello-64-tempest-trial-3: 988 req/s; errors=0
+RUN hello-64-crab-trial-3 2026-11-10T10:51:16.259632+00:00
+DONE hello-64-crab-trial-3: 108522 req/s; errors=0
+RUN hello-64-webman-trial-3 2026-11-10T10:51:39.075523+00:00
+DONE hello-64-webman-trial-3: 72469 req/s; errors=0
+RUN hello-64-symfony-trial-4 2026-11-10T10:52:02.757835+00:00
+DONE hello-64-symfony-trial-4: 6139 req/s; errors=0
+RUN hello-64-spiral-trial-4 2026-11-10T10:52:25.394914+00:00
+DONE hello-64-spiral-trial-4: 3251 req/s; errors=0
+RUN hello-64-laravel-trial-4 2026-11-10T10:52:49.161796+00:00
+DONE hello-64-laravel-trial-4: 2121 req/s; errors=0
+RUN hello-64-tempest-trial-4 2026-11-10T10:53:12.105498+00:00
+DONE hello-64-tempest-trial-4: 991 req/s; errors=0
+RUN hello-64-crab-trial-4 2026-11-10T10:53:34.735260+00:00
+DONE hello-64-crab-trial-4: 110128 req/s; errors=0
+RUN hello-64-webman-trial-4 2026-11-10T10:53:57.290747+00:00
+DONE hello-64-webman-trial-4: 74827 req/s; errors=0
+RUN hello-64-hyperf-trial-4 2026-11-10T10:54:21.382313+00:00
+DONE hello-64-hyperf-trial-4: 41652 req/s; errors=0
+RUN hello-64-spiral-trial-5 2026-11-10T10:54:44.136456+00:00
+DONE hello-64-spiral-trial-5: 3125 req/s; errors=0
+RUN hello-64-laravel-trial-5 2026-11-10T10:55:07.749245+00:00
+DONE hello-64-laravel-trial-5: 2132 req/s; errors=0
+RUN hello-64-tempest-trial-5 2026-11-10T10:55:30.377089+00:00
+DONE hello-64-tempest-trial-5: 987 req/s; errors=0
+RUN hello-64-crab-trial-5 2026-11-10T10:55:52.999847+00:00
+DONE hello-64-crab-trial-5: 108813 req/s; errors=0
+RUN hello-64-webman-trial-5 2026-11-10T10:56:15.613629+00:00
+DONE hello-64-webman-trial-5: 74650 req/s; errors=0
+RUN hello-64-hyperf-trial-5 2026-11-10T10:56:39.310975+00:00
+DONE hello-64-hyperf-trial-5: 40936 req/s; errors=0
+RUN hello-64-symfony-trial-5 2026-11-10T10:57:01.536295+00:00
+DONE hello-64-symfony-trial-5: 6114 req/s; errors=0
+PREFLIGHT hello-256 crab
+PREFLIGHT hello-256 webman
+PREFLIGHT hello-256 hyperf
+PREFLIGHT hello-256 symfony
+PREFLIGHT hello-256 spiral
+PREFLIGHT hello-256 laravel
+PREFLIGHT hello-256 tempest
+RUN hello-256-crab-trial-1 2026-11-10T10:57:40.909731+00:00
+DONE hello-256-crab-trial-1: 105569 req/s; errors=0
+RUN hello-256-webman-trial-1 2026-11-10T10:58:03.551815+00:00
+DONE hello-256-webman-trial-1: 70504 req/s; errors=0
+RUN hello-256-hyperf-trial-1 2026-11-10T10:58:27.311975+00:00
+DONE hello-256-hyperf-trial-1: 41820 req/s; errors=0
+RUN hello-256-symfony-trial-1 2026-11-10T10:58:49.958944+00:00
+DONE hello-256-symfony-trial-1: 6134 req/s; errors=0
+RUN hello-256-spiral-trial-1 2026-11-10T10:59:12.680339+00:00
+DONE hello-256-spiral-trial-1: 3193 req/s; errors=0
+RUN hello-256-laravel-trial-1 2026-11-10T10:59:36.116832+00:00
+DONE hello-256-laravel-trial-1: 2138 req/s; errors=0
+RUN hello-256-tempest-trial-1 2026-11-10T10:59:59.029881+00:00
+DONE hello-256-tempest-trial-1: 993 req/s; errors=0
+RUN hello-256-webman-trial-2 2026-11-10T11:00:21.619419+00:00
+DONE hello-256-webman-trial-2: 73283 req/s; errors=0
+RUN hello-256-hyperf-trial-2 2026-11-10T11:00:45.260852+00:00
+DONE hello-256-hyperf-trial-2: 40960 req/s; errors=0
+RUN hello-256-symfony-trial-2 2026-11-10T11:01:07.484180+00:00
+DONE hello-256-symfony-trial-2: 6303 req/s; errors=0
+RUN hello-256-spiral-trial-2 2026-11-10T11:01:30.428254+00:00
+DONE hello-256-spiral-trial-2: 3153 req/s; errors=0
+RUN hello-256-laravel-trial-2 2026-11-10T11:01:54.102632+00:00
+DONE hello-256-laravel-trial-2: 2138 req/s; errors=0
+RUN hello-256-tempest-trial-2 2026-11-10T11:02:16.788367+00:00
+DONE hello-256-tempest-trial-2: 999 req/s; errors=0
+RUN hello-256-crab-trial-2 2026-11-10T11:02:39.369038+00:00
+DONE hello-256-crab-trial-2: 109632 req/s; errors=0
+RUN hello-256-hyperf-trial-3 2026-11-10T11:03:02.483082+00:00
+DONE hello-256-hyperf-trial-3: 41455 req/s; errors=0
+RUN hello-256-symfony-trial-3 2026-11-10T11:03:25.125065+00:00
+DONE hello-256-symfony-trial-3: 5931 req/s; errors=0
+RUN hello-256-spiral-trial-3 2026-11-10T11:03:47.860273+00:00
+DONE hello-256-spiral-trial-3: 3125 req/s; errors=0
+RUN hello-256-laravel-trial-3 2026-11-10T11:04:11.564625+00:00
+DONE hello-256-laravel-trial-3: 2154 req/s; errors=0
+RUN hello-256-tempest-trial-3 2026-11-10T11:04:34.218468+00:00
+DONE hello-256-tempest-trial-3: 993 req/s; errors=0
+RUN hello-256-crab-trial-3 2026-11-10T11:04:56.920574+00:00
+DONE hello-256-crab-trial-3: 110497 req/s; errors=0
+RUN hello-256-webman-trial-3 2026-11-10T11:05:19.664863+00:00
+DONE hello-256-webman-trial-3: 72486 req/s; errors=0
+RUN hello-256-symfony-trial-4 2026-11-10T11:05:43.301696+00:00
+DONE hello-256-symfony-trial-4: 6032 req/s; errors=0
+RUN hello-256-spiral-trial-4 2026-11-10T11:06:06.104830+00:00
+DONE hello-256-spiral-trial-4: 3106 req/s; errors=0
+RUN hello-256-laravel-trial-4 2026-11-10T11:06:29.933453+00:00
+DONE hello-256-laravel-trial-4: 2175 req/s; errors=0
+RUN hello-256-tempest-trial-4 2026-11-10T11:06:52.976529+00:00
+DONE hello-256-tempest-trial-4: 992 req/s; errors=0
+RUN hello-256-crab-trial-4 2026-11-10T11:07:15.590188+00:00
+DONE hello-256-crab-trial-4: 109646 req/s; errors=0
+RUN hello-256-webman-trial-4 2026-11-10T11:07:38.898689+00:00
+DONE hello-256-webman-trial-4: 71652 req/s; errors=0
+RUN hello-256-hyperf-trial-4 2026-11-10T11:08:02.698153+00:00
+DONE hello-256-hyperf-trial-4: 41450 req/s; errors=0
+RUN hello-256-spiral-trial-5 2026-11-10T11:08:25.374941+00:00
+DONE hello-256-spiral-trial-5: 3256 req/s; errors=0
+RUN hello-256-laravel-trial-5 2026-11-10T11:08:49.162348+00:00
+DONE hello-256-laravel-trial-5: 2155 req/s; errors=0
+RUN hello-256-tempest-trial-5 2026-11-10T11:09:12.010304+00:00
+DONE hello-256-tempest-trial-5: 988 req/s; errors=0
+RUN hello-256-crab-trial-5 2026-11-10T11:09:34.774705+00:00
+DONE hello-256-crab-trial-5: 105360 req/s; errors=0
+RUN hello-256-webman-trial-5 2026-11-10T11:09:57.309093+00:00
+DONE hello-256-webman-trial-5: 73647 req/s; errors=0
+RUN hello-256-hyperf-trial-5 2026-11-10T11:10:21.075063+00:00
+DONE hello-256-hyperf-trial-5: 40424 req/s; errors=0
+RUN hello-256-symfony-trial-5 2026-11-10T11:10:43.646051+00:00
+DONE hello-256-symfony-trial-5: 6063 req/s; errors=0
+PREFLIGHT db-64 crab
+PREFLIGHT db-64 webman
+PREFLIGHT db-64 hyperf
+PREFLIGHT db-64 symfony
+PREFLIGHT db-64 spiral
+PREFLIGHT db-64 laravel
+PREFLIGHT db-64 tempest
+RUN db-64-crab-trial-1 2026-11-10T11:11:22.833073+00:00
+DONE db-64-crab-trial-1: 20240 req/s; errors=0
+RUN db-64-webman-trial-1 2026-11-10T11:11:45.529204+00:00
+DONE db-64-webman-trial-1: 8301 req/s; errors=0
+RUN db-64-hyperf-trial-1 2026-11-10T11:12:09.414893+00:00
+DONE db-64-hyperf-trial-1: 9380 req/s; errors=0
+RUN db-64-symfony-trial-1 2026-11-10T11:12:32.180399+00:00
+DONE db-64-symfony-trial-1: 3540 req/s; errors=0
+RUN db-64-spiral-trial-1 2026-11-10T11:12:54.879330+00:00
+DONE db-64-spiral-trial-1: 2517 req/s; errors=0
+RUN db-64-laravel-trial-1 2026-11-10T11:13:18.560349+00:00
+DONE db-64-laravel-trial-1: 1571 req/s; errors=0
+RUN db-64-tempest-trial-1 2026-11-10T11:13:41.225648+00:00
+DONE db-64-tempest-trial-1: 902 req/s; errors=0
+RUN db-64-webman-trial-2 2026-11-10T11:14:03.891213+00:00
+DONE db-64-webman-trial-2: 8335 req/s; errors=0
+RUN db-64-hyperf-trial-2 2026-11-10T11:14:27.652479+00:00
+DONE db-64-hyperf-trial-2: 9448 req/s; errors=0
+RUN db-64-symfony-trial-2 2026-11-10T11:14:50.248353+00:00
+DONE db-64-symfony-trial-2: 1920 req/s; errors=0
+RUN db-64-spiral-trial-2 2026-11-10T11:15:13.064159+00:00
+DONE db-64-spiral-trial-2: 2535 req/s; errors=0
+RUN db-64-laravel-trial-2 2026-11-10T11:15:36.763561+00:00
+DONE db-64-laravel-trial-2: 1622 req/s; errors=0
+RUN db-64-tempest-trial-2 2026-11-10T11:15:59.734754+00:00
+DONE db-64-tempest-trial-2: 909 req/s; errors=0
+RUN db-64-crab-trial-2 2026-11-10T11:16:22.412630+00:00
+DONE db-64-crab-trial-2: 20141 req/s; errors=0
+RUN db-64-hyperf-trial-3 2026-11-10T11:16:45.101395+00:00
+DONE db-64-hyperf-trial-3: 9443 req/s; errors=0
+RUN db-64-symfony-trial-3 2026-11-10T11:17:07.835802+00:00
+DONE db-64-symfony-trial-3: 2823 req/s; errors=0
+RUN db-64-spiral-trial-3 2026-11-10T11:17:30.555842+00:00
+DONE db-64-spiral-trial-3: 2515 req/s; errors=0
+RUN db-64-laravel-trial-3 2026-11-10T11:17:54.349522+00:00
+DONE db-64-laravel-trial-3: 1614 req/s; errors=0
+RUN db-64-tempest-trial-3 2026-11-10T11:18:17.056615+00:00
+DONE db-64-tempest-trial-3: 906 req/s; errors=0
+RUN db-64-crab-trial-3 2026-11-10T11:18:39.681306+00:00
+DONE db-64-crab-trial-3: 20566 req/s; errors=0
+RUN db-64-webman-trial-3 2026-11-10T11:19:03.042064+00:00
+DONE db-64-webman-trial-3: 8165 req/s; errors=0
+RUN db-64-symfony-trial-4 2026-11-10T11:19:26.690688+00:00
+DONE db-64-symfony-trial-4: 4265 req/s; errors=0
+RUN db-64-spiral-trial-4 2026-11-10T11:19:49.467399+00:00
+DONE db-64-spiral-trial-4: 2526 req/s; errors=0
+RUN db-64-laravel-trial-4 2026-11-10T11:20:13.145073+00:00
+DONE db-64-laravel-trial-4: 1588 req/s; errors=0
+RUN db-64-tempest-trial-4 2026-11-10T11:20:35.932589+00:00
+DONE db-64-tempest-trial-4: 904 req/s; errors=0
+RUN db-64-crab-trial-4 2026-11-10T11:20:58.593145+00:00
+DONE db-64-crab-trial-4: 20552 req/s; errors=0
+RUN db-64-webman-trial-4 2026-11-10T11:21:21.353847+00:00
+DONE db-64-webman-trial-4: 8481 req/s; errors=0
+RUN db-64-hyperf-trial-4 2026-11-10T11:21:44.970732+00:00
+DONE db-64-hyperf-trial-4: 9308 req/s; errors=0
+RUN db-64-spiral-trial-5 2026-11-10T11:22:07.759321+00:00
+DONE db-64-spiral-trial-5: 2401 req/s; errors=0
+RUN db-64-laravel-trial-5 2026-11-10T11:22:31.359240+00:00
+DONE db-64-laravel-trial-5: 1589 req/s; errors=0
+RUN db-64-tempest-trial-5 2026-11-10T11:22:53.993849+00:00
+DONE db-64-tempest-trial-5: 888 req/s; errors=0
+RUN db-64-crab-trial-5 2026-11-10T11:23:16.687516+00:00
+DONE db-64-crab-trial-5: 19833 req/s; errors=0
+RUN db-64-webman-trial-5 2026-11-10T11:23:39.421257+00:00
+DONE db-64-webman-trial-5: 8295 req/s; errors=0
+RUN db-64-hyperf-trial-5 2026-11-10T11:24:02.708370+00:00
+DONE db-64-hyperf-trial-5: 9299 req/s; errors=0
+RUN db-64-symfony-trial-5 2026-11-10T11:24:25.438998+00:00
+DONE db-64-symfony-trial-5: 4636 req/s; errors=0
+PREFLIGHT validate-64 crab
+PREFLIGHT validate-64 webman
+PREFLIGHT validate-64 hyperf
+PREFLIGHT validate-64 symfony
+PREFLIGHT validate-64 spiral
+PREFLIGHT validate-64 laravel
+PREFLIGHT validate-64 tempest
+RUN validate-64-crab-trial-1 2026-11-10T11:25:04.001184+00:00
+DONE validate-64-crab-trial-1: 52963 req/s; errors=0
+RUN validate-64-webman-trial-1 2026-11-10T11:25:26.754385+00:00
+DONE validate-64-webman-trial-1: 6199 req/s; errors=0
+RUN validate-64-hyperf-trial-1 2026-11-10T11:25:50.690500+00:00
+DONE validate-64-hyperf-trial-1: 6884 req/s; errors=0
+RUN validate-64-symfony-trial-1 2026-11-10T11:26:13.574111+00:00
+DONE validate-64-symfony-trial-1: 4097 req/s; errors=0
+RUN validate-64-spiral-trial-1 2026-11-10T11:26:36.111036+00:00
+DONE validate-64-spiral-trial-1: 2688 req/s; errors=0
+RUN validate-64-laravel-trial-1 2026-11-10T11:26:59.872749+00:00
+DONE validate-64-laravel-trial-1: 1397 req/s; errors=0
+RUN validate-64-tempest-trial-1 2026-11-10T11:27:22.885468+00:00
+DONE validate-64-tempest-trial-1: 918 req/s; errors=0
+RUN validate-64-webman-trial-2 2026-11-10T11:27:45.533149+00:00
+DONE validate-64-webman-trial-2: 6095 req/s; errors=0
+RUN validate-64-hyperf-trial-2 2026-11-10T11:28:09.311275+00:00
+DONE validate-64-hyperf-trial-2: 6880 req/s; errors=0
+RUN validate-64-symfony-trial-2 2026-11-10T11:28:32.163800+00:00
+DONE validate-64-symfony-trial-2: 4031 req/s; errors=0
+RUN validate-64-spiral-trial-2 2026-11-10T11:28:54.881962+00:00
+DONE validate-64-spiral-trial-2: 2363 req/s; errors=0
+RUN validate-64-laravel-trial-2 2026-11-10T11:29:18.805569+00:00
+DONE validate-64-laravel-trial-2: 1437 req/s; errors=0
+RUN validate-64-tempest-trial-2 2026-11-10T11:29:41.492601+00:00
+DONE validate-64-tempest-trial-2: 911 req/s; errors=0
+RUN validate-64-crab-trial-2 2026-11-10T11:30:04.181428+00:00
+DONE validate-64-crab-trial-2: 57832 req/s; errors=0
+RUN validate-64-hyperf-trial-3 2026-11-10T11:30:26.923307+00:00
+DONE validate-64-hyperf-trial-3: 6940 req/s; errors=0
+RUN validate-64-symfony-trial-3 2026-11-10T11:30:50.631737+00:00
+DONE validate-64-symfony-trial-3: 4120 req/s; errors=0
+RUN validate-64-spiral-trial-3 2026-11-10T11:31:13.336204+00:00
+DONE validate-64-spiral-trial-3: 2635 req/s; errors=0
+RUN validate-64-laravel-trial-3 2026-11-10T11:31:37.174187+00:00
+DONE validate-64-laravel-trial-3: 1427 req/s; errors=0
+RUN validate-64-tempest-trial-3 2026-11-10T11:31:59.843666+00:00
+DONE validate-64-tempest-trial-3: 925 req/s; errors=0
+RUN validate-64-crab-trial-3 2026-11-10T11:32:22.518093+00:00
+DONE validate-64-crab-trial-3: 55804 req/s; errors=0
+RUN validate-64-webman-trial-3 2026-11-10T11:32:45.062639+00:00
+DONE validate-64-webman-trial-3: 6181 req/s; errors=0
+RUN validate-64-symfony-trial-4 2026-11-10T11:33:09.266252+00:00
+DONE validate-64-symfony-trial-4: 3795 req/s; errors=0
+RUN validate-64-spiral-trial-4 2026-11-10T11:33:31.917975+00:00
+DONE validate-64-spiral-trial-4: 2744 req/s; errors=0
+RUN validate-64-laravel-trial-4 2026-11-10T11:33:55.794631+00:00
+DONE validate-64-laravel-trial-4: 1417 req/s; errors=0
+RUN validate-64-tempest-trial-4 2026-11-10T11:34:18.582229+00:00
+DONE validate-64-tempest-trial-4: 911 req/s; errors=0
+RUN validate-64-crab-trial-4 2026-11-10T11:34:41.456570+00:00
+DONE validate-64-crab-trial-4: 56092 req/s; errors=0
+RUN validate-64-webman-trial-4 2026-11-10T11:35:04.002687+00:00
+DONE validate-64-webman-trial-4: 6146 req/s; errors=0
+RUN validate-64-hyperf-trial-4 2026-11-10T11:35:27.822312+00:00
+DONE validate-64-hyperf-trial-4: 7030 req/s; errors=0
+RUN validate-64-spiral-trial-5 2026-11-10T11:35:50.594518+00:00
+DONE validate-64-spiral-trial-5: 2663 req/s; errors=0
+RUN validate-64-laravel-trial-5 2026-11-10T11:36:14.267368+00:00
+DONE validate-64-laravel-trial-5: 1403 req/s; errors=0
+RUN validate-64-tempest-trial-5 2026-11-10T11:36:37.030171+00:00
+DONE validate-64-tempest-trial-5: 919 req/s; errors=0
+RUN validate-64-crab-trial-5 2026-11-10T11:36:59.834667+00:00
+DONE validate-64-crab-trial-5: 56576 req/s; errors=0
+RUN validate-64-webman-trial-5 2026-11-10T11:37:22.576363+00:00
+DONE validate-64-webman-trial-5: 6124 req/s; errors=0
+RUN validate-64-hyperf-trial-5 2026-11-10T11:37:46.355790+00:00
+DONE validate-64-hyperf-trial-5: 6984 req/s; errors=0
+RUN validate-64-symfony-trial-5 2026-11-10T11:38:09.145139+00:00
+DONE validate-64-symfony-trial-5: 4118 req/s; errors=0
+COMPLETE /home/daudau/Code/crabphp/benchmarks/results/20261110T104256Z

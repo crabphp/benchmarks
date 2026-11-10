@@ -1,0 +1,142 @@
+[
+  {
+    "case": "hello-64",
+    "service": "crab",
+    "ready_seconds": 1.5626898719929159
+  },
+  {
+    "case": "hello-64",
+    "service": "webman",
+    "ready_seconds": 0.6658231689943932
+  },
+  {
+    "case": "hello-64",
+    "service": "hyperf",
+    "ready_seconds": 1.3682915040408261
+  },
+  {
+    "case": "hello-64",
+    "service": "symfony",
+    "ready_seconds": 1.3625282130087726
+  },
+  {
+    "case": "hello-64",
+    "service": "spiral",
+    "ready_seconds": 1.4258354139747098
+  },
+  {
+    "case": "hello-64",
+    "service": "laravel",
+    "ready_seconds": 1.3813442660029978
+  },
+  {
+    "case": "hello-64",
+    "service": "tempest",
+    "ready_seconds": 1.3509616290102713
+  },
+  {
+    "case": "hello-256",
+    "service": "crab",
+    "ready_seconds": 0.5932555599720217
+  },
+  {
+    "case": "hello-256",
+    "service": "webman",
+    "ready_seconds": 1.5879132990376092
+  },
+  {
+    "case": "hello-256",
+    "service": "hyperf",
+    "ready_seconds": 1.709344660048373
+  },
+  {
+    "case": "hello-256",
+    "service": "symfony",
+    "ready_seconds": 1.6527021059882827
+  },
+  {
+    "case": "hello-256",
+    "service": "spiral",
+    "ready_seconds": 0.9910853750188835
+  },
+  {
+    "case": "hello-256",
+    "service": "laravel",
+    "ready_seconds": 1.7754779870156199
+  },
+  {
+    "case": "hello-256",
+    "service": "tempest",
+    "ready_seconds": 1.664830030000303
+  },
+  {
+    "case": "db-64",
+    "service": "crab",
+    "ready_seconds": 0.7369833590346389
+  },
+  {
+    "case": "db-64",
+    "service": "webman",
+    "ready_seconds": 1.4895184729830362
+  },
+  {
+    "case": "db-64",
+    "service": "hyperf",
+    "ready_seconds": 1.4632416759850457
+  },
+  {
+    "case": "db-64",
+    "service": "symfony",
+    "ready_seconds": 1.6300297349807806
+  },
+  {
+    "case": "db-64",
+    "service": "spiral",
+    "ready_seconds": 1.4815103680011816
+  },
+  {
+    "case": "db-64",
+    "service": "laravel",
+    "ready_seconds": 1.544004034018144
+  },
+  {
+    "case": "db-64",
+    "service": "tempest",
+    "ready_seconds": 1.3512137670186348
+  },
+  {
+    "case": "validate-64",
+    "service": "crab",
+    "ready_seconds": 0.550133477023337
+  },
+  {
+    "case": "validate-64",
+    "service": "webman",
+    "ready_seconds": 0.6869077870505862
+  },
+  {
+    "case": "validate-64",
+    "service": "hyperf",
+    "ready_seconds": 1.672463966999203
+  },
+  {
+    "case": "validate-64",
+    "service": "symfony",
+    "ready_seconds": 1.5624116429826245
+  },
+  {
+    "case": "validate-64",
+    "service": "spiral",
+    "ready_seconds": 1.648474462039303
+  },
+  {
+    "case": "validate-64",
+    "service": "laravel",
+    "ready_seconds": 1.3659742649761029
+  },
+  {
+    "case": "validate-64",
+    "service": "tempest",
+    "ready_seconds": 1.5961554059758782
+  }
+]

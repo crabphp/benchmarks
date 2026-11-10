@@ -1,0 +1,144 @@
+symfony-1  | {"level":"info","ts":1794309888.4157267,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+symfony-1  | {"level":"info","ts":1794309888.4157412,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+symfony-1  | {"level":"info","ts":1794309888.4157448,"msg":"using config from file","file":"/bench/symfony/Caddyfile"}
+symfony-1  | {"level":"info","ts":1794309888.4157465,"msg":"adapted config to JSON","adapter":"caddyfile"}
+symfony-1  | {"level":"warn","ts":1794309888.415748,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/symfony/Caddyfile","line":2}
+symfony-1  | {"level":"warn","ts":1794309888.4157515,"logger":"admin","msg":"admin endpoint disabled"}
+symfony-1  | {"level":"info","ts":1794309888.4159174,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+symfony-1  | {"level":"info","ts":1794309888.4159384,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x26b35776ce80"}
+symfony-1  | {"level":"info","ts":1794309888.6894994,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+symfony-1  | {"level":"warn","ts":1794309888.6897933,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"warn","ts":1794309888.689799,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"info","ts":1794309888.6898012,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+symfony-1  | {"level":"info","ts":1794309888.690092,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+symfony-1  | {"level":"info","ts":1794309888.690097,"msg":"serving initial configuration"}
+symfony-1  | {"level":"info","ts":1794309888.695934,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/data/caddy"}
+symfony-1  | {"level":"info","ts":1794309888.6988711,"logger":"tls","msg":"finished cleaning storage units"}
+symfony-1  | {"level":"info","ts":1794309889.3942518,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type string.\nThis value should be of type string.\nThis value should be of type int.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.3975267,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value is too short. It should have 1 character or more.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.398591,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value is too long. It should have 100 characters or less.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.3995852,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value is too long. It should have 100 characters or less.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.4005246,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type string.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.4014814,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value is not a valid email address.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.402434,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be between 18 and 120.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.403389,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be between 18 and 120.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.4043298,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type int.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.4052494,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type int.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.406173,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type int.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.4074838,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type int.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.5162358,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+symfony-1  | {"level":"warn","ts":1794309889.5163264,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+symfony-1  | {"level":"info","ts":1794309889.516365,"logger":"http","msg":"servers shutting down with eternal grace period"}
+symfony-1  | {"level":"info","ts":1794309889.5166986,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+symfony-1  | {"level":"info","ts":1794309889.5168047,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x26b35776ce80"}
+symfony-1  | {"level":"info","ts":1794309889.539926,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+symfony-1  | {"level":"info","ts":1794309967.3732877,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+symfony-1  | {"level":"info","ts":1794309967.3732982,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+symfony-1  | {"level":"info","ts":1794309967.3733017,"msg":"using config from file","file":"/bench/symfony/Caddyfile"}
+symfony-1  | {"level":"info","ts":1794309967.3733037,"msg":"adapted config to JSON","adapter":"caddyfile"}
+symfony-1  | {"level":"warn","ts":1794309967.3733048,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/symfony/Caddyfile","line":2}
+symfony-1  | {"level":"warn","ts":1794309967.3733082,"logger":"admin","msg":"admin endpoint disabled"}
+symfony-1  | {"level":"info","ts":1794309967.3734639,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+symfony-1  | {"level":"info","ts":1794309967.3734877,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x5b7e0dcf080"}
+symfony-1  | {"level":"info","ts":1794309967.6471996,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+symfony-1  | {"level":"warn","ts":1794309967.647448,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"warn","ts":1794309967.6474538,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"info","ts":1794309967.6474557,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+symfony-1  | {"level":"info","ts":1794309967.6476288,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+symfony-1  | {"level":"info","ts":1794309967.6476378,"msg":"serving initial configuration"}
+symfony-1  | {"level":"info","ts":1794309967.6535304,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"e54881e0-f239-4863-85f5-d611ae3787f5","try_again":1794396367.6535292,"try_again_in":86399.999999647}
+symfony-1  | {"level":"info","ts":1794309967.6536026,"logger":"tls","msg":"finished cleaning storage units"}
+symfony-1  | {"level":"info","ts":1794309988.9886572,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+symfony-1  | {"level":"warn","ts":1794309988.9886978,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+symfony-1  | {"level":"info","ts":1794309988.9887173,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+symfony-1  | {"level":"info","ts":1794309988.9887316,"logger":"http","msg":"servers shutting down with eternal grace period"}
+symfony-1  | {"level":"info","ts":1794309988.9888175,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x5b7e0dcf080"}
+symfony-1  | {"level":"info","ts":1794309988.994662,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+symfony-1  | {"level":"info","ts":1794310105.9091783,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+symfony-1  | {"level":"info","ts":1794310105.9091885,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+symfony-1  | {"level":"info","ts":1794310105.9091916,"msg":"using config from file","file":"/bench/symfony/Caddyfile"}
+symfony-1  | {"level":"info","ts":1794310105.9091933,"msg":"adapted config to JSON","adapter":"caddyfile"}
+symfony-1  | {"level":"warn","ts":1794310105.9091945,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/symfony/Caddyfile","line":2}
+symfony-1  | {"level":"warn","ts":1794310105.9091976,"logger":"admin","msg":"admin endpoint disabled"}
+symfony-1  | {"level":"info","ts":1794310105.9093282,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+symfony-1  | {"level":"info","ts":1794310105.9093812,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x3b05dda75c80"}
+symfony-1  | {"level":"info","ts":1794310105.912395,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"e54881e0-f239-4863-85f5-d611ae3787f5","try_again":1794396505.9123926,"try_again_in":86399.999999617}
+symfony-1  | {"level":"info","ts":1794310105.9124753,"logger":"tls","msg":"finished cleaning storage units"}
+symfony-1  | {"level":"info","ts":1794310106.200731,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+symfony-1  | {"level":"warn","ts":1794310106.2010448,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"warn","ts":1794310106.2010658,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"info","ts":1794310106.2010689,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+symfony-1  | {"level":"info","ts":1794310106.2012045,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+symfony-1  | {"level":"info","ts":1794310106.2012222,"msg":"serving initial configuration"}
+symfony-1  | {"level":"info","ts":1794310127.6395001,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+symfony-1  | {"level":"warn","ts":1794310127.6395404,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+symfony-1  | {"level":"info","ts":1794310127.6395557,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+symfony-1  | {"level":"info","ts":1794310127.6395714,"logger":"http","msg":"servers shutting down with eternal grace period"}
+symfony-1  | {"level":"info","ts":1794310127.6396687,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x3b05dda75c80"}
+symfony-1  | {"level":"info","ts":1794310127.6467083,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+symfony-1  | {"level":"info","ts":1794310243.6348531,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+symfony-1  | {"level":"info","ts":1794310243.6348624,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+symfony-1  | {"level":"info","ts":1794310243.634865,"msg":"using config from file","file":"/bench/symfony/Caddyfile"}
+symfony-1  | {"level":"info","ts":1794310243.634867,"msg":"adapted config to JSON","adapter":"caddyfile"}
+symfony-1  | {"level":"warn","ts":1794310243.6348684,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/symfony/Caddyfile","line":2}
+symfony-1  | {"level":"warn","ts":1794310243.6348712,"logger":"admin","msg":"admin endpoint disabled"}
+symfony-1  | {"level":"info","ts":1794310243.6350036,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+symfony-1  | {"level":"info","ts":1794310243.6352427,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x322ed50da900"}
+symfony-1  | {"level":"info","ts":1794310243.9133673,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+symfony-1  | {"level":"warn","ts":1794310243.9136612,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"warn","ts":1794310243.9136677,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"info","ts":1794310243.9136698,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+symfony-1  | {"level":"info","ts":1794310243.913819,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+symfony-1  | {"level":"info","ts":1794310243.9138284,"msg":"serving initial configuration"}
+symfony-1  | {"level":"info","ts":1794310243.9173107,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"e54881e0-f239-4863-85f5-d611ae3787f5","try_again":1794396643.9173095,"try_again_in":86399.999999664}
+symfony-1  | {"level":"info","ts":1794310243.9173727,"logger":"tls","msg":"finished cleaning storage units"}
+symfony-1  | {"level":"info","ts":1794310266.0664778,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+symfony-1  | {"level":"warn","ts":1794310266.0665166,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+symfony-1  | {"level":"info","ts":1794310266.0665424,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+symfony-1  | {"level":"info","ts":1794310266.0665581,"logger":"http","msg":"servers shutting down with eternal grace period"}
+symfony-1  | {"level":"info","ts":1794310266.0666273,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x322ed50da900"}
+symfony-1  | {"level":"info","ts":1794310266.072521,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+symfony-1  | {"level":"info","ts":1794310382.8667307,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+symfony-1  | {"level":"info","ts":1794310382.86674,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+symfony-1  | {"level":"info","ts":1794310382.8667428,"msg":"using config from file","file":"/bench/symfony/Caddyfile"}
+symfony-1  | {"level":"info","ts":1794310382.8667445,"msg":"adapted config to JSON","adapter":"caddyfile"}
+symfony-1  | {"level":"warn","ts":1794310382.866746,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/symfony/Caddyfile","line":2}
+symfony-1  | {"level":"warn","ts":1794310382.8667486,"logger":"admin","msg":"admin endpoint disabled"}
+symfony-1  | {"level":"info","ts":1794310382.8668907,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+symfony-1  | {"level":"info","ts":1794310382.8669336,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x132f40132d00"}
+symfony-1  | {"level":"info","ts":1794310383.145652,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+symfony-1  | {"level":"warn","ts":1794310383.1459754,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"warn","ts":1794310383.1459804,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"info","ts":1794310383.1459825,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+symfony-1  | {"level":"info","ts":1794310383.1461406,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+symfony-1  | {"level":"info","ts":1794310383.146146,"msg":"serving initial configuration"}
+symfony-1  | {"level":"info","ts":1794310383.1520953,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"e54881e0-f239-4863-85f5-d611ae3787f5","try_again":1794396783.152093,"try_again_in":86399.999999165}
+symfony-1  | {"level":"info","ts":1794310383.1522841,"logger":"tls","msg":"finished cleaning storage units"}
+symfony-1  | {"level":"info","ts":1794310404.712261,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+symfony-1  | {"level":"warn","ts":1794310404.7123027,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+symfony-1  | {"level":"info","ts":1794310404.7123208,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+symfony-1  | {"level":"info","ts":1794310404.7123406,"logger":"http","msg":"servers shutting down with eternal grace period"}
+symfony-1  | {"level":"info","ts":1794310404.7124476,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x132f40132d00"}
+symfony-1  | {"level":"info","ts":1794310404.7184405,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+symfony-1  | {"level":"info","ts":1794310683.169989,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+symfony-1  | {"level":"info","ts":1794310683.1699996,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+symfony-1  | {"level":"info","ts":1794310683.1700025,"msg":"using config from file","file":"/bench/symfony/Caddyfile"}
+symfony-1  | {"level":"info","ts":1794310683.1700041,"msg":"adapted config to JSON","adapter":"caddyfile"}
+symfony-1  | {"level":"warn","ts":1794310683.1700056,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/symfony/Caddyfile","line":2}
+symfony-1  | {"level":"warn","ts":1794310683.1700084,"logger":"admin","msg":"admin endpoint disabled"}
+symfony-1  | {"level":"info","ts":1794310683.1701314,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+symfony-1  | {"level":"info","ts":1794310683.1701534,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x2636fb0fa300"}
+symfony-1  | {"level":"info","ts":1794310683.1736064,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"e54881e0-f239-4863-85f5-d611ae3787f5","try_again":1794397083.1736047,"try_again_in":86399.999999378}
+symfony-1  | {"level":"info","ts":1794310683.173677,"logger":"tls","msg":"finished cleaning storage units"}
+symfony-1  | {"level":"info","ts":1794310683.4469001,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+symfony-1  | {"level":"warn","ts":1794310683.4471312,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"warn","ts":1794310683.4471364,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"info","ts":1794310683.4471388,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+symfony-1  | {"level":"info","ts":1794310683.4472628,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+symfony-1  | {"level":"info","ts":1794310683.4472682,"msg":"serving initial configuration"}
+symfony-1  | {"level":"info","ts":1794310704.554869,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+symfony-1  | {"level":"warn","ts":1794310704.5549064,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+symfony-1  | {"level":"info","ts":1794310704.554921,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+symfony-1  | {"level":"info","ts":1794310704.5549572,"logger":"http","msg":"servers shutting down with eternal grace period"}
+symfony-1  | {"level":"info","ts":1794310704.5550778,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x2636fb0fa300"}
+symfony-1  | {"level":"info","ts":1794310704.5613074,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}

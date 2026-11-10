@@ -1,0 +1,14 @@
+Running 5s test @ http://spiral:8080
+  4 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    25.13ms    1.08ms  42.15ms   85.03%
+    Req/Sec   638.15     32.21   790.00     82.76%
+  Latency Distribution
+     50%   24.98ms
+     75%   25.45ms
+     90%   26.17ms
+     99%   28.95ms
+  12899 requests in 5.09s, 2.46MB read
+Requests/sec:   2534.66
+Transfer/sec:    494.73KB
+BENCH_JSON {"workload":"db","bad_body":0,"bad_response":0,"requests":12899,"duration_us":5089043,"rps":2534.661232,"p50_us":24984.000000,"p99_us":28954.000000,"bad_status":0,"errors":{"connect":0,"read":0,"write":0,"timeout":0,"status":0}}

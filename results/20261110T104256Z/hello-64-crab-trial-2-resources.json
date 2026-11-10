@@ -1,0 +1,560 @@
+[
+  {
+    "time": 383677.48942722,
+    "crab": {
+      "cpu_ns": 8632978000,
+      "memory_bytes": 25305088,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13111722000,
+      "memory_bytes": 602263552,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 105259894000,
+      "memory_bytes": 17399808,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383677.994029464,
+    "crab": {
+      "cpu_ns": 9367246000,
+      "memory_bytes": 26062848,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13112612000,
+      "memory_bytes": 602247168,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 105857291000,
+      "memory_bytes": 34758656,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383678.498135918,
+    "crab": {
+      "cpu_ns": 10196782000,
+      "memory_bytes": 25825280,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13113419000,
+      "memory_bytes": 602247168,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 106462946000,
+      "memory_bytes": 35524608,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383679.002514537,
+    "crab": {
+      "cpu_ns": 11026556000,
+      "memory_bytes": 26324992,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13114175000,
+      "memory_bytes": 602247168,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 107084636000,
+      "memory_bytes": 34959360,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383679.506989314,
+    "crab": {
+      "cpu_ns": 11853262000,
+      "memory_bytes": 26456064,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13152449000,
+      "memory_bytes": 602697728,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 107710248000,
+      "memory_bytes": 36352000,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383680.011607014,
+    "crab": {
+      "cpu_ns": 12682110000,
+      "memory_bytes": 25989120,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13153260000,
+      "memory_bytes": 602284032,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 108335898000,
+      "memory_bytes": 36315136,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383680.51586767,
+    "crab": {
+      "cpu_ns": 13504010000,
+      "memory_bytes": 26497024,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13154233000,
+      "memory_bytes": 602247168,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 108954018000,
+      "memory_bytes": 36556800,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383681.020148793,
+    "crab": {
+      "cpu_ns": 14330169000,
+      "memory_bytes": 26202112,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13155037000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 109591836000,
+      "memory_bytes": 36540416,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383681.524324252,
+    "crab": {
+      "cpu_ns": 15157325000,
+      "memory_bytes": 26300416,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13192534000,
+      "memory_bytes": 602304512,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 110219041000,
+      "memory_bytes": 36724736,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383682.031299507,
+    "crab": {
+      "cpu_ns": 15987914000,
+      "memory_bytes": 26071040,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13193368000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 110846346000,
+      "memory_bytes": 37191680,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383682.536137167,
+    "crab": {
+      "cpu_ns": 16814163000,
+      "memory_bytes": 26714112,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13194202000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 111480631000,
+      "memory_bytes": 37220352,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383683.040689966,
+    "crab": {
+      "cpu_ns": 17641563000,
+      "memory_bytes": 26349568,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13195000000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 112116937000,
+      "memory_bytes": 37453824,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383683.545027534,
+    "crab": {
+      "cpu_ns": 18459561000,
+      "memory_bytes": 26796032,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13234712000,
+      "memory_bytes": 602296320,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 112731237000,
+      "memory_bytes": 37326848,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383684.05519446,
+    "crab": {
+      "cpu_ns": 19285078000,
+      "memory_bytes": 26230784,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13235690000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 113323785000,
+      "memory_bytes": 37523456,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383684.559534591,
+    "crab": {
+      "cpu_ns": 20112240000,
+      "memory_bytes": 26517504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13236582000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 113947488000,
+      "memory_bytes": 37748736,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383685.06417097,
+    "crab": {
+      "cpu_ns": 20939241000,
+      "memory_bytes": 26841088,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13237339000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 114580197000,
+      "memory_bytes": 37711872,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383685.568737359,
+    "crab": {
+      "cpu_ns": 21765996000,
+      "memory_bytes": 26509312,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13275889000,
+      "memory_bytes": 602955776,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 115204800000,
+      "memory_bytes": 37535744,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383686.072843254,
+    "crab": {
+      "cpu_ns": 22592610000,
+      "memory_bytes": 26263552,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13276633000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 115839449000,
+      "memory_bytes": 37154816,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383686.577157502,
+    "crab": {
+      "cpu_ns": 23420322000,
+      "memory_bytes": 26599424,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13277435000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 116473806000,
+      "memory_bytes": 37404672,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383687.081291998,
+    "crab": {
+      "cpu_ns": 24246868000,
+      "memory_bytes": 26411008,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13278226000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 117095614000,
+      "memory_bytes": 37240832,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383687.58679802,
+    "crab": {
+      "cpu_ns": 25066290000,
+      "memory_bytes": 26210304,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13317115000,
+      "memory_bytes": 603209728,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 117691009000,
+      "memory_bytes": 37732352,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383688.0920111,
+    "crab": {
+      "cpu_ns": 25894803000,
+      "memory_bytes": 26505216,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13317859000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 118325790000,
+      "memory_bytes": 37339136,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383688.59622334,
+    "crab": {
+      "cpu_ns": 26721365000,
+      "memory_bytes": 26312704,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13318650000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 118961297000,
+      "memory_bytes": 37601280,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383689.10138241,
+    "crab": {
+      "cpu_ns": 27551270000,
+      "memory_bytes": 26619904,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13319413000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 119603275000,
+      "memory_bytes": 37134336,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383689.606491329,
+    "crab": {
+      "cpu_ns": 28378428000,
+      "memory_bytes": 26882048,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13326325000,
+      "memory_bytes": 603455488,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 120245051000,
+      "memory_bytes": 37859328,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383690.111685607,
+    "crab": {
+      "cpu_ns": 29204626000,
+      "memory_bytes": 26468352,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13357229000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 120876903000,
+      "memory_bytes": 37752832,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383690.615872329,
+    "crab": {
+      "cpu_ns": 30031210000,
+      "memory_bytes": 26456064,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13358056000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 121505791000,
+      "memory_bytes": 37781504,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383691.120404582,
+    "crab": {
+      "cpu_ns": 30860224000,
+      "memory_bytes": 26558464,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13358811000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 122139159000,
+      "memory_bytes": 37855232,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383691.624951045,
+    "crab": {
+      "cpu_ns": 31687127000,
+      "memory_bytes": 26365952,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13359611000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 122777911000,
+      "memory_bytes": 37474304,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383692.129284582,
+    "crab": {
+      "cpu_ns": 32511713000,
+      "memory_bytes": 26304512,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13396323000,
+      "memory_bytes": 602365952,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 123399205000,
+      "memory_bytes": 38064128,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383692.633509792,
+    "crab": {
+      "cpu_ns": 33339651000,
+      "memory_bytes": 26005504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 13397111000,
+      "memory_bytes": 602144768,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 124044433000,
+      "memory_bytes": 37830656,
+      "memory_limit": 536870912
+    }
+  }
+]

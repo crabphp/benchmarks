@@ -1,0 +1,14 @@
+Running 5s test @ http://hyperf:8080
+  4 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.19ms  707.83us  16.69ms   91.71%
+    Req/Sec    10.39k     1.02k   14.81k    71.92%
+  Latency Distribution
+     50%    5.97ms
+     75%    6.78ms
+     90%    6.82ms
+     99%    7.24ms
+  209829 requests in 5.09s, 37.82MB read
+Requests/sec:  41240.16
+Transfer/sec:      7.43MB
+BENCH_JSON {"workload":"hello","bad_body":0,"bad_response":0,"requests":209829,"duration_us":5087977,"rps":41240.162839,"p50_us":5966.000000,"p99_us":7238.000000,"bad_status":0,"errors":{"connect":0,"read":0,"write":0,"timeout":0,"status":0}}

@@ -1,0 +1,14 @@
+Running 5s test @ http://webman:8080
+  4 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.16ms    7.30ms 194.69ms   99.07%
+    Req/Sec    17.84k     2.26k   36.92k    95.07%
+  Latency Distribution
+     50%    3.62ms
+     75%    3.67ms
+     90%    3.72ms
+     99%    7.22ms
+  360284 requests in 5.09s, 41.57MB read
+Requests/sec:  70814.57
+Transfer/sec:      8.17MB
+BENCH_JSON {"workload":"hello","bad_body":0,"bad_response":0,"requests":360284,"duration_us":5087710,"rps":70814.570799,"p50_us":3617.000000,"p99_us":7215.000000,"bad_status":0,"errors":{"connect":0,"read":0,"write":0,"timeout":0,"status":0}}

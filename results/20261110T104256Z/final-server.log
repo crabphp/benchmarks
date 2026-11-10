@@ -1,0 +1,498 @@
+spiral-1  | [INFO] RoadRunner server started; version: 3.0.1, buildtime: 2026-10-21T19:34:12+0000
+spiral-1  | stop signal received, grace timeout is: 30 seconds
+spiral-1  | [INFO] RoadRunner server started; version: 3.0.1, buildtime: 2026-10-21T19:34:12+0000
+spiral-1  | stop signal received, grace timeout is: 30 seconds
+spiral-1  | [INFO] RoadRunner server started; version: 3.0.1, buildtime: 2026-10-21T19:34:12+0000
+spiral-1  | stop signal received, grace timeout is: 30 seconds
+spiral-1  | [INFO] RoadRunner server started; version: 3.0.1, buildtime: 2026-10-21T19:34:12+0000
+spiral-1  | stop signal received, grace timeout is: 30 seconds
+spiral-1  | [INFO] RoadRunner server started; version: 3.0.1, buildtime: 2026-10-21T19:34:12+0000
+spiral-1  | stop signal received, grace timeout is: 30 seconds
+spiral-1  | [INFO] RoadRunner server started; version: 3.0.1, buildtime: 2026-10-21T19:34:12+0000
+spiral-1  | stop signal received, grace timeout is: 30 seconds
+webman-1  | Workerman[start.php] start in DEBUG mode
+webman-1  | -------------------------------------------- WORKERMAN ---------------------------------------------
+webman-1  | Workerman/5.2.3         PHP/8.5.12 (JIT off)          Linux/7.0.12-201.fc44.x86_64
+webman-1  | --------------------------------------------- WORKERS ----------------------------------------------
+webman-1  | event-loop  proto       user        worker      listen                 count       state            
+webman-1  | event       tcp         root        webman      http://0.0.0.0:8080    2            [OK]            
+webman-1  | ----------------------------------------------------------------------------------------------------
+webman-1  | Press Ctrl+C to stop. Start success.
+webman-1  | Workerman[start.php] received signal SIGTERM
+webman-1  | Workerman[start.php] stopping
+webman-1  | Workerman[start.php] has been stopped
+webman-1  | Workerman[start.php] start in DEBUG mode
+webman-1  | -------------------------------------------- WORKERMAN ---------------------------------------------
+webman-1  | Workerman/5.2.3         PHP/8.5.12 (JIT off)          Linux/7.0.12-201.fc44.x86_64
+webman-1  | --------------------------------------------- WORKERS ----------------------------------------------
+webman-1  | event-loop  proto       user        worker      listen                 count       state            
+webman-1  | event       tcp         root        webman      http://0.0.0.0:8080    2            [OK]            
+webman-1  | ----------------------------------------------------------------------------------------------------
+webman-1  | Press Ctrl+C to stop. Start success.
+webman-1  | Workerman[start.php] received signal SIGTERM
+webman-1  | Workerman[start.php] stopping
+webman-1  | Workerman[start.php] has been stopped
+webman-1  | Workerman[start.php] start in DEBUG mode
+webman-1  | -------------------------------------------- WORKERMAN ---------------------------------------------
+webman-1  | Workerman/5.2.3         PHP/8.5.12 (JIT off)          Linux/7.0.12-201.fc44.x86_64
+webman-1  | --------------------------------------------- WORKERS ----------------------------------------------
+webman-1  | event-loop  proto       user        worker      listen                 count       state            
+webman-1  | event       tcp         root        webman      http://0.0.0.0:8080    2            [OK]            
+webman-1  | ----------------------------------------------------------------------------------------------------
+webman-1  | Press Ctrl+C to stop. Start success.
+webman-1  | Workerman[start.php] received signal SIGTERM
+webman-1  | Workerman[start.php] stopping
+webman-1  | Workerman[start.php] has been stopped
+webman-1  | Workerman[start.php] start in DEBUG mode
+webman-1  | -------------------------------------------- WORKERMAN ---------------------------------------------
+webman-1  | Workerman/5.2.3         PHP/8.5.12 (JIT off)          Linux/7.0.12-201.fc44.x86_64
+webman-1  | --------------------------------------------- WORKERS ----------------------------------------------
+webman-1  | event-loop  proto       user        worker      listen                 count       state            
+webman-1   | event       tcp         root        webman      http://0.0.0.0:8080    2            [OK]            
+webman-1   | ----------------------------------------------------------------------------------------------------
+webman-1   | Press Ctrl+C to stop. Start success.
+webman-1   | Workerman[start.php] received signal SIGTERM
+webman-1   | Workerman[start.php] stopping
+webman-1   | Workerman[start.php] has been stopped
+webman-1   | Workerman[start.php] start in DEBUG mode
+webman-1   | -------------------------------------------- WORKERMAN ---------------------------------------------
+webman-1   | Workerman/5.2.3         PHP/8.5.12 (JIT off)          Linux/7.0.12-201.fc44.x86_64
+webman-1   | --------------------------------------------- WORKERS ----------------------------------------------
+webman-1   | event-loop  proto       user        worker      listen                 count       state            
+webman-1   | event       tcp         root        webman      http://0.0.0.0:8080    2            [OK]            
+webman-1   | ----------------------------------------------------------------------------------------------------
+webman-1   | Press Ctrl+C to stop. Start success.
+webman-1   | Workerman[start.php] received signal SIGTERM
+webman-1   | Workerman[start.php] stopping
+webman-1   | Workerman[start.php] has been stopped
+laravel-1  | {"level":"info","ts":1794309894.0165079,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+tempest-1  | {"level":"info","ts":1794309895.6517243,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+tempest-1  | {"level":"info","ts":1794309895.651737,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+tempest-1  | {"level":"info","ts":1794309895.6517444,"msg":"using config from file","file":"/bench/tempest/Caddyfile"}
+tempest-1  | {"level":"info","ts":1794309895.6517463,"msg":"adapted config to JSON","adapter":"caddyfile"}
+tempest-1  | {"level":"warn","ts":1794309895.651748,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/tempest/Caddyfile","line":2}
+tempest-1  | {"level":"warn","ts":1794309895.6517518,"logger":"admin","msg":"admin endpoint disabled"}
+crab-1     | Starting Crab server on http://localhost:8080
+crab-1     | Press Ctrl+C to stop
+crab-1     | Starting Crab server on http://localhost:8080
+crab-1     | Press Ctrl+C to stop
+crab-1     | Starting Crab server on http://localhost:8080
+crab-1     | Press Ctrl+C to stop
+crab-1     | Starting Crab server on http://localhost:8080
+crab-1     | Press Ctrl+C to stop
+laravel-1  | {"level":"info","ts":1794309894.0165157,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+laravel-1  | {"level":"info","ts":1794309894.0165186,"msg":"using config from file","file":"/srv/app/vendor/laravel/octane/src/Commands/stubs/Caddyfile"}
+laravel-1  | {"level":"info","ts":1794309894.0165207,"msg":"adapted config to JSON","adapter":"caddyfile"}
+webman-1   | Workerman[start.php] start in DEBUG mode
+webman-1   | -------------------------------------------- WORKERMAN ---------------------------------------------
+webman-1   | Workerman/5.2.3         PHP/8.5.12 (JIT off)          Linux/7.0.12-201.fc44.x86_64
+webman-1   | --------------------------------------------- WORKERS ----------------------------------------------
+webman-1   | event-loop  proto       user        worker      listen                 count       state            
+webman-1   | event       tcp         root        webman      http://0.0.0.0:8080    2            [OK]            
+webman-1   | ----------------------------------------------------------------------------------------------------
+webman-1   | Press Ctrl+C to stop. Start success.
+webman-1   | Workerman[start.php] received signal SIGTERM
+webman-1   | Workerman[start.php] stopping
+webman-1   | Workerman[start.php] has been stopped
+crab-1     | Starting Crab server on http://localhost:8080
+crab-1     | Press Ctrl+C to stop
+crab-1     | Starting Crab server on http://localhost:8080
+crab-1     | Press Ctrl+C to stop
+tempest-1  | {"level":"info","ts":1794309895.6520777,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+tempest-1  | {"level":"info","ts":1794309895.652188,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x1e8029042c00"}
+tempest-1  | {"level":"info","ts":1794309895.8206518,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+tempest-1  | {"level":"warn","ts":1794309895.8209188,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"warn","ts":1794309895.820925,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"info","ts":1794309895.8209271,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+tempest-1  | {"level":"info","ts":1794309895.8212013,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+symfony-1  | {"level":"info","ts":1794309888.4157267,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+symfony-1  | {"level":"info","ts":1794309888.4157412,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+symfony-1  | {"level":"info","ts":1794309888.4157448,"msg":"using config from file","file":"/bench/symfony/Caddyfile"}
+symfony-1  | {"level":"info","ts":1794309888.4157465,"msg":"adapted config to JSON","adapter":"caddyfile"}
+symfony-1  | {"level":"warn","ts":1794309888.415748,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/symfony/Caddyfile","line":2}
+symfony-1  | {"level":"warn","ts":1794309888.4157515,"logger":"admin","msg":"admin endpoint disabled"}
+symfony-1  | {"level":"info","ts":1794309888.4159174,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+symfony-1  | {"level":"info","ts":1794309888.4159384,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x26b35776ce80"}
+symfony-1  | {"level":"info","ts":1794309888.6894994,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+symfony-1  | {"level":"warn","ts":1794309888.6897933,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"warn","ts":1794309888.689799,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"info","ts":1794309888.6898012,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+symfony-1  | {"level":"info","ts":1794309888.690092,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+mysql-1    | 2026-11-10 10:43:23+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.13-1.el9 started.
+mysql-1    | 2026-11-10 10:43:23+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+mysql-1    | 2026-11-10 10:43:23+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.13-1.el9 started.
+mysql-1    | 2026-11-10 10:43:23+00:00 [Note] [Entrypoint]: Initializing database files
+mysql-1    | 2026-11-10T10:43:23.494695Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+mysql-1    | 2026-11-10T10:43:23.499471Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.4.13) initializing of server in progress as process 79
+symfony-1  | {"level":"info","ts":1794309888.690097,"msg":"serving initial configuration"}
+symfony-1  | {"level":"info","ts":1794309888.695934,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/data/caddy"}
+laravel-1  | {"level":"info","ts":1794309894.0170739,"logger":"admin","msg":"admin endpoint started","address":"localhost:2019","enforce_origin":false,"origins":["//127.0.0.1:2019","//localhost:2019","//[::1]:2019"]}
+laravel-1  | {"level":"info","ts":1794309894.0172977,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x2541018a5c80"}
+laravel-1  | {"level":"info","ts":1794309894.2017674,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+laravel-1  | {"level":"warn","ts":1794309894.2018764,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"warn","ts":1794309894.2018821,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"info","ts":1794309894.2018845,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+laravel-1  | {"level":"info","ts":1794309894.2022228,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+laravel-1  | {"level":"info","ts":1794309894.202229,"msg":"serving initial configuration"}
+laravel-1  | {"level":"info","ts":1794309894.2053874,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/data/caddy"}
+laravel-1  | {"level":"info","ts":1794309894.2084115,"logger":"tls","msg":"finished cleaning storage units"}
+laravel-1  | {"level":"info","ts":1794310013.869916,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+laravel-1  | {"level":"info","ts":1794310013.8699243,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+laravel-1  | {"level":"info","ts":1794310013.8699272,"msg":"using config from file","file":"/srv/app/vendor/laravel/octane/src/Commands/stubs/Caddyfile"}
+laravel-1  | {"level":"info","ts":1794310013.8699286,"msg":"adapted config to JSON","adapter":"caddyfile"}
+laravel-1  | {"level":"info","ts":1794310013.8705535,"logger":"admin","msg":"admin endpoint started","address":"localhost:2019","enforce_origin":false,"origins":["//localhost:2019","//[::1]:2019","//127.0.0.1:2019"]}
+laravel-1  | {"level":"info","ts":1794310013.870771,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x2d88d26d0b00"}
+laravel-1  | {"level":"info","ts":1794310014.0539098,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+laravel-1  | {"level":"warn","ts":1794310014.054025,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"warn","ts":1794310014.0540307,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"info","ts":1794310014.0540326,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+laravel-1  | {"level":"info","ts":1794310014.0541744,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+laravel-1  | {"level":"info","ts":1794310014.054179,"msg":"serving initial configuration"}
+laravel-1  | {"level":"info","ts":1794310014.0570526,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"018ee5d3-939c-4eb4-b432-d360c2b5a01d","try_again":1794396414.0570517,"try_again_in":86399.999999667}
+laravel-1  | {"level":"info","ts":1794310014.0571096,"logger":"tls","msg":"finished cleaning storage units"}
+laravel-1  | {"level":"info","ts":1794310153.2675328,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+laravel-1  | {"level":"info","ts":1794310153.2675433,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+laravel-1  | {"level":"info","ts":1794310153.2675462,"msg":"using config from file","file":"/srv/app/vendor/laravel/octane/src/Commands/stubs/Caddyfile"}
+laravel-1  | {"level":"info","ts":1794310153.2675476,"msg":"adapted config to JSON","adapter":"caddyfile"}
+laravel-1  | {"level":"info","ts":1794310153.2681754,"logger":"admin","msg":"admin endpoint started","address":"localhost:2019","enforce_origin":false,"origins":["//[::1]:2019","//127.0.0.1:2019","//localhost:2019"]}
+laravel-1  | {"level":"info","ts":1794310153.2683878,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x7e9625bd000"}
+laravel-1  | {"level":"info","ts":1794310153.453293,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+laravel-1  | {"level":"warn","ts":1794310153.4533927,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"warn","ts":1794310153.453398,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"info","ts":1794310153.4534004,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+laravel-1  | {"level":"info","ts":1794310153.4535506,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+symfony-1  | {"level":"info","ts":1794309888.6988711,"logger":"tls","msg":"finished cleaning storage units"}
+symfony-1  | {"level":"info","ts":1794309889.3942518,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type string.\nThis value should be of type string.\nThis value should be of type int.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.3975267,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value is too short. It should have 1 character or more.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.398591,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value is too long. It should have 100 characters or less.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.3995852,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value is too long. It should have 100 characters or less.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.4005246,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type string.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.4014814,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value is not a valid email address.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.402434,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be between 18 and 120.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.403389,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be between 18 and 120.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.4043298,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type int.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.4052494,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type int.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.406173,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type int.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.4074838,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type int.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794309889.5162358,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+symfony-1  | {"level":"warn","ts":1794309889.5163264,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+symfony-1  | {"level":"info","ts":1794309889.516365,"logger":"http","msg":"servers shutting down with eternal grace period"}
+symfony-1  | {"level":"info","ts":1794309889.5166986,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+mysql-1    | 2026-11-10T10:43:23.499476Z 0 [System] [MY-015150] [Server] Server version with update: '8.4.13.0'
+mysql-1    | 2026-11-10T10:43:23.507897Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+mysql-1    | 2026-11-10T10:43:24.048672Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+mysql-1    | 2026-11-10T10:43:25.754176Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+mysql-1    | 2026-11-10T10:43:28.598082Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+mysql-1    | 2026-11-10 10:43:28+00:00 [Note] [Entrypoint]: Database files initialized
+mysql-1    | 2026-11-10 10:43:28+00:00 [Note] [Entrypoint]: Starting temporary server
+mysql-1    | 2026-11-10T10:43:28.644203Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+mysql-1    | 2026-11-10T10:43:28.876682Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.4.13) starting as process 132
+mysql-1    | 2026-11-10T10:43:28.876686Z 0 [System] [MY-015150] [Server] Server version with update: '8.4.13.0'
+mysql-1    | 2026-11-10T10:43:28.894600Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+mysql-1    | 2026-11-10T10:43:29.275251Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+mysql-1    | 2026-11-10T10:43:29.754146Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+mysql-1    | 2026-11-10T10:43:29.754169Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+symfony-1  | {"level":"info","ts":1794309889.5168047,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x26b35776ce80"}
+symfony-1  | {"level":"info","ts":1794309889.539926,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+symfony-1  | {"level":"info","ts":1794309967.3732877,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+symfony-1  | {"level":"info","ts":1794309967.3732982,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+symfony-1  | {"level":"info","ts":1794309967.3733017,"msg":"using config from file","file":"/bench/symfony/Caddyfile"}
+symfony-1  | {"level":"info","ts":1794309967.3733037,"msg":"adapted config to JSON","adapter":"caddyfile"}
+symfony-1  | {"level":"warn","ts":1794309967.3733048,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/symfony/Caddyfile","line":2}
+symfony-1  | {"level":"warn","ts":1794309967.3733082,"logger":"admin","msg":"admin endpoint disabled"}
+symfony-1  | {"level":"info","ts":1794309967.3734639,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+symfony-1  | {"level":"info","ts":1794309967.3734877,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x5b7e0dcf080"}
+symfony-1  | {"level":"info","ts":1794309967.6471996,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+symfony-1  | {"level":"warn","ts":1794309967.647448,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"warn","ts":1794309967.6474538,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"info","ts":1794309967.6474557,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+symfony-1  | {"level":"info","ts":1794309967.6476288,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+symfony-1  | {"level":"info","ts":1794309967.6476378,"msg":"serving initial configuration"}
+symfony-1  | {"level":"info","ts":1794309967.6535304,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"e54881e0-f239-4863-85f5-d611ae3787f5","try_again":1794396367.6535292,"try_again_in":86399.999999647}
+symfony-1  | {"level":"info","ts":1794309967.6536026,"logger":"tls","msg":"finished cleaning storage units"}
+symfony-1  | {"level":"info","ts":1794309988.9886572,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+symfony-1  | {"level":"warn","ts":1794309988.9886978,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+symfony-1  | {"level":"info","ts":1794309988.9887173,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+symfony-1  | {"level":"info","ts":1794309988.9887316,"logger":"http","msg":"servers shutting down with eternal grace period"}
+mysql-1    | 2026-11-10T10:43:29.758664Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+mysql-1    | 2026-11-10T10:43:29.773675Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.4.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+mysql-1    | 2026-11-10 10:43:29+00:00 [Note] [Entrypoint]: Temporary server started.
+mysql-1    | '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+mysql-1    | 2026-11-10 10:43:31+00:00 [Note] [Entrypoint]: Creating database benchmark
+mysql-1    | 2026-11-10 10:43:31+00:00 [Note] [Entrypoint]: Creating user bench
+mysql-1    | 2026-11-10 10:43:31+00:00 [Note] [Entrypoint]: Giving user bench access to schema benchmark
+mysql-1    | 
+mysql-1    | 2026-11-10 10:43:31+00:00 [Note] [Entrypoint]: /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+mysql-1    | 
+mysql-1    | 
+mysql-1    | 2026-11-10 10:43:31+00:00 [Note] [Entrypoint]: Stopping temporary server
+mysql-1    | 2026-11-10T10:43:31.581212Z 14 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.4.13).
+mysql-1    | 2026-11-10T10:43:33.203194Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.4.13)  MySQL Community Server - GPL.
+mysql-1    | 2026-11-10T10:43:33.203204Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+mysql-1    | 2026-11-10 10:43:33+00:00 [Note] [Entrypoint]: Temporary server stopped
+mysql-1    | 
+laravel-1  | {"level":"info","ts":1794310153.4535549,"msg":"serving initial configuration"}
+laravel-1  | {"level":"info","ts":1794310153.4569309,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"018ee5d3-939c-4eb4-b432-d360c2b5a01d","try_again":1794396553.4569287,"try_again_in":86399.999999218}
+mysql-1    | 2026-11-10 10:43:33+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+mysql-1    | 
+mysql-1    | 2026-11-10T10:43:33.610315Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+mysql-1    | 2026-11-10T10:43:33.841212Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.4.13) starting as process 1
+mysql-1    | 2026-11-10T10:43:33.841215Z 0 [System] [MY-015150] [Server] Server version with update: '8.4.13.0'
+mysql-1    | 2026-11-10T10:43:33.850184Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+mysql-1    | 2026-11-10T10:43:34.242411Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+mysql-1    | 2026-11-10T10:43:34.639192Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+mysql-1    | 2026-11-10T10:43:34.639233Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+mysql-1    | 2026-11-10T10:43:34.645641Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+mysql-1    | 2026-11-10T10:43:34.682463Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.4.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 23306  MySQL Community Server - GPL.
+laravel-1  | {"level":"info","ts":1794310153.4569864,"logger":"tls","msg":"finished cleaning storage units"}
+laravel-1  | {"level":"info","ts":1794310291.2313895,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+laravel-1  | {"level":"info","ts":1794310291.231398,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+symfony-1  | {"level":"info","ts":1794309988.9888175,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x5b7e0dcf080"}
+laravel-1  | {"level":"info","ts":1794310291.231401,"msg":"using config from file","file":"/srv/app/vendor/laravel/octane/src/Commands/stubs/Caddyfile"}
+laravel-1  | {"level":"info","ts":1794310291.2314026,"msg":"adapted config to JSON","adapter":"caddyfile"}
+laravel-1  | {"level":"info","ts":1794310291.2320578,"logger":"admin","msg":"admin endpoint started","address":"localhost:2019","enforce_origin":false,"origins":["//localhost:2019","//[::1]:2019","//127.0.0.1:2019"]}
+laravel-1  | {"level":"info","ts":1794310291.232272,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x203827cc0900"}
+laravel-1  | {"level":"warn","ts":1794310291.2324898,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"warn","ts":1794310291.232495,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"info","ts":1794310291.2324972,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+laravel-1  | {"level":"info","ts":1794310291.2361252,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"018ee5d3-939c-4eb4-b432-d360c2b5a01d","try_again":1794396691.2361238,"try_again_in":86399.999999646}
+laravel-1  | {"level":"info","ts":1794310291.2361956,"logger":"tls","msg":"finished cleaning storage units"}
+laravel-1  | {"level":"info","ts":1794310291.4127083,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+laravel-1  | {"level":"info","ts":1794310291.4128673,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+laravel-1  | {"level":"info","ts":1794310291.412873,"msg":"serving initial configuration"}
+laravel-1  | {"level":"info","ts":1794310430.0547938,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+laravel-1  | {"level":"info","ts":1794310430.0548017,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+laravel-1  | {"level":"info","ts":1794310430.0548043,"msg":"using config from file","file":"/srv/app/vendor/laravel/octane/src/Commands/stubs/Caddyfile"}
+laravel-1  | {"level":"info","ts":1794310430.054806,"msg":"adapted config to JSON","adapter":"caddyfile"}
+laravel-1  | {"level":"info","ts":1794310430.0554018,"logger":"admin","msg":"admin endpoint started","address":"localhost:2019","enforce_origin":false,"origins":["//localhost:2019","//[::1]:2019","//127.0.0.1:2019"]}
+tempest-1  | {"level":"info","ts":1794309895.821207,"msg":"serving initial configuration"}
+tempest-1  | {"level":"info","ts":1794309895.8239493,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/data/caddy"}
+tempest-1  | {"level":"info","ts":1794309895.827192,"logger":"tls","msg":"finished cleaning storage units"}
+tempest-1  | {"level":"info","ts":1794309896.8382962,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+tempest-1  | {"level":"warn","ts":1794309896.8383276,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+laravel-1  | {"level":"info","ts":1794310430.0557146,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x352811d06e80"}
+laravel-1  | {"level":"warn","ts":1794310430.0558763,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"warn","ts":1794310430.0558813,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"info","ts":1794310430.0558832,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+laravel-1  | {"level":"info","ts":1794310430.059662,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"018ee5d3-939c-4eb4-b432-d360c2b5a01d","try_again":1794396830.0596597,"try_again_in":86399.999999567}
+symfony-1  | {"level":"info","ts":1794309988.994662,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+symfony-1  | {"level":"info","ts":1794310105.9091783,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+symfony-1  | {"level":"info","ts":1794310105.9091885,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+symfony-1  | {"level":"info","ts":1794310105.9091916,"msg":"using config from file","file":"/bench/symfony/Caddyfile"}
+symfony-1  | {"level":"info","ts":1794310105.9091933,"msg":"adapted config to JSON","adapter":"caddyfile"}
+symfony-1  | {"level":"warn","ts":1794310105.9091945,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/symfony/Caddyfile","line":2}
+symfony-1  | {"level":"warn","ts":1794310105.9091976,"logger":"admin","msg":"admin endpoint disabled"}
+symfony-1  | {"level":"info","ts":1794310105.9093282,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+symfony-1  | {"level":"info","ts":1794310105.9093812,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x3b05dda75c80"}
+symfony-1  | {"level":"info","ts":1794310105.912395,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"e54881e0-f239-4863-85f5-d611ae3787f5","try_again":1794396505.9123926,"try_again_in":86399.999999617}
+symfony-1  | {"level":"info","ts":1794310105.9124753,"logger":"tls","msg":"finished cleaning storage units"}
+symfony-1  | {"level":"info","ts":1794310106.200731,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+symfony-1  | {"level":"warn","ts":1794310106.2010448,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"warn","ts":1794310106.2010658,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"info","ts":1794310106.2010689,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+symfony-1  | {"level":"info","ts":1794310106.2012045,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+symfony-1  | {"level":"info","ts":1794310106.2012222,"msg":"serving initial configuration"}
+symfony-1  | {"level":"info","ts":1794310127.6395001,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+symfony-1  | {"level":"warn","ts":1794310127.6395404,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+symfony-1  | {"level":"info","ts":1794310127.6395557,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+symfony-1  | {"level":"info","ts":1794310127.6395714,"logger":"http","msg":"servers shutting down with eternal grace period"}
+symfony-1  | {"level":"info","ts":1794310127.6396687,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x3b05dda75c80"}
+symfony-1  | {"level":"info","ts":1794310127.6467083,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+symfony-1  | {"level":"info","ts":1794310243.6348531,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+symfony-1  | {"level":"info","ts":1794310243.6348624,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+symfony-1  | {"level":"info","ts":1794310243.634865,"msg":"using config from file","file":"/bench/symfony/Caddyfile"}
+symfony-1  | {"level":"info","ts":1794310243.634867,"msg":"adapted config to JSON","adapter":"caddyfile"}
+symfony-1  | {"level":"warn","ts":1794310243.6348684,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/symfony/Caddyfile","line":2}
+symfony-1  | {"level":"warn","ts":1794310243.6348712,"logger":"admin","msg":"admin endpoint disabled"}
+symfony-1  | {"level":"info","ts":1794310243.6350036,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+symfony-1  | {"level":"info","ts":1794310243.6352427,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x322ed50da900"}
+symfony-1  | {"level":"info","ts":1794310243.9133673,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+symfony-1  | {"level":"warn","ts":1794310243.9136612,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"warn","ts":1794310243.9136677,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"info","ts":1794310243.9136698,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+symfony-1  | {"level":"info","ts":1794310243.913819,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+symfony-1  | {"level":"info","ts":1794310243.9138284,"msg":"serving initial configuration"}
+symfony-1  | {"level":"info","ts":1794310243.9173107,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"e54881e0-f239-4863-85f5-d611ae3787f5","try_again":1794396643.9173095,"try_again_in":86399.999999664}
+symfony-1  | {"level":"info","ts":1794310243.9173727,"logger":"tls","msg":"finished cleaning storage units"}
+symfony-1  | {"level":"info","ts":1794310266.0664778,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+symfony-1  | {"level":"warn","ts":1794310266.0665166,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+symfony-1  | {"level":"info","ts":1794310266.0665424,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+symfony-1  | {"level":"info","ts":1794310266.0665581,"logger":"http","msg":"servers shutting down with eternal grace period"}
+symfony-1  | {"level":"info","ts":1794310266.0666273,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x322ed50da900"}
+symfony-1  | {"level":"info","ts":1794310266.072521,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+symfony-1  | {"level":"info","ts":1794310382.8667307,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+symfony-1  | {"level":"info","ts":1794310382.86674,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+symfony-1  | {"level":"info","ts":1794310382.8667428,"msg":"using config from file","file":"/bench/symfony/Caddyfile"}
+symfony-1  | {"level":"info","ts":1794310382.8667445,"msg":"adapted config to JSON","adapter":"caddyfile"}
+symfony-1  | {"level":"warn","ts":1794310382.866746,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/symfony/Caddyfile","line":2}
+symfony-1  | {"level":"warn","ts":1794310382.8667486,"logger":"admin","msg":"admin endpoint disabled"}
+symfony-1  | {"level":"info","ts":1794310382.8668907,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+symfony-1  | {"level":"info","ts":1794310382.8669336,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x132f40132d00"}
+symfony-1  | {"level":"info","ts":1794310383.145652,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+symfony-1  | {"level":"warn","ts":1794310383.1459754,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"warn","ts":1794310383.1459804,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"info","ts":1794310383.1459825,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+symfony-1  | {"level":"info","ts":1794310383.1461406,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+symfony-1  | {"level":"info","ts":1794310383.146146,"msg":"serving initial configuration"}
+symfony-1  | {"level":"info","ts":1794310383.1520953,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"e54881e0-f239-4863-85f5-d611ae3787f5","try_again":1794396783.152093,"try_again_in":86399.999999165}
+symfony-1  | {"level":"info","ts":1794310383.1522841,"logger":"tls","msg":"finished cleaning storage units"}
+symfony-1  | {"level":"info","ts":1794310404.712261,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+symfony-1  | {"level":"warn","ts":1794310404.7123027,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+symfony-1  | {"level":"info","ts":1794310404.7123208,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+symfony-1  | {"level":"info","ts":1794310404.7123406,"logger":"http","msg":"servers shutting down with eternal grace period"}
+symfony-1  | {"level":"info","ts":1794310404.7124476,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x132f40132d00"}
+symfony-1  | {"level":"info","ts":1794310404.7184405,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+tempest-1  | {"level":"info","ts":1794309896.838342,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+tempest-1  | {"level":"info","ts":1794309896.838367,"logger":"http","msg":"servers shutting down with eternal grace period"}
+tempest-1  | {"level":"info","ts":1794309896.838479,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x1e8029042c00"}
+laravel-1  | {"level":"info","ts":1794310430.0597398,"logger":"tls","msg":"finished cleaning storage units"}
+laravel-1  | {"level":"info","ts":1794310430.2372653,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+laravel-1  | {"level":"info","ts":1794310430.2374122,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+laravel-1  | {"level":"info","ts":1794310430.2374182,"msg":"serving initial configuration"}
+laravel-1  | {"level":"info","ts":1794310568.5563338,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+laravel-1  | {"level":"info","ts":1794310568.5563483,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+laravel-1  | {"level":"info","ts":1794310568.5563512,"msg":"using config from file","file":"/srv/app/vendor/laravel/octane/src/Commands/stubs/Caddyfile"}
+laravel-1  | {"level":"info","ts":1794310568.556353,"msg":"adapted config to JSON","adapter":"caddyfile"}
+laravel-1  | {"level":"info","ts":1794310568.5570977,"logger":"admin","msg":"admin endpoint started","address":"localhost:2019","enforce_origin":false,"origins":["//[::1]:2019","//127.0.0.1:2019","//localhost:2019"]}
+laravel-1  | {"level":"info","ts":1794310568.5577326,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0xae78356100"}
+laravel-1  | {"level":"info","ts":1794310568.7478747,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+laravel-1  | {"level":"warn","ts":1794310568.7480185,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"warn","ts":1794310568.7480264,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"info","ts":1794310568.7480288,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+laravel-1  | {"level":"info","ts":1794310568.7481754,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+laravel-1  | {"level":"info","ts":1794310568.7481804,"msg":"serving initial configuration"}
+tempest-1  | {"level":"info","ts":1794309896.8444037,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+tempest-1  | {"level":"info","ts":1794310036.9762855,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+tempest-1  | {"level":"info","ts":1794310036.976295,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+tempest-1  | {"level":"info","ts":1794310036.976298,"msg":"using config from file","file":"/bench/tempest/Caddyfile"}
+tempest-1  | {"level":"info","ts":1794310036.9762998,"msg":"adapted config to JSON","adapter":"caddyfile"}
+tempest-1  | {"level":"warn","ts":1794310036.9763012,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/tempest/Caddyfile","line":2}
+tempest-1  | {"level":"warn","ts":1794310036.976304,"logger":"admin","msg":"admin endpoint disabled"}
+tempest-1  | {"level":"info","ts":1794310036.9764364,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+tempest-1  | {"level":"info","ts":1794310036.9764872,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x33f927d4c800"}
+tempest-1  | {"level":"info","ts":1794310037.142996,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+tempest-1  | {"level":"warn","ts":1794310037.1433175,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"warn","ts":1794310037.1433232,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"info","ts":1794310568.7520485,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"018ee5d3-939c-4eb4-b432-d360c2b5a01d","try_again":1794396968.7520454,"try_again_in":86399.999999491}
+laravel-1  | {"level":"info","ts":1794310568.752128,"logger":"tls","msg":"finished cleaning storage units"}
+symfony-1  | {"level":"info","ts":1794310683.169989,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+symfony-1  | {"level":"info","ts":1794310683.1699996,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+symfony-1  | {"level":"info","ts":1794310683.1700025,"msg":"using config from file","file":"/bench/symfony/Caddyfile"}
+symfony-1  | {"level":"info","ts":1794310683.1700041,"msg":"adapted config to JSON","adapter":"caddyfile"}
+symfony-1  | {"level":"warn","ts":1794310683.1700056,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/symfony/Caddyfile","line":2}
+symfony-1  | {"level":"warn","ts":1794310683.1700084,"logger":"admin","msg":"admin endpoint disabled"}
+symfony-1  | {"level":"info","ts":1794310683.1701314,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+symfony-1  | {"level":"info","ts":1794310683.1701534,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x2636fb0fa300"}
+symfony-1  | {"level":"info","ts":1794310683.1736064,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"e54881e0-f239-4863-85f5-d611ae3787f5","try_again":1794397083.1736047,"try_again_in":86399.999999378}
+symfony-1  | {"level":"info","ts":1794310683.173677,"logger":"tls","msg":"finished cleaning storage units"}
+symfony-1  | {"level":"info","ts":1794310683.4469001,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+tempest-1  | {"level":"info","ts":1794310037.1433253,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+tempest-1  | {"level":"info","ts":1794310037.1434824,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+tempest-1  | {"level":"info","ts":1794310037.1434913,"msg":"serving initial configuration"}
+tempest-1  | {"level":"info","ts":1794310037.1472394,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"a7cfb4db-3965-4f7f-9bfe-c6e68b27a9f1","try_again":1794396437.1472378,"try_again_in":86399.999999685}
+tempest-1  | {"level":"info","ts":1794310037.1472988,"logger":"tls","msg":"finished cleaning storage units"}
+tempest-1  | {"level":"info","ts":1794310058.2909386,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+tempest-1  | {"level":"warn","ts":1794310058.291029,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+tempest-1  | {"level":"info","ts":1794310058.2910473,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+tempest-1  | {"level":"info","ts":1794310058.2910638,"logger":"http","msg":"servers shutting down with eternal grace period"}
+tempest-1  | {"level":"info","ts":1794310058.2911708,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x33f927d4c800"}
+tempest-1  | {"level":"info","ts":1794310058.2982666,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+tempest-1  | {"level":"info","ts":1794310175.6360307,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+tempest-1  | {"level":"info","ts":1794310175.6360404,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+tempest-1  | {"level":"info","ts":1794310175.6360435,"msg":"using config from file","file":"/bench/tempest/Caddyfile"}
+tempest-1  | {"level":"info","ts":1794310175.636045,"msg":"adapted config to JSON","adapter":"caddyfile"}
+tempest-1  | {"level":"warn","ts":1794310175.6360464,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/tempest/Caddyfile","line":2}
+tempest-1  | {"level":"warn","ts":1794310175.6360497,"logger":"admin","msg":"admin endpoint disabled"}
+tempest-1  | {"level":"info","ts":1794310175.6361966,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0xa6b00dd2c80"}
+tempest-1  | {"level":"info","ts":1794310175.6362312,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+symfony-1  | {"level":"warn","ts":1794310683.4471312,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"warn","ts":1794310683.4471364,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"info","ts":1794310683.4471388,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+symfony-1  | {"level":"info","ts":1794310683.4472628,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+symfony-1  | {"level":"info","ts":1794310683.4472682,"msg":"serving initial configuration"}
+symfony-1  | {"level":"info","ts":1794310704.554869,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+symfony-1  | {"level":"warn","ts":1794310704.5549064,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+symfony-1  | {"level":"info","ts":1794310704.554921,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+symfony-1  | {"level":"info","ts":1794310704.5549572,"logger":"http","msg":"servers shutting down with eternal grace period"}
+symfony-1  | {"level":"info","ts":1794310704.5550778,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x2636fb0fa300"}
+symfony-1  | {"level":"info","ts":1794310704.5613074,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+tempest-1  | {"level":"info","ts":1794310175.6398857,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"a7cfb4db-3965-4f7f-9bfe-c6e68b27a9f1","try_again":1794396575.6398835,"try_again_in":86399.999999367}
+tempest-1  | {"level":"info","ts":1794310175.6399517,"logger":"tls","msg":"finished cleaning storage units"}
+tempest-1  | {"level":"info","ts":1794310175.8061566,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+tempest-1  | {"level":"warn","ts":1794310175.8063772,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"warn","ts":1794310175.8063838,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"info","ts":1794310175.806386,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+tempest-1  | {"level":"info","ts":1794310175.8065264,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+tempest-1  | {"level":"info","ts":1794310175.8065314,"msg":"serving initial configuration"}
+tempest-1  | {"level":"info","ts":1794310196.91339,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+tempest-1  | {"level":"warn","ts":1794310196.9134326,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+tempest-1  | {"level":"info","ts":1794310196.913449,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+tempest-1  | {"level":"info","ts":1794310196.913467,"logger":"http","msg":"servers shutting down with eternal grace period"}
+tempest-1  | {"level":"info","ts":1794310196.9135458,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0xa6b00dd2c80"}
+tempest-1  | {"level":"info","ts":1794310196.9206746,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+tempest-1  | {"level":"info","ts":1794310313.9816437,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+tempest-1  | {"level":"info","ts":1794310313.9816537,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+tempest-1  | {"level":"info","ts":1794310313.9816568,"msg":"using config from file","file":"/bench/tempest/Caddyfile"}
+tempest-1  | {"level":"info","ts":1794310313.9816587,"msg":"adapted config to JSON","adapter":"caddyfile"}
+tempest-1  | {"level":"warn","ts":1794310313.9816601,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/tempest/Caddyfile","line":2}
+tempest-1  | {"level":"warn","ts":1794310313.9816635,"logger":"admin","msg":"admin endpoint disabled"}
+tempest-1  | {"level":"info","ts":1794310313.9818006,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+tempest-1  | {"level":"info","ts":1794310313.9818568,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x2483680a3e00"}
+tempest-1  | {"level":"info","ts":1794310314.1492593,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+tempest-1  | {"level":"warn","ts":1794310314.14952,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"warn","ts":1794310314.1495256,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"info","ts":1794310314.1495278,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+tempest-1  | {"level":"info","ts":1794310314.1496975,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+tempest-1  | {"level":"info","ts":1794310314.1497025,"msg":"serving initial configuration"}
+tempest-1  | {"level":"info","ts":1794310314.1531506,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"a7cfb4db-3965-4f7f-9bfe-c6e68b27a9f1","try_again":1794396714.153149,"try_again_in":86399.999999632}
+tempest-1  | {"level":"info","ts":1794310314.1532083,"logger":"tls","msg":"finished cleaning storage units"}
+tempest-1  | {"level":"info","ts":1794310335.2483237,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+tempest-1  | {"level":"warn","ts":1794310335.2483602,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+tempest-1  | {"level":"info","ts":1794310335.2483752,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+tempest-1  | {"level":"info","ts":1794310335.2483907,"logger":"http","msg":"servers shutting down with eternal grace period"}
+tempest-1  | {"level":"info","ts":1794310335.2484958,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x2483680a3e00"}
+tempest-1  | {"level":"info","ts":1794310335.2552786,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+tempest-1  | {"level":"info","ts":1794310452.3233504,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+tempest-1  | {"level":"info","ts":1794310452.323361,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+tempest-1  | {"level":"info","ts":1794310452.323364,"msg":"using config from file","file":"/bench/tempest/Caddyfile"}
+tempest-1  | {"level":"info","ts":1794310452.323366,"msg":"adapted config to JSON","adapter":"caddyfile"}
+tempest-1  | {"level":"warn","ts":1794310452.3233674,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/tempest/Caddyfile","line":2}
+tempest-1  | {"level":"warn","ts":1794310452.3233712,"logger":"admin","msg":"admin endpoint disabled"}
+tempest-1  | {"level":"info","ts":1794310452.3235264,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+tempest-1  | {"level":"info","ts":1794310452.323535,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x1313c7fe7c00"}
+tempest-1  | {"level":"info","ts":1794310452.4922688,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+tempest-1  | {"level":"warn","ts":1794310452.4925258,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"warn","ts":1794310452.4925315,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"info","ts":1794310452.4925334,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+tempest-1  | {"level":"info","ts":1794310452.4927003,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+tempest-1  | {"level":"info","ts":1794310452.4927056,"msg":"serving initial configuration"}
+tempest-1  | {"level":"info","ts":1794310452.4959288,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"a7cfb4db-3965-4f7f-9bfe-c6e68b27a9f1","try_again":1794396852.4959276,"try_again_in":86399.999999657}
+tempest-1  | {"level":"info","ts":1794310452.4959884,"logger":"tls","msg":"finished cleaning storage units"}
+tempest-1  | {"level":"info","ts":1794310474.0232813,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+tempest-1  | {"level":"warn","ts":1794310474.0233188,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+tempest-1  | {"level":"info","ts":1794310474.0233316,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+tempest-1  | {"level":"info","ts":1794310474.0233455,"logger":"http","msg":"servers shutting down with eternal grace period"}
+tempest-1  | {"level":"info","ts":1794310474.0234478,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x1313c7fe7c00"}
+tempest-1  | {"level":"info","ts":1794310474.0297587,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+tempest-1  | {"level":"info","ts":1794310590.7802556,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+tempest-1  | {"level":"info","ts":1794310590.7802658,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+tempest-1  | {"level":"info","ts":1794310590.7802684,"msg":"using config from file","file":"/bench/tempest/Caddyfile"}
+tempest-1  | {"level":"info","ts":1794310590.7802703,"msg":"adapted config to JSON","adapter":"caddyfile"}
+tempest-1  | {"level":"warn","ts":1794310590.7802732,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/tempest/Caddyfile","line":2}
+tempest-1  | {"level":"warn","ts":1794310590.7802765,"logger":"admin","msg":"admin endpoint disabled"}
+tempest-1  | {"level":"info","ts":1794310590.7804084,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+tempest-1  | {"level":"info","ts":1794310590.7804341,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x32d1bbadc980"}
+tempest-1  | {"level":"info","ts":1794310590.9466877,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+tempest-1  | {"level":"warn","ts":1794310590.9469523,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"warn","ts":1794310590.946995,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"info","ts":1794310590.9469993,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+tempest-1  | {"level":"info","ts":1794310590.9471803,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+tempest-1  | {"level":"info","ts":1794310590.9471855,"msg":"serving initial configuration"}
+tempest-1  | {"level":"info","ts":1794310590.950433,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"a7cfb4db-3965-4f7f-9bfe-c6e68b27a9f1","try_again":1794396990.9504313,"try_again_in":86399.9999996}
+tempest-1  | {"level":"info","ts":1794310590.950492,"logger":"tls","msg":"finished cleaning storage units"}
+tempest-1  | {"level":"info","ts":1794310612.4596796,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+tempest-1  | {"level":"warn","ts":1794310612.459722,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+tempest-1  | {"level":"info","ts":1794310612.4597363,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+tempest-1  | {"level":"info","ts":1794310612.459753,"logger":"http","msg":"servers shutting down with eternal grace period"}
+tempest-1  | {"level":"info","ts":1794310612.4598682,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x32d1bbadc980"}
+tempest-1  | {"level":"info","ts":1794310612.4667473,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}

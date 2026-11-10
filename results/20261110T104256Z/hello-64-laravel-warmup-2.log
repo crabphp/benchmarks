@@ -1,0 +1,14 @@
+Running 5s test @ http://laravel:8080
+  4 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    29.46ms    8.59ms  65.88ms   71.19%
+    Req/Sec   544.35     61.44     1.01k    81.28%
+  Latency Distribution
+     50%   25.28ms
+     75%   37.58ms
+     90%   40.48ms
+     99%   53.64ms
+  11010 requests in 5.09s, 2.04MB read
+Requests/sec:   2163.84
+Transfer/sec:    409.95KB
+BENCH_JSON {"workload":"hello","bad_body":0,"bad_response":0,"requests":11010,"duration_us":5088184,"rps":2163.836842,"p50_us":25276.000000,"p99_us":53636.000000,"bad_status":0,"errors":{"connect":0,"read":0,"write":0,"timeout":0,"status":0}}

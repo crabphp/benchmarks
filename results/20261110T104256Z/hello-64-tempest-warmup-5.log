@@ -1,0 +1,14 @@
+Running 5s test @ http://tempest:8080
+  4 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    62.53ms    6.94ms  83.95ms   93.85%
+    Req/Sec   255.57     50.52   490.00     62.56%
+  Latency Distribution
+     50%   65.17ms
+     75%   66.57ms
+     90%   67.59ms
+     99%   73.56ms
+  5169 requests in 5.09s, 807.66KB read
+Requests/sec:   1014.73
+Transfer/sec:    158.55KB
+BENCH_JSON {"workload":"hello","bad_body":0,"bad_response":0,"requests":5169,"duration_us":5093947,"rps":1014.733761,"p50_us":65166.000000,"p99_us":73560.000000,"bad_status":0,"errors":{"connect":0,"read":0,"write":0,"timeout":0,"status":0}}

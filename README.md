@@ -2,6 +2,10 @@
 
 A public, independently runnable comparison of the seven frameworks listed on the CrabPHP website. Every PHP runtime is **8.5**. Frameworks use their latest stable releases as of the timestamp in [`sources.json`](sources.json); dependencies stay frozen for repeatability.
 
+## Reference results
+
+[Audited reference run: 10 November 2026](results/20261110T104256Z/README.md) — PHP 8.5.12, 140 trials and 140 warmups, zero errors across 44.8 million measured responses. It includes full trial ranges, latency, memory, exact versions, configuration and limitations. Symfony’s database results have substantial variability, disclosed alongside its median.
+
 ## Run
 
 Install **Docker Engine or Docker Desktop with Compose v2**, **Python 3.12+**, and Bash. Allow at least four logical CPUs, 8 GiB available RAM and 12 GiB free disk. Linux, macOS and Windows with WSL2 can run the harness; Linux amd64 is the reference environment. No host PHP, Composer, database, sibling repository, or credentials are needed.
