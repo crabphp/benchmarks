@@ -98,6 +98,14 @@ Spiral’s upstream installer requires a prerelease gRPC client dependency; the 
 
 Runtime extensions and RoadRunner downloads are pinned in Dockerfiles/setup scripts, with RoadRunner checksums for amd64 and arm64. Review those pins when refreshing. Debian OS packages are installed from distribution repositories rather than a dated snapshot; image digests and recorded image/package metadata document that remaining reproducibility limit.
 
+## Engine maintainer tools
+
+Optional [engine diagnostics](engine/README.md) retain the request-path CPU and
+long-running HTTP/WebSocket soak harnesses from the framework. They can target
+a local framework checkout and require host tools; they are separate from the
+independently runnable published-release comparison above and do not supply
+website ranking results.
+
 ## License
 
 MIT. See [LICENSE](LICENSE). Upstream frameworks and runtimes retain their own licenses.
