@@ -23,6 +23,7 @@ for service,(label,runtime) in labels.items():
     attr=' class="crab-row"' if service=='crab' else ''
     rows.append(f'              <tr{attr}><th scope="row">{label} {version} <span class="faint">{runtime}</span></th>{"".join(values)}</tr>')
 date=metadata['started_utc'][:10]
+cpu_model=next(line.split(':',1)[1].strip() for line in metadata['cpu'].splitlines() if line.startswith('Model name:')).split(' CPU @')[0].replace('(R)','').replace('(TM)','')
 url='https://github.com/crabphp/benchmarks/tree/main/results/'+args.results.name
 section=f'''      <section class="section" aria-labelledby="benchmarks">
         <h2 id="benchmarks">Benchmarks</h2>
@@ -37,7 +38,7 @@ section=f'''      <section class="section" aria-labelledby="benchmarks">
             </tbody>
           </table>
         </div>
-        <p class="faint">Tested {date} on a shared machine. Results vary by setup. <a href="{url}">Full results</a> · <a href="https://github.com/crabphp/benchmarks">Run it yourself <span aria-hidden="true">↗</span></a></p>
+        <p class="faint">{html.escape(cpu_model)} · 2 CPU / 2 GiB RAM limit per app (shared host). Tested {date}. <a href="{url}">Full results</a> · <a href="https://github.com/crabphp/benchmarks">Run it yourself <span aria-hidden="true">↗</span></a></p>
       </section>'''
 p=args.site/'index.html';text=p.read_text();start=text.index('      <section class="section" aria-labelledby="benchmarks">');end=text.index('      </section>',start)+len('      </section>');p.write_text(text[:start]+section+text[end:])
 print('Updated',p)
