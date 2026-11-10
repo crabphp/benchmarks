@@ -1,0 +1,44 @@
+tempest-1  | {"level":"info","ts":1794307265.101055,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+tempest-1  | {"level":"info","ts":1794307265.1010668,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+tempest-1  | {"level":"info","ts":1794307265.1010704,"msg":"using config from file","file":"/bench/tempest/Caddyfile"}
+tempest-1  | {"level":"info","ts":1794307265.1010761,"msg":"adapted config to JSON","adapter":"caddyfile"}
+tempest-1  | {"level":"warn","ts":1794307265.1010778,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/tempest/Caddyfile","line":2}
+tempest-1  | {"level":"warn","ts":1794307265.1010811,"logger":"admin","msg":"admin endpoint disabled"}
+tempest-1  | {"level":"info","ts":1794307265.1013598,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+tempest-1  | {"level":"info","ts":1794307265.1014712,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x234f2e6c2700"}
+tempest-1  | {"level":"info","ts":1794307265.2477152,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+tempest-1  | {"level":"warn","ts":1794307265.247949,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"warn","ts":1794307265.2479544,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"info","ts":1794307265.2479568,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+tempest-1  | {"level":"info","ts":1794307265.2482557,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+tempest-1  | {"level":"info","ts":1794307265.2482615,"msg":"serving initial configuration"}
+tempest-1  | {"level":"info","ts":1794307265.2514575,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/data/caddy"}
+tempest-1  | {"level":"info","ts":1794307265.2548773,"logger":"tls","msg":"finished cleaning storage units"}
+tempest-1  | {"level":"info","ts":1794307266.3029833,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+tempest-1  | {"level":"warn","ts":1794307266.3030128,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+tempest-1  | {"level":"info","ts":1794307266.3030286,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+tempest-1  | {"level":"info","ts":1794307266.3030539,"logger":"http","msg":"servers shutting down with eternal grace period"}
+tempest-1  | {"level":"info","ts":1794307266.3031673,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x234f2e6c2700"}
+tempest-1  | {"level":"info","ts":1794307266.308912,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+tempest-1  | {"level":"info","ts":1794307304.4283931,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+tempest-1  | {"level":"info","ts":1794307304.4284022,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+tempest-1  | {"level":"info","ts":1794307304.4284048,"msg":"using config from file","file":"/bench/tempest/Caddyfile"}
+tempest-1  | {"level":"info","ts":1794307304.4284065,"msg":"adapted config to JSON","adapter":"caddyfile"}
+tempest-1  | {"level":"warn","ts":1794307304.4284081,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/tempest/Caddyfile","line":2}
+tempest-1  | {"level":"warn","ts":1794307304.4284112,"logger":"admin","msg":"admin endpoint disabled"}
+tempest-1  | {"level":"info","ts":1794307304.4285522,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+tempest-1  | {"level":"info","ts":1794307304.4285872,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x11e313fa7b00"}
+tempest-1  | {"level":"warn","ts":1794307304.4289174,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"warn","ts":1794307304.428923,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"info","ts":1794307304.428925,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+tempest-1  | {"level":"info","ts":1794307304.4321132,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"d19b184e-a5e5-4676-86a6-71ec0c756acb","try_again":1794393704.432112,"try_again_in":86399.999999294}
+tempest-1  | {"level":"info","ts":1794307304.4321835,"logger":"tls","msg":"finished cleaning storage units"}
+tempest-1  | {"level":"info","ts":1794307304.5744455,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+tempest-1  | {"level":"info","ts":1794307304.5745997,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+tempest-1  | {"level":"info","ts":1794307304.574606,"msg":"serving initial configuration"}
+tempest-1  | {"level":"info","ts":1794307308.6904294,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+tempest-1  | {"level":"warn","ts":1794307308.6904674,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+tempest-1  | {"level":"info","ts":1794307308.6904824,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+tempest-1  | {"level":"info","ts":1794307308.6904967,"logger":"http","msg":"servers shutting down with eternal grace period"}
+tempest-1  | {"level":"info","ts":1794307308.6905885,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x11e313fa7b00"}
+tempest-1  | {"level":"info","ts":1794307308.696074,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}

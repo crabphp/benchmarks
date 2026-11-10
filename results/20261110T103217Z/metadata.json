@@ -1,0 +1,94 @@
+{
+  "started_utc": "2026-11-10T10:32:42.696590+00:00",
+  "host": "Linux-7.0.12-201.fc44.x86_64-x86_64-with-glibc2.43",
+  "docker": {
+    "NCPU": 6,
+    "MemTotal": 16695664640,
+    "KernelVersion": "7.0.12-201.fc44.x86_64",
+    "ServerVersion": "29.6.0",
+    "Architecture": "x86_64",
+    "OperatingSystem": "Fedora Linux 44 (Workstation Edition)"
+  },
+  "cpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           39 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  6\nOn-line CPU(s) list:                     0-5\nVendor ID:                               GenuineIntel\nModel name:                              Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz\nCPU family:                              6\nModel:                                   158\nThread(s) per core:                      1\nCore(s) per socket:                      6\nSocket(s):                               1\nStepping:                                10\nCPU(s) scaling MHz:                      95%\nCPU max MHz:                             4100.0000\nCPU min MHz:                             800.0000\nBogoMIPS:                                5799.77\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities\nVirtualization:                          VT-x\nL1d cache:                               192 KiB (6 instances)\nL1i cache:                               192 KiB (6 instances)\nL2 cache:                                1.5 MiB (6 instances)\nL3 cache:                                9 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-5\nVulnerability Gather data sampling:      Mitigation; Microcode\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             KVM: Mitigation: Split huge pages\nVulnerability L1tf:                      Mitigation; PTE Inversion; VMX conditional cache flushes, SMT disabled\nVulnerability Mds:                       Mitigation; Clear CPU buffers; SMT disabled\nVulnerability Meltdown:                  Mitigation; PTI\nVulnerability Mmio stale data:           Mitigation; Clear CPU buffers; SMT disabled\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Mitigation; IBRS\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; IBRS; IBPB conditional; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Mitigation; Microcode\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Mitigation; IBPB before exit to userspace\n",
+  "load_average": [
+    2.84619140625,
+    3.0517578125,
+    2.169921875
+  ],
+  "other_containers": "plane-app-proxy-1\nplane-app-live-1\nplane-app-space-1\nplane-app-admin-1\nplane-app-web-1\nplane-app-worker-1\nplane-app-beat-worker-1\nplane-app-api-1\nplane-app-plane-db-1\nplane-app-plane-mq-1\nplane-app-plane-minio-1\nplane-app-plane-redis-1\n",
+  "cpu_affinity": "not pinned; equal CPU quotas, shared host",
+  "sources": {
+    "resolved_utc": "2026-11-10T10:22:06.175838+00:00",
+    "apps": {
+      "crab": {
+        "skeleton": "crabphp/crab",
+        "skeleton_version": "v0.1.1",
+        "commit": "e3cde8454318130fa2dd82594d0d8d4c1344d908",
+        "archive_url": "https://codeload.github.com/crabphp/crab/tar.gz/e3cde8454318130fa2dd82594d0d8d4c1344d908",
+        "sha256": "199d8329eae36ed52d1cb3c1b4e5789468f07facd1fbe0b5888c36639afda49d",
+        "framework": "crabphp/framework",
+        "version": "v0.6.4"
+      },
+      "webman": {
+        "skeleton": "workerman/webman",
+        "skeleton_version": "v2.2.3",
+        "commit": "394e611efc496eab992fc6447d2c7ef2438b6902",
+        "archive_url": "https://codeload.github.com/walkor/webman/tar.gz/394e611efc496eab992fc6447d2c7ef2438b6902",
+        "sha256": "f411981968724143cbcbf9a5306752babab2ac47c216a0f10e4fd8d1acb252d0",
+        "framework": "workerman/webman-framework",
+        "version": "v2.2.5"
+      },
+      "hyperf": {
+        "skeleton": "hyperf/hyperf-skeleton",
+        "skeleton_version": "3.2.0",
+        "commit": "855dd7ef145d9e1e3d0500d958ac55d51cbf6ef0",
+        "archive_url": "https://codeload.github.com/hyperf/hyperf-skeleton/tar.gz/855dd7ef145d9e1e3d0500d958ac55d51cbf6ef0",
+        "sha256": "514c6880516db17d091aeef30d3617d1b8c219db037ad4949a90b28dde910d27",
+        "framework": "hyperf/framework",
+        "version": "v3.2.0"
+      },
+      "symfony": {
+        "skeleton": "symfony/skeleton",
+        "skeleton_version": "v8.1.99",
+        "commit": "84ced89bc1f6fe31709373e72d0ca60ff6a60f07",
+        "archive_url": "https://codeload.github.com/symfony/skeleton/tar.gz/84ced89bc1f6fe31709373e72d0ca60ff6a60f07",
+        "sha256": "b99bd713b30d8e6eec9997e2ed69d76c1f96296251e7fb69f2ba548b145c68bf",
+        "framework": "symfony/framework-bundle",
+        "version": "v8.1.11"
+      },
+      "spiral": {
+        "skeleton": "spiral/app",
+        "skeleton_version": "3.9.0",
+        "commit": "b3ebe0a5e089f0012482c808e90c614d9cfd9e51",
+        "archive_url": "https://codeload.github.com/spiral/app/tar.gz/b3ebe0a5e089f0012482c808e90c614d9cfd9e51",
+        "sha256": "1be27377af5a27f963f438a1359c06ab4f10fe0c6ebc22d1276da5c9416c8b65",
+        "framework": "spiral/framework",
+        "version": "3.18.2"
+      },
+      "laravel": {
+        "skeleton": "laravel/laravel",
+        "skeleton_version": "v13.11.0",
+        "commit": "06d016a364a37430eec9cbc52209adce3d7667ce",
+        "archive_url": "https://codeload.github.com/laravel/laravel/tar.gz/06d016a364a37430eec9cbc52209adce3d7667ce",
+        "sha256": "0a9c0e0bb361499c08daabcecfc0aab1034e9dae58ecd421230eb4dc2cc27d0b",
+        "framework": "laravel/framework",
+        "version": "v13.40.0"
+      },
+      "tempest": {
+        "skeleton": "tempest/app",
+        "skeleton_version": "v3.1.0",
+        "commit": "6619b5c29ef06d177924b60cb6db6da5f494f751",
+        "archive_url": "https://codeload.github.com/tempestphp/tempest-app/tar.gz/6619b5c29ef06d177924b60cb6db6da5f494f751",
+        "sha256": "6264d15d1b818c7e66773ba72b8b55979507bbd55ca60939b5a203f7dbf0873f",
+        "framework": "tempest/framework",
+        "version": "v3.21.0"
+      }
+    }
+  },
+  "warmup_seconds": 1,
+  "duration_seconds": 2,
+  "trials": 1,
+  "full_method": false,
+  "images": "PHP_CLI_IMAGE=php@sha256:050713ce008e2360ea9dc96e1f9a075690132388d917fc3552806f7a7be6f2a0\nFRANKEN_IMAGE=dunglas/frankenphp@sha256:8104eb9c834d905e5678a183d053ef1a0c650c5f4874f366dfec7eb025e92e06\nMYSQL_IMAGE=mysql@sha256:a81d043930e51745522bd5c430961cf8286f0a23f0a9a2a6e0108f7ea71b0902\nLOADGEN_IMAGE=debian@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc\nCOMPOSER_IMAGE=composer@sha256:8de2184c6de224f4689e8f80ed5f5edaf0030b6b8b7839a22a2bcb6722ac87d0\n",
+  "excluded": []
+}

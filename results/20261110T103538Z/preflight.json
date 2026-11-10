@@ -1,0 +1,256 @@
+[
+  {
+    "case": "hello-64",
+    "service": "crab",
+    "ok": true,
+    "metadata": {
+      "php": "8.5.12",
+      "classmap_authoritative": true,
+      "debug": false,
+      "sapi": "cli",
+      "workers": "2",
+      "jit": {
+        "enabled": false,
+        "on": false,
+        "kind": 0,
+        "opt_level": 0,
+        "opt_flags": 0,
+        "buffer_size": 0,
+        "buffer_free": 0
+      },
+      "opcache": "1",
+      "opcache_statistics": {
+        "num_cached_scripts": 163,
+        "num_cached_keys": 313,
+        "max_cached_keys": 32531,
+        "hits": 1,
+        "start_time": 1794306980,
+        "last_restart_time": 0,
+        "oom_restarts": 0,
+        "hash_restarts": 0,
+        "manual_restarts": 0,
+        "misses": 191,
+        "blacklist_misses": 0,
+        "blacklist_miss_ratio": 0,
+        "opcache_hit_rate": 0.5208333333333333
+      },
+      "opcache_cache_full": false,
+      "timestamps": "0",
+      "preload": "",
+      "preload_classes": 0
+    }
+  },
+  {
+    "case": "hello-64",
+    "service": "webman",
+    "ok": true,
+    "metadata": {
+      "php": "8.5.12",
+      "sapi": "cli",
+      "classmap_authoritative": true,
+      "memory_limit": "256M",
+      "debug": false,
+      "pid": 8,
+      "opcache": "1",
+      "timestamps": "0",
+      "jit": {
+        "enabled": false,
+        "on": false,
+        "kind": 0,
+        "opt_level": 0,
+        "opt_flags": 0,
+        "buffer_size": 0,
+        "buffer_free": 0
+      },
+      "opcache_statistics": {
+        "num_cached_scripts": 256,
+        "num_cached_keys": 476,
+        "max_cached_keys": 32531,
+        "hits": 34,
+        "start_time": 1794306982,
+        "last_restart_time": 0,
+        "oom_restarts": 0,
+        "hash_restarts": 0,
+        "manual_restarts": 0,
+        "misses": 301,
+        "blacklist_misses": 0,
+        "blacklist_miss_ratio": 0,
+        "opcache_hit_rate": 10.149253731343283
+      },
+      "cache_full": false,
+      "workers": 2,
+      "event": "3.2.0",
+      "persistent": true,
+      "pool_per_worker": 10
+    }
+  },
+  {
+    "case": "hello-64",
+    "service": "hyperf",
+    "ok": true,
+    "metadata": {
+      "php": "8.5.12",
+      "sapi": "cli",
+      "classmap_authoritative": true,
+      "memory_limit": "256M",
+      "debug": false,
+      "pid": 10,
+      "opcache": "1",
+      "timestamps": "0",
+      "jit": {
+        "enabled": false,
+        "on": false,
+        "kind": 0,
+        "opt_level": 0,
+        "opt_flags": 0,
+        "buffer_size": 0,
+        "buffer_free": 0
+      },
+      "opcache_statistics": {
+        "num_cached_scripts": 441,
+        "num_cached_keys": 853,
+        "max_cached_keys": 32531,
+        "hits": 6,
+        "start_time": 1794306985,
+        "last_restart_time": 0,
+        "oom_restarts": 0,
+        "hash_restarts": 0,
+        "manual_restarts": 0,
+        "misses": 446,
+        "blacklist_misses": 0,
+        "blacklist_miss_ratio": 0,
+        "opcache_hit_rate": 1.3274336283185841
+      },
+      "cache_full": false,
+      "workers": 2,
+      "swoole": "6.2.5",
+      "scan_cacheable": true,
+      "pool_per_worker": 10
+    }
+  },
+  {
+    "case": "hello-64",
+    "service": "symfony",
+    "ok": true,
+    "metadata": {
+      "php": "8.5.12",
+      "classmap_authoritative": true,
+      "debug": false,
+      "sapi": "frankenphp",
+      "jit": {
+        "enabled": false,
+        "on": false,
+        "kind": 0,
+        "opt_level": 0,
+        "opt_flags": 0,
+        "buffer_size": 0,
+        "buffer_free": 0
+      },
+      "opcache": "1",
+      "opcache_statistics": {
+        "num_cached_scripts": 732,
+        "num_cached_keys": 816,
+        "max_cached_keys": 32531,
+        "hits": 34,
+        "start_time": 1794306987,
+        "last_restart_time": 0,
+        "oom_restarts": 0,
+        "hash_restarts": 0,
+        "manual_restarts": 0,
+        "misses": 95,
+        "blacklist_misses": 0,
+        "blacklist_miss_ratio": 0,
+        "opcache_hit_rate": 26.356589147286826
+      },
+      "opcache_cache_full": false,
+      "timestamps": "0",
+      "preload": "/srv/app/config/preload.php",
+      "preload_classes": 637
+    }
+  },
+  {
+    "case": "hello-64",
+    "service": "spiral",
+    "ok": true,
+    "metadata": {
+      "php": "8.5.12",
+      "sapi": "cli",
+      "pid": 13,
+      "classmap_authoritative": true,
+      "debug": false,
+      "opcache": "1",
+      "timestamps": "0",
+      "jit": {
+        "enabled": false,
+        "on": false,
+        "kind": 0,
+        "opt_level": 0,
+        "opt_flags": 0,
+        "buffer_size": 0,
+        "buffer_free": 0
+      },
+      "opcache_statistics": {
+        "num_cached_scripts": 851,
+        "num_cached_keys": 1681,
+        "max_cached_keys": 32531,
+        "hits": 0,
+        "start_time": 1794306990,
+        "last_restart_time": 0,
+        "oom_restarts": 0,
+        "hash_restarts": 0,
+        "manual_restarts": 0,
+        "misses": 851,
+        "blacklist_misses": 0,
+        "blacklist_miss_ratio": 0,
+        "opcache_hit_rate": 0
+      },
+      "cache_full": false,
+      "workers": 2,
+      "tokenizer_cache": true,
+      "connection_reuse": "Cycle driver kept in worker"
+    }
+  },
+  {
+    "case": "hello-64",
+    "service": "laravel",
+    "ok": true,
+    "metadata": {
+      "php": "8.5.12",
+      "classmap_authoritative": true,
+      "debug": false,
+      "config_cached": true,
+      "routes_cached": true,
+      "persistent": true,
+      "sapi": "frankenphp",
+      "jit": {
+        "enabled": false,
+        "on": false,
+        "kind": 0,
+        "opt_level": 0,
+        "opt_flags": 0,
+        "buffer_size": 0,
+        "buffer_free": 0
+      },
+      "opcache": "1",
+      "opcache_statistics": {
+        "num_cached_scripts": 630,
+        "num_cached_keys": 1238,
+        "max_cached_keys": 32531,
+        "hits": 18,
+        "start_time": 1794306993,
+        "last_restart_time": 0,
+        "oom_restarts": 0,
+        "hash_restarts": 0,
+        "manual_restarts": 0,
+        "misses": 1016,
+        "blacklist_misses": 0,
+        "blacklist_miss_ratio": 0,
+        "opcache_hit_rate": 1.7408123791102514
+      },
+      "opcache_cache_full": false,
+      "timestamps": "0",
+      "preload": "",
+      "preload_classes": 0
+    }
+  }
+]

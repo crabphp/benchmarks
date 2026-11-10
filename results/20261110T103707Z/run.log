@@ -1,0 +1,85 @@
+PREFLIGHT hello-64 crab
+PREFLIGHT hello-64 webman
+PREFLIGHT hello-64 hyperf
+PREFLIGHT hello-64 symfony
+PREFLIGHT hello-64 spiral
+PREFLIGHT hello-64 laravel
+PREFLIGHT hello-64 tempest
+RUN hello-64-crab-trial-1 2026-11-10T10:38:12.934096+00:00
+DONE hello-64-crab-trial-1: 112655 req/s; errors=0
+RUN hello-64-webman-trial-1 2026-11-10T10:38:18.547068+00:00
+DONE hello-64-webman-trial-1: 76152 req/s; errors=0
+RUN hello-64-hyperf-trial-1 2026-11-10T10:38:25.318083+00:00
+DONE hello-64-hyperf-trial-1: 43200 req/s; errors=0
+RUN hello-64-symfony-trial-1 2026-11-10T10:38:30.973603+00:00
+DONE hello-64-symfony-trial-1: 6240 req/s; errors=0
+RUN hello-64-spiral-trial-1 2026-11-10T10:38:36.612892+00:00
+DONE hello-64-spiral-trial-1: 3187 req/s; errors=0
+RUN hello-64-laravel-trial-1 2026-11-10T10:38:43.279502+00:00
+DONE hello-64-laravel-trial-1: 2213 req/s; errors=0
+RUN hello-64-tempest-trial-1 2026-11-10T10:38:49.027318+00:00
+DONE hello-64-tempest-trial-1: 984 req/s; errors=0
+PREFLIGHT hello-256 crab
+PREFLIGHT hello-256 webman
+PREFLIGHT hello-256 hyperf
+PREFLIGHT hello-256 symfony
+PREFLIGHT hello-256 spiral
+PREFLIGHT hello-256 laravel
+PREFLIGHT hello-256 tempest
+RUN hello-256-crab-trial-1 2026-11-10T10:39:12.283615+00:00
+DONE hello-256-crab-trial-1: 109895 req/s; errors=0
+RUN hello-256-webman-trial-1 2026-11-10T10:39:17.856902+00:00
+DONE hello-256-webman-trial-1: 73954 req/s; errors=0
+RUN hello-256-hyperf-trial-1 2026-11-10T10:39:24.604624+00:00
+DONE hello-256-hyperf-trial-1: 41568 req/s; errors=0
+RUN hello-256-symfony-trial-1 2026-11-10T10:39:30.246058+00:00
+DONE hello-256-symfony-trial-1: 6431 req/s; errors=0
+RUN hello-256-spiral-trial-1 2026-11-10T10:39:35.965022+00:00
+DONE hello-256-spiral-trial-1: 3301 req/s; errors=0
+RUN hello-256-laravel-trial-1 2026-11-10T10:39:42.528236+00:00
+DONE hello-256-laravel-trial-1: 2206 req/s; errors=0
+RUN hello-256-tempest-trial-1 2026-11-10T10:39:48.149382+00:00
+DONE hello-256-tempest-trial-1: 966 req/s; errors=0
+PREFLIGHT db-64 crab
+PREFLIGHT db-64 webman
+PREFLIGHT db-64 hyperf
+PREFLIGHT db-64 symfony
+PREFLIGHT db-64 spiral
+PREFLIGHT db-64 laravel
+PREFLIGHT db-64 tempest
+RUN db-64-crab-trial-1 2026-11-10T10:40:11.038345+00:00
+DONE db-64-crab-trial-1: 20808 req/s; errors=0
+RUN db-64-webman-trial-1 2026-11-10T10:40:16.618149+00:00
+DONE db-64-webman-trial-1: 8925 req/s; errors=0
+RUN db-64-hyperf-trial-1 2026-11-10T10:40:23.237862+00:00
+DONE db-64-hyperf-trial-1: 9544 req/s; errors=0
+RUN db-64-symfony-trial-1 2026-11-10T10:40:28.798920+00:00
+DONE db-64-symfony-trial-1: 4778 req/s; errors=0
+RUN db-64-spiral-trial-1 2026-11-10T10:40:34.594965+00:00
+DONE db-64-spiral-trial-1: 2573 req/s; errors=0
+RUN db-64-laravel-trial-1 2026-11-10T10:40:41.345962+00:00
+DONE db-64-laravel-trial-1: 1612 req/s; errors=0
+RUN db-64-tempest-trial-1 2026-11-10T10:40:47.337437+00:00
+DONE db-64-tempest-trial-1: 903 req/s; errors=0
+PREFLIGHT validate-64 crab
+PREFLIGHT validate-64 webman
+PREFLIGHT validate-64 hyperf
+PREFLIGHT validate-64 symfony
+PREFLIGHT validate-64 spiral
+PREFLIGHT validate-64 laravel
+PREFLIGHT validate-64 tempest
+RUN validate-64-crab-trial-1 2026-11-10T10:41:09.357092+00:00
+DONE validate-64-crab-trial-1: 57963 req/s; errors=0
+RUN validate-64-webman-trial-1 2026-11-10T10:41:15.048058+00:00
+DONE validate-64-webman-trial-1: 6362 req/s; errors=0
+RUN validate-64-hyperf-trial-1 2026-11-10T10:41:22.047164+00:00
+DONE validate-64-hyperf-trial-1: 7168 req/s; errors=0
+RUN validate-64-symfony-trial-1 2026-11-10T10:41:27.777864+00:00
+DONE validate-64-symfony-trial-1: 4240 req/s; errors=0
+RUN validate-64-spiral-trial-1 2026-11-10T10:41:33.516022+00:00
+DONE validate-64-spiral-trial-1: 2692 req/s; errors=0
+RUN validate-64-laravel-trial-1 2026-11-10T10:41:40.598948+00:00
+DONE validate-64-laravel-trial-1: 1425 req/s; errors=0
+RUN validate-64-tempest-trial-1 2026-11-10T10:41:46.293806+00:00
+DONE validate-64-tempest-trial-1: 952 req/s; errors=0
+COMPLETE /home/daudau/Code/crabphp/benchmarks/results/20261110T103707Z

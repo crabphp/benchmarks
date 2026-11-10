@@ -1,0 +1,68 @@
+{
+  "resolved_utc": "2026-11-10T10:22:06.175838+00:00",
+  "apps": {
+    "crab": {
+      "skeleton": "crabphp/crab",
+      "skeleton_version": "v0.1.1",
+      "commit": "e3cde8454318130fa2dd82594d0d8d4c1344d908",
+      "archive_url": "https://codeload.github.com/crabphp/crab/tar.gz/e3cde8454318130fa2dd82594d0d8d4c1344d908",
+      "sha256": "199d8329eae36ed52d1cb3c1b4e5789468f07facd1fbe0b5888c36639afda49d",
+      "framework": "crabphp/framework",
+      "version": "v0.6.4"
+    },
+    "webman": {
+      "skeleton": "workerman/webman",
+      "skeleton_version": "v2.2.3",
+      "commit": "394e611efc496eab992fc6447d2c7ef2438b6902",
+      "archive_url": "https://codeload.github.com/walkor/webman/tar.gz/394e611efc496eab992fc6447d2c7ef2438b6902",
+      "sha256": "f411981968724143cbcbf9a5306752babab2ac47c216a0f10e4fd8d1acb252d0",
+      "framework": "workerman/webman-framework",
+      "version": "v2.2.5"
+    },
+    "hyperf": {
+      "skeleton": "hyperf/hyperf-skeleton",
+      "skeleton_version": "3.2.0",
+      "commit": "855dd7ef145d9e1e3d0500d958ac55d51cbf6ef0",
+      "archive_url": "https://codeload.github.com/hyperf/hyperf-skeleton/tar.gz/855dd7ef145d9e1e3d0500d958ac55d51cbf6ef0",
+      "sha256": "514c6880516db17d091aeef30d3617d1b8c219db037ad4949a90b28dde910d27",
+      "framework": "hyperf/framework",
+      "version": "v3.2.0"
+    },
+    "symfony": {
+      "skeleton": "symfony/skeleton",
+      "skeleton_version": "v8.1.99",
+      "commit": "84ced89bc1f6fe31709373e72d0ca60ff6a60f07",
+      "archive_url": "https://codeload.github.com/symfony/skeleton/tar.gz/84ced89bc1f6fe31709373e72d0ca60ff6a60f07",
+      "sha256": "b99bd713b30d8e6eec9997e2ed69d76c1f96296251e7fb69f2ba548b145c68bf",
+      "framework": "symfony/framework-bundle",
+      "version": "v8.1.11"
+    },
+    "spiral": {
+      "skeleton": "spiral/app",
+      "skeleton_version": "3.9.0",
+      "commit": "b3ebe0a5e089f0012482c808e90c614d9cfd9e51",
+      "archive_url": "https://codeload.github.com/spiral/app/tar.gz/b3ebe0a5e089f0012482c808e90c614d9cfd9e51",
+      "sha256": "1be27377af5a27f963f438a1359c06ab4f10fe0c6ebc22d1276da5c9416c8b65",
+      "framework": "spiral/framework",
+      "version": "3.18.2"
+    },
+    "laravel": {
+      "skeleton": "laravel/laravel",
+      "skeleton_version": "v13.11.0",
+      "commit": "06d016a364a37430eec9cbc52209adce3d7667ce",
+      "archive_url": "https://codeload.github.com/laravel/laravel/tar.gz/06d016a364a37430eec9cbc52209adce3d7667ce",
+      "sha256": "0a9c0e0bb361499c08daabcecfc0aab1034e9dae58ecd421230eb4dc2cc27d0b",
+      "framework": "laravel/framework",
+      "version": "v13.40.0"
+    },
+    "tempest": {
+      "skeleton": "tempest/app",
+      "skeleton_version": "v3.1.0",
+      "commit": "6619b5c29ef06d177924b60cb6db6da5f494f751",
+      "archive_url": "https://codeload.github.com/tempestphp/tempest-app/tar.gz/6619b5c29ef06d177924b60cb6db6da5f494f751",
+      "sha256": "6264d15d1b818c7e66773ba72b8b55979507bbd55ca60939b5a203f7dbf0873f",
+      "framework": "tempest/framework",
+      "version": "v3.21.0"
+    }
+  }
+}

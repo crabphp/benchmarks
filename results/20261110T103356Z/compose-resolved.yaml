@@ -1,0 +1,277 @@
+name: crab-benchmark-20261110103356-1574937
+services:
+  crab:
+    build:
+      context: /home/daudau/Code/crabphp/benchmarks/.work/context
+      dockerfile: crab/Dockerfile
+      args:
+        BASE: php@sha256:050713ce008e2360ea9dc96e1f9a075690132388d917fc3552806f7a7be6f2a0
+        COMPOSER_IMAGE: composer@sha256:8de2184c6de224f4689e8f80ed5f5edaf0030b6b8b7839a22a2bcb6722ac87d0
+        FRANKEN_IMAGE: dunglas/frankenphp@sha256:8104eb9c834d905e5678a183d053ef1a0c650c5f4874f366dfec7eb025e92e06
+    cpus: 2
+    depends_on:
+      mysql:
+        condition: service_healthy
+        required: true
+    environment:
+      APP_DEBUG: "false"
+      APP_ENV: production
+      DB_DATABASE: benchmark
+      DB_DRIVER: mysql
+      DB_HOST: mysql
+      DB_PASSWORD: bench
+      DB_PORT: "23306"
+      DB_USERNAME: bench
+      LOG_LEVEL: error
+      SERVER_QUEUE: "false"
+      SERVER_SCHEDULE: "false"
+      SERVER_WORKERS: "2"
+    healthcheck:
+      disable: true
+    mem_limit: "2147483648"
+    memswap_limit: "2147483648"
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        host_ip: 127.0.0.1
+        target: 8080
+        published: "23101"
+        protocol: tcp
+    stop_grace_period: 15s
+  hyperf:
+    build:
+      context: /home/daudau/Code/crabphp/benchmarks/.work/context
+      dockerfile: hyperf/Dockerfile
+      args:
+        BASE: php@sha256:050713ce008e2360ea9dc96e1f9a075690132388d917fc3552806f7a7be6f2a0
+        COMPOSER_IMAGE: composer@sha256:8de2184c6de224f4689e8f80ed5f5edaf0030b6b8b7839a22a2bcb6722ac87d0
+        FRANKEN_IMAGE: dunglas/frankenphp@sha256:8104eb9c834d905e5678a183d053ef1a0c650c5f4874f366dfec7eb025e92e06
+    cpus: 2
+    depends_on:
+      mysql:
+        condition: service_healthy
+        required: true
+    healthcheck:
+      disable: true
+    mem_limit: "2147483648"
+    memswap_limit: "2147483648"
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        host_ip: 127.0.0.1
+        target: 8080
+        published: "23103"
+        protocol: tcp
+    stop_grace_period: 15s
+  laravel:
+    build:
+      context: /home/daudau/Code/crabphp/benchmarks/.work/context
+      dockerfile: laravel-octane/Dockerfile
+      args:
+        BASE: dunglas/frankenphp@sha256:8104eb9c834d905e5678a183d053ef1a0c650c5f4874f366dfec7eb025e92e06
+        COMPOSER_IMAGE: composer@sha256:8de2184c6de224f4689e8f80ed5f5edaf0030b6b8b7839a22a2bcb6722ac87d0
+        FRANKEN_IMAGE: dunglas/frankenphp@sha256:8104eb9c834d905e5678a183d053ef1a0c650c5f4874f366dfec7eb025e92e06
+    cpus: 2
+    depends_on:
+      mysql:
+        condition: service_healthy
+        required: true
+    healthcheck:
+      disable: true
+    mem_limit: "2147483648"
+    memswap_limit: "2147483648"
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        host_ip: 127.0.0.1
+        target: 8080
+        published: "23106"
+        protocol: tcp
+    stop_grace_period: 15s
+  loadgen:
+    build:
+      context: /home/daudau/Code/crabphp/benchmarks/.work/context
+      dockerfile: loadgen/Dockerfile
+      args:
+        BASE: debian@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc
+    cpus: 4
+    mem_limit: "536870912"
+    memswap_limit: "536870912"
+    networks:
+      default: null
+  mysql:
+    cpus: 2
+    command:
+      - --port=23306
+      - --mysqlx=OFF
+      - --innodb-buffer-pool-size=512M
+      - --max-connections=100
+    environment:
+      MYSQL_DATABASE: benchmark
+      MYSQL_PASSWORD: bench
+      MYSQL_ROOT_PASSWORD: benchroot
+      MYSQL_USER: bench
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - mysqladmin ping -h 127.0.0.1 -P 23306 -uroot -pbenchroot --silent
+      timeout: 2s
+      interval: 2s
+      retries: 90
+    image: mysql@sha256:a81d043930e51745522bd5c430961cf8286f0a23f0a9a2a6e0108f7ea71b0902
+    mem_limit: "2147483648"
+    memswap_limit: "2147483648"
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        host_ip: 127.0.0.1
+        target: 23306
+        published: "23306"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: mysql-data
+        target: /var/lib/mysql
+        volume: {}
+      - type: bind
+        source: /home/daudau/Code/crabphp/benchmarks/.work/context/mysql/init.sql
+        target: /docker-entrypoint-initdb.d/init.sql
+        read_only: true
+        bind: {}
+  spiral:
+    build:
+      context: /home/daudau/Code/crabphp/benchmarks/.work/context
+      dockerfile: spiral/Dockerfile
+      args:
+        BASE: php@sha256:050713ce008e2360ea9dc96e1f9a075690132388d917fc3552806f7a7be6f2a0
+        COMPOSER_IMAGE: composer@sha256:8de2184c6de224f4689e8f80ed5f5edaf0030b6b8b7839a22a2bcb6722ac87d0
+        FRANKEN_IMAGE: dunglas/frankenphp@sha256:8104eb9c834d905e5678a183d053ef1a0c650c5f4874f366dfec7eb025e92e06
+    cpus: 2
+    depends_on:
+      mysql:
+        condition: service_healthy
+        required: true
+    healthcheck:
+      disable: true
+    mem_limit: "2147483648"
+    memswap_limit: "2147483648"
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        host_ip: 127.0.0.1
+        target: 8080
+        published: "23105"
+        protocol: tcp
+    stop_grace_period: 15s
+  symfony:
+    build:
+      context: /home/daudau/Code/crabphp/benchmarks/.work/context
+      dockerfile: symfony/Dockerfile
+      args:
+        BASE: dunglas/frankenphp@sha256:8104eb9c834d905e5678a183d053ef1a0c650c5f4874f366dfec7eb025e92e06
+        COMPOSER_IMAGE: composer@sha256:8de2184c6de224f4689e8f80ed5f5edaf0030b6b8b7839a22a2bcb6722ac87d0
+        FRANKEN_IMAGE: dunglas/frankenphp@sha256:8104eb9c834d905e5678a183d053ef1a0c650c5f4874f366dfec7eb025e92e06
+    cpus: 2
+    depends_on:
+      mysql:
+        condition: service_healthy
+        required: true
+    healthcheck:
+      disable: true
+    mem_limit: "2147483648"
+    memswap_limit: "2147483648"
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        host_ip: 127.0.0.1
+        target: 8080
+        published: "23104"
+        protocol: tcp
+    stop_grace_period: 15s
+  tempest:
+    build:
+      context: /home/daudau/Code/crabphp/benchmarks/.work/context
+      dockerfile: tempest/Dockerfile
+      args:
+        BASE: dunglas/frankenphp@sha256:8104eb9c834d905e5678a183d053ef1a0c650c5f4874f366dfec7eb025e92e06
+        COMPOSER_IMAGE: composer@sha256:8de2184c6de224f4689e8f80ed5f5edaf0030b6b8b7839a22a2bcb6722ac87d0
+        FRANKEN_IMAGE: dunglas/frankenphp@sha256:8104eb9c834d905e5678a183d053ef1a0c650c5f4874f366dfec7eb025e92e06
+    cpus: 2
+    depends_on:
+      mysql:
+        condition: service_healthy
+        required: true
+    healthcheck:
+      disable: true
+    mem_limit: "2147483648"
+    memswap_limit: "2147483648"
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        host_ip: 127.0.0.1
+        target: 8080
+        published: "23107"
+        protocol: tcp
+    stop_grace_period: 15s
+  webman:
+    build:
+      context: /home/daudau/Code/crabphp/benchmarks/.work/context
+      dockerfile: webman/Dockerfile
+      args:
+        BASE: php@sha256:050713ce008e2360ea9dc96e1f9a075690132388d917fc3552806f7a7be6f2a0
+        COMPOSER_IMAGE: composer@sha256:8de2184c6de224f4689e8f80ed5f5edaf0030b6b8b7839a22a2bcb6722ac87d0
+        FRANKEN_IMAGE: dunglas/frankenphp@sha256:8104eb9c834d905e5678a183d053ef1a0c650c5f4874f366dfec7eb025e92e06
+    cpus: 2
+    depends_on:
+      mysql:
+        condition: service_healthy
+        required: true
+    healthcheck:
+      disable: true
+    mem_limit: "2147483648"
+    memswap_limit: "2147483648"
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        host_ip: 127.0.0.1
+        target: 8080
+        published: "23102"
+        protocol: tcp
+    stop_grace_period: 15s
+networks:
+  default:
+    name: crab-benchmark-20261110103356-1574937_default
+volumes:
+  mysql-data:
+    name: crab-benchmark-20261110103356-1574937_mysql-data
+x-app:
+  cpus: 2
+  depends_on:
+    mysql:
+      condition: service_healthy
+  environment:
+    APP_DEBUG: "false"
+    APP_ENV: production
+    DB_DATABASE: benchmark
+    DB_DRIVER: mysql
+    DB_HOST: mysql
+    DB_PASSWORD: bench
+    DB_PORT: "23306"
+    DB_USERNAME: bench
+    LOG_LEVEL: error
+    SERVER_QUEUE: "false"
+    SERVER_SCHEDULE: "false"
+    SERVER_WORKERS: "2"
+  healthcheck:
+    disable: true
+  mem_limit: 2g
+  memswap_limit: 2g
+  stop_grace_period: 15s

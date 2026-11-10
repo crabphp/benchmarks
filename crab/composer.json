@@ -1,0 +1,27 @@
+{
+  "name": "crabphp/crab",
+  "description": "A starting point for an application on the Crab framework",
+  "type": "project",
+  "require": {
+    "php": "^8.4",
+    "crabphp/framework": "0.6.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "scripts": {
+    "test": "@php vendor/bin/phpunit",
+    "post-create-project-cmd": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ]
+  },
+  "prefer-stable": true,
+  "minimum-stability": "stable",
+  "config": {
+    "platform": {
+      "php": "8.5.0"
+    }
+  }
+}

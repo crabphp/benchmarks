@@ -1,0 +1,92 @@
+[
+  {
+    "time": 383055.629620733,
+    "spiral": {
+      "cpu_ns": 2744925000,
+      "memory_bytes": 132956160,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 9894254000,
+      "memory_bytes": 558522368,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 10770745000,
+      "memory_bytes": 10162176,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383056.133972088,
+    "spiral": {
+      "cpu_ns": 3580780000,
+      "memory_bytes": 135225344,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 9937294000,
+      "memory_bytes": 558530560,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 10925960000,
+      "memory_bytes": 24997888,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383056.637781441,
+    "spiral": {
+      "cpu_ns": 4576605000,
+      "memory_bytes": 135733248,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 9938353000,
+      "memory_bytes": 558530560,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 10968354000,
+      "memory_bytes": 25399296,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383057.141641841,
+    "spiral": {
+      "cpu_ns": 5575719000,
+      "memory_bytes": 135790592,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 9939423000,
+      "memory_bytes": 558530560,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 11011170000,
+      "memory_bytes": 25808896,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383057.645786724,
+    "spiral": {
+      "cpu_ns": 6573268000,
+      "memory_bytes": 135557120,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 9940494000,
+      "memory_bytes": 558530560,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 11057267000,
+      "memory_bytes": 26050560,
+      "memory_limit": 536870912
+    }
+  }
+]

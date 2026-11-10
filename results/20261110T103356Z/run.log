@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/daudau/Code/crabphp/benchmarks/runner.py", line 200, in <module>
+    print('PREFLIGHT ' + case + ' ' + service, flush=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daudau/Code/crabphp/benchmarks/runner.py", line 42, in command
+    raise RuntimeError(' '.join(args) + '\n' + result.stdout + result.stderr)
+RuntimeError: docker exec 04bc9e7a16ef9c1d8f82d8510ff97ed4830399af71974bd1ede91689e9d7a58f python3 -I /bench/check.py tempest
+Traceback (most recent call last):
+  File "/bench/check.py", line 14, in <module>
+    assert request('/users/10001')[0]==404
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/bench/check.py", line 9, in request
+    raw=r.read();media=r.headers.get('Content-Type','').split(';')[0];assert media=='application/json' or media.endswith('+json'),(path,r.status,raw)
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('/users/10001', 500, b'')
+

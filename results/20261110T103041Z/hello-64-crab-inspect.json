@@ -1,0 +1,258 @@
+{
+  "Id": "4ae06ab6cbe23b94d53c0984ea02c6ebd8f375fd5359f8673c6a7fcb49032eb4",
+  "Created": "2026-11-10T10:31:27.288777602Z",
+  "Path": "/bench/crab/entrypoint.sh",
+  "Args": [],
+  "State": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 1565478,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-11-10T10:31:27.566498772Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+  },
+  "Image": "sha256:eb8a082fd270d60ea3394818c5bfcf069742b933c8e495a3ea87d85f534e11c6",
+  "ResolvConfPath": "/home/daudau/.local/share/docker/containers/4ae06ab6cbe23b94d53c0984ea02c6ebd8f375fd5359f8673c6a7fcb49032eb4/resolv.conf",
+  "HostnamePath": "/home/daudau/.local/share/docker/containers/4ae06ab6cbe23b94d53c0984ea02c6ebd8f375fd5359f8673c6a7fcb49032eb4/hostname",
+  "HostsPath": "/home/daudau/.local/share/docker/containers/4ae06ab6cbe23b94d53c0984ea02c6ebd8f375fd5359f8673c6a7fcb49032eb4/hosts",
+  "LogPath": "/home/daudau/.local/share/docker/containers/4ae06ab6cbe23b94d53c0984ea02c6ebd8f375fd5359f8673c6a7fcb49032eb4/4ae06ab6cbe23b94d53c0984ea02c6ebd8f375fd5359f8673c6a7fcb49032eb4-json.log",
+  "Name": "/crab-benchmark-20261110103041-1562088-crab-1",
+  "RestartCount": 0,
+  "Driver": "overlayfs",
+  "Platform": "linux",
+  "MountLabel": "",
+  "ProcessLabel": "",
+  "AppArmorProfile": "",
+  "ExecIDs": null,
+  "HostConfig": {
+    "Binds": null,
+    "ContainerIDFile": "",
+    "LogConfig": {
+      "Type": "json-file",
+      "Config": {}
+    },
+    "NetworkMode": "crab-benchmark-20261110103041-1562088_default",
+    "PortBindings": {
+      "8080/tcp": [
+        {
+          "HostIp": "127.0.0.1",
+          "HostPort": "23101"
+        }
+      ]
+    },
+    "RestartPolicy": {
+      "Name": "no",
+      "MaximumRetryCount": 0
+    },
+    "AutoRemove": false,
+    "VolumeDriver": "",
+    "VolumesFrom": null,
+    "ConsoleSize": [
+      0,
+      0
+    ],
+    "CapAdd": null,
+    "CapDrop": null,
+    "CgroupnsMode": "private",
+    "Dns": null,
+    "DnsOptions": null,
+    "DnsSearch": null,
+    "ExtraHosts": [],
+    "GroupAdd": null,
+    "IpcMode": "private",
+    "Cgroup": "",
+    "Links": null,
+    "OomScoreAdj": 200,
+    "PidMode": "",
+    "Privileged": false,
+    "PublishAllPorts": false,
+    "ReadonlyRootfs": false,
+    "SecurityOpt": null,
+    "UTSMode": "",
+    "UsernsMode": "",
+    "ShmSize": 67108864,
+    "Runtime": "runc",
+    "Isolation": "",
+    "CpuShares": 0,
+    "Memory": 2147483648,
+    "NanoCpus": 2000000000,
+    "CgroupParent": "",
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": null,
+    "BlkioDeviceReadBps": null,
+    "BlkioDeviceWriteBps": null,
+    "BlkioDeviceReadIOps": null,
+    "BlkioDeviceWriteIOps": null,
+    "CpuPeriod": 0,
+    "CpuQuota": 0,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "CpusetCpus": "",
+    "CpusetMems": "",
+    "Devices": null,
+    "DeviceCgroupRules": null,
+    "DeviceRequests": null,
+    "MemoryReservation": 0,
+    "MemorySwap": 2147483648,
+    "MemorySwappiness": null,
+    "OomKillDisable": null,
+    "PidsLimit": null,
+    "Ulimits": null,
+    "CpuCount": 0,
+    "CpuPercent": 0,
+    "IOMaximumIOps": 0,
+    "IOMaximumBandwidth": 0,
+    "MaskedPaths": [
+      "/proc/acpi",
+      "/proc/asound",
+      "/proc/interrupts",
+      "/proc/kcore",
+      "/proc/keys",
+      "/proc/latency_stats",
+      "/proc/sched_debug",
+      "/proc/scsi",
+      "/proc/timer_list",
+      "/proc/timer_stats",
+      "/sys/devices/virtual/powercap",
+      "/sys/firmware",
+      "/sys/devices/system/cpu/cpu0/thermal_throttle",
+      "/sys/devices/system/cpu/cpu1/thermal_throttle",
+      "/sys/devices/system/cpu/cpu2/thermal_throttle",
+      "/sys/devices/system/cpu/cpu3/thermal_throttle",
+      "/sys/devices/system/cpu/cpu4/thermal_throttle",
+      "/sys/devices/system/cpu/cpu5/thermal_throttle"
+    ],
+    "ReadonlyPaths": [
+      "/proc/bus",
+      "/proc/fs",
+      "/proc/irq",
+      "/proc/sys",
+      "/proc/sysrq-trigger"
+    ]
+  },
+  "Storage": {
+    "RootFS": {
+      "Snapshot": {
+        "Name": "overlayfs"
+      }
+    }
+  },
+  "Mounts": [],
+  "Config": {
+    "Hostname": "4ae06ab6cbe2",
+    "Domainname": "",
+    "User": "",
+    "AttachStdin": false,
+    "AttachStdout": true,
+    "AttachStderr": true,
+    "ExposedPorts": {
+      "8080/tcp": {}
+    },
+    "Tty": false,
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "Env": [
+      "SERVER_WORKERS=2",
+      "DB_USERNAME=bench",
+      "APP_DEBUG=false",
+      "DB_HOST=mysql",
+      "DB_DATABASE=benchmark",
+      "SERVER_QUEUE=false",
+      "DB_PORT=23306",
+      "DB_DRIVER=mysql",
+      "LOG_LEVEL=error",
+      "SERVER_SCHEDULE=false",
+      "DB_PASSWORD=bench",
+      "APP_ENV=production",
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkg-config \t\tre2c",
+      "PHP_INI_DIR=/usr/local/etc/php",
+      "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+      "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+      "PHP_LDFLAGS=-Wl,-O1 -pie",
+      "GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5",
+      "PHP_VERSION=8.5.12",
+      "PHP_URL=https://www.php.net/distributions/php-8.5.12.tar.xz",
+      "PHP_ASC_URL=https://www.php.net/distributions/php-8.5.12.tar.xz.asc",
+      "PHP_SHA256=08bc2eba2a588654ade1357174aa646b761556c862dda0678345ee29ed481209",
+      "COMPOSER_ALLOW_SUPERUSER=1"
+    ],
+    "Cmd": null,
+    "Healthcheck": {
+      "Test": [
+        "NONE"
+      ]
+    },
+    "Image": "crab-benchmark-20261110103041-1562088-crab",
+    "Volumes": null,
+    "WorkingDir": "/srv/crab",
+    "Entrypoint": [
+      "/bench/crab/entrypoint.sh"
+    ],
+    "Labels": {
+      "com.docker.compose.config-hash": "95ff074a043a9f4b317da58cd96e9074cea6c638f6a110012e52b34b51b901e2",
+      "com.docker.compose.container-number": "1",
+      "com.docker.compose.depends_on": "",
+      "com.docker.compose.image": "sha256:eb8a082fd270d60ea3394818c5bfcf069742b933c8e495a3ea87d85f534e11c6",
+      "com.docker.compose.oneoff": "False",
+      "com.docker.compose.project": "crab-benchmark-20261110103041-1562088",
+      "com.docker.compose.project.config_files": "/home/daudau/Code/crabphp/benchmarks/compose.yaml",
+      "com.docker.compose.project.working_dir": "/home/daudau/Code/crabphp/benchmarks",
+      "com.docker.compose.service": "crab",
+      "com.docker.compose.version": "5.1.4"
+    },
+    "StopTimeout": 15
+  },
+  "NetworkSettings": {
+    "SandboxID": "fd607bcfa36694d1c3dcfc7660972d1e6cbfb048f9eb4948579545e4fdf3afb2",
+    "SandboxKey": "/run/user/1000/docker/netns/fd607bcfa366",
+    "Ports": {
+      "8080/tcp": [
+        {
+          "HostIp": "127.0.0.1",
+          "HostPort": "23101"
+        }
+      ]
+    },
+    "Networks": {
+      "crab-benchmark-20261110103041-1562088_default": {
+        "IPAMConfig": null,
+        "Links": null,
+        "Aliases": [
+          "crab-benchmark-20261110103041-1562088-crab-1",
+          "crab"
+        ],
+        "DriverOpts": null,
+        "GwPriority": 0,
+        "NetworkID": "2f28fbb2996a9c17b3f9f819997c936801fa2e874454894f9c2824442dd36916",
+        "EndpointID": "c04e20e85da0bc322b3aeee754a332b514b6f5cdde0f4c59e2a38183b8531e12",
+        "Gateway": "172.21.0.1",
+        "IPAddress": "172.21.0.4",
+        "MacAddress": "de:76:65:ab:06:c3",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "DNSNames": [
+          "crab-benchmark-20261110103041-1562088-crab-1",
+          "crab",
+          "4ae06ab6cbe2"
+        ]
+      }
+    }
+  },
+  "ImageManifestDescriptor": {
+    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+    "digest": "sha256:484b2b2c7515c09a639cca4a480bf196f8128ea4abb1a58ca1bf6b6e512c2b17",
+    "size": 3710,
+    "platform": {
+      "architecture": "amd64",
+      "os": "linux"
+    }
+  }
+}

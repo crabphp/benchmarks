@@ -1,0 +1,92 @@
+[
+  {
+    "time": 383226.794555192,
+    "symfony": {
+      "cpu_ns": 2499010000,
+      "memory_bytes": 74067968,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 24368291000,
+      "memory_bytes": 592035840,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 34006058000,
+      "memory_bytes": 9781248,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383227.299231283,
+    "symfony": {
+      "cpu_ns": 3382661000,
+      "memory_bytes": 74366976,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 24405907000,
+      "memory_bytes": 592523264,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 34156973000,
+      "memory_bytes": 31084544,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383227.80421562,
+    "symfony": {
+      "cpu_ns": 4319962000,
+      "memory_bytes": 74821632,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 24406848000,
+      "memory_bytes": 592285696,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 34213027000,
+      "memory_bytes": 30392320,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383228.308882404,
+    "symfony": {
+      "cpu_ns": 5252549000,
+      "memory_bytes": 74547200,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 24407783000,
+      "memory_bytes": 592035840,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 34266731000,
+      "memory_bytes": 30138368,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383228.813067353,
+    "symfony": {
+      "cpu_ns": 6184392000,
+      "memory_bytes": 74563584,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 24408804000,
+      "memory_bytes": 592035840,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 34323391000,
+      "memory_bytes": 30646272,
+      "memory_limit": 536870912
+    }
+  }
+]

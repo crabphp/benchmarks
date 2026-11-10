@@ -1,0 +1,128 @@
+spiral-1  | [INFO] RoadRunner server started; version: 3.0.1, buildtime: 2026-10-21T19:34:12+0000
+spiral-1  | stop signal received, grace timeout is: 30 seconds
+tempest-1  | {"level":"info","ts":1794306897.9112973,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+tempest-1  | {"level":"info","ts":1794306897.9113076,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+tempest-1  | {"level":"info","ts":1794306897.9113107,"msg":"using config from file","file":"/bench/tempest/Caddyfile"}
+tempest-1  | {"level":"info","ts":1794306897.911312,"msg":"adapted config to JSON","adapter":"caddyfile"}
+tempest-1  | {"level":"warn","ts":1794306897.9113138,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/tempest/Caddyfile","line":2}
+tempest-1  | {"level":"warn","ts":1794306897.9113164,"logger":"admin","msg":"admin endpoint disabled"}
+tempest-1  | {"level":"info","ts":1794306897.9114535,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x28d1008dcd00"}
+tempest-1  | {"level":"info","ts":1794306897.9114604,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+tempest-1  | {"level":"info","ts":1794306898.0595765,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+tempest-1  | {"level":"warn","ts":1794306898.0598063,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"warn","ts":1794306898.0598123,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+tempest-1  | {"level":"info","ts":1794306898.0598145,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+tempest-1  | {"level":"info","ts":1794306898.0601964,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+tempest-1  | {"level":"info","ts":1794306898.060203,"msg":"serving initial configuration"}
+tempest-1  | {"level":"info","ts":1794306898.063149,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/data/caddy"}
+tempest-1  | {"level":"info","ts":1794306898.0663378,"logger":"tls","msg":"finished cleaning storage units"}
+tempest-1  | {"level":"error","ts":1794306898.5317163,"logger":"http.handlers.php","msg":"PHP Fatal error:  Uncaught Tempest\\Http\\HttpRequestFailed in /srv/app/vendor/tempest/framework/packages/router/src/HandleRouteExceptionMiddleware.php:23\nStack trace:\n#0 /srv/app/vendor/tempest/framework/packages/router/src/GenericRouter.php(84): Tempest\\Router\\HandleRouteExceptionMiddleware->__invoke()\n#1 /srv/app/vendor/tempest/framework/packages/router/src/HttpMiddlewareCallable.php(19): Tempest\\Router\\GenericRouter->{closure:Tempest\\Router\\GenericRouter::getCallable():67}()\n#2 /srv/app/vendor/tempest/framework/packages/router/src/GenericRouter.php(36): Tempest\\Router\\HttpMiddlewareCallable->__invoke()\n#3 /srv/app/vendor/tempest/framework/packages/router/src/WorkerModeApplication.php(38): Tempest\\Router\\GenericRouter->dispatch()\n#4 /srv/app/public/index.php(8): Tempest\\Router\\WorkerModeApplication->run()\n#5 [internal function]: {closure:/srv/app/public/index.php:7}()\n#6 /srv/app/public/index.php(10): frankenphp_handle_request()\n#7 {main}\n  thrown in /srv/app/vendor/tempest/framework/packages/router/src/HandleRouteExceptionMiddleware.php on line 23","syslog_level":"err","stacktrace":"log/slog.(*Logger).LogAttrs\n\t/usr/local/go/src/log/slog/logger.go:194\ngithub.com/dunglas/frankenphp.go_log\n\t/go/src/app/frankenphp.go:857\n_cgoexp_fdde15a7b2d9_go_log\n\t/go/src/app/frankenphp.go:804\nruntime.cgocallbackg1\n\t/usr/local/go/src/runtime/cgocall.go:474\nruntime.cgocallbackg\n\t/usr/local/go/src/runtime/cgocall.go:362\nruntime.cgocallback\n\t/usr/local/go/src/runtime/asm_amd64.s:1130"}
+webman-1   | Workerman[start.php] start in DEBUG mode
+webman-1   | -------------------------------------------- WORKERMAN ---------------------------------------------
+webman-1   | Workerman/5.2.3         PHP/8.5.12 (JIT off)          Linux/7.0.12-201.fc44.x86_64
+webman-1   | --------------------------------------------- WORKERS ----------------------------------------------
+webman-1   | event-loop  proto       user        worker      listen                 count       state            
+webman-1   | event       tcp         root        webman      http://0.0.0.0:8080    2            [OK]            
+webman-1   | ----------------------------------------------------------------------------------------------------
+webman-1   | Press Ctrl+C to stop. Start success.
+webman-1   | Workerman[start.php] received signal SIGTERM
+webman-1   | Workerman[start.php] stopping
+webman-1   | Workerman[start.php] has been stopped
+laravel-1  | {"level":"info","ts":1794306895.8380117,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+laravel-1  | {"level":"info","ts":1794306895.8380206,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+laravel-1  | {"level":"info","ts":1794306895.8380234,"msg":"using config from file","file":"/srv/app/vendor/laravel/octane/src/Commands/stubs/Caddyfile"}
+laravel-1  | {"level":"info","ts":1794306895.8380253,"msg":"adapted config to JSON","adapter":"caddyfile"}
+crab-1     | Starting Crab server on http://localhost:8080
+laravel-1  | {"level":"info","ts":1794306895.8386495,"logger":"admin","msg":"admin endpoint started","address":"localhost:2019","enforce_origin":false,"origins":["//localhost:2019","//[::1]:2019","//127.0.0.1:2019"]}
+laravel-1  | {"level":"info","ts":1794306895.8388329,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x3d67ab2d9b80"}
+laravel-1  | {"level":"info","ts":1794306896.022079,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+laravel-1  | {"level":"warn","ts":1794306896.0221896,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"info","ts":1794306889.7422814,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+symfony-1  | {"level":"info","ts":1794306889.7422903,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+symfony-1  | {"level":"info","ts":1794306889.742293,"msg":"using config from file","file":"/bench/symfony/Caddyfile"}
+crab-1     | Press Ctrl+C to stop
+symfony-1  | {"level":"info","ts":1794306889.7422948,"msg":"adapted config to JSON","adapter":"caddyfile"}
+symfony-1  | {"level":"warn","ts":1794306889.742296,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/bench/symfony/Caddyfile","line":2}
+symfony-1  | {"level":"warn","ts":1794306889.7422993,"logger":"admin","msg":"admin endpoint disabled"}
+symfony-1  | {"level":"info","ts":1794306889.7424452,"logger":"http.auto_https","msg":"automatic HTTPS is completely disabled for server","server_name":"srv0"}
+symfony-1  | {"level":"info","ts":1794306889.7424455,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x2adefa772a80"}
+symfony-1  | {"level":"warn","ts":1794306889.7428322,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+symfony-1  | {"level":"warn","ts":1794306889.7428408,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"warn","ts":1794306896.0221949,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"info","ts":1794306896.0221972,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+laravel-1  | {"level":"info","ts":1794306896.0225482,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+mysql-1    | 2026-11-10 10:34:24+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.13-1.el9 started.
+mysql-1    | 2026-11-10 10:34:24+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+mysql-1    | 2026-11-10 10:34:24+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.13-1.el9 started.
+mysql-1    | 2026-11-10 10:34:25+00:00 [Note] [Entrypoint]: Initializing database files
+laravel-1  | {"level":"info","ts":1794306896.0225546,"msg":"serving initial configuration"}
+laravel-1  | {"level":"info","ts":1794306896.0258696,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/data/caddy"}
+laravel-1  | {"level":"info","ts":1794306896.0288885,"logger":"tls","msg":"finished cleaning storage units"}
+mysql-1    | 2026-11-10T10:34:25.099217Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+mysql-1    | 2026-11-10T10:34:25.100522Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.4.13) initializing of server in progress as process 80
+mysql-1    | 2026-11-10T10:34:25.100524Z 0 [System] [MY-015150] [Server] Server version with update: '8.4.13.0'
+mysql-1    | 2026-11-10T10:34:25.109795Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+mysql-1    | 2026-11-10T10:34:25.851680Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+mysql-1    | 2026-11-10T10:34:28.187231Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+mysql-1    | 2026-11-10T10:34:31.151899Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+mysql-1    | 2026-11-10 10:34:31+00:00 [Note] [Entrypoint]: Database files initialized
+mysql-1    | 2026-11-10 10:34:31+00:00 [Note] [Entrypoint]: Starting temporary server
+mysql-1    | 2026-11-10T10:34:31.190451Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+mysql-1    | 2026-11-10T10:34:31.421106Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.4.13) starting as process 139
+mysql-1    | 2026-11-10T10:34:31.421109Z 0 [System] [MY-015150] [Server] Server version with update: '8.4.13.0'
+mysql-1    | 2026-11-10T10:34:31.440039Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+mysql-1    | 2026-11-10T10:34:31.770001Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+mysql-1    | 2026-11-10T10:34:32.268185Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+mysql-1    | 2026-11-10T10:34:32.268275Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+mysql-1    | 2026-11-10T10:34:32.278757Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+mysql-1    | 2026-11-10T10:34:32.306313Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.4.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+mysql-1    | 2026-11-10 10:34:32+00:00 [Note] [Entrypoint]: Temporary server started.
+mysql-1    | '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+mysql-1    | 2026-11-10 10:34:33+00:00 [Note] [Entrypoint]: Creating database benchmark
+mysql-1    | 2026-11-10 10:34:33+00:00 [Note] [Entrypoint]: Creating user bench
+mysql-1    | 2026-11-10 10:34:33+00:00 [Note] [Entrypoint]: Giving user bench access to schema benchmark
+mysql-1    | 
+mysql-1    | 2026-11-10 10:34:33+00:00 [Note] [Entrypoint]: /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+mysql-1    | 
+mysql-1    | 
+symfony-1  | {"level":"info","ts":1794306889.742843,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+symfony-1  | {"level":"info","ts":1794306889.7452846,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/data/caddy"}
+symfony-1  | {"level":"info","ts":1794306889.7476454,"logger":"tls","msg":"finished cleaning storage units"}
+symfony-1  | {"level":"info","ts":1794306890.0047843,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+symfony-1  | {"level":"info","ts":1794306890.005049,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+symfony-1  | {"level":"info","ts":1794306890.0050554,"msg":"serving initial configuration"}
+symfony-1  | {"level":"info","ts":1794306890.7254844,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type string.\nThis value should be of type string.\nThis value should be of type int.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794306890.7285364,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value is too short. It should have 1 character or more.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794306890.7295754,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value is too long. It should have 100 characters or less.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794306890.7304995,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value is too long. It should have 100 characters or less.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794306890.7314448,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type string.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794306890.7323647,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value is not a valid email address.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794306890.7333233,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be between 18 and 120.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794306890.7342806,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be between 18 and 120.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794306890.7352095,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type int.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794306890.7361252,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type int.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794306890.737049,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type int.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794306890.738418,"logger":"http.handlers.php","msg":"[error] Uncaught PHP Exception Symfony\\Component\\HttpKernel\\Exception\\UnprocessableEntityHttpException: \"This value should be of type int.\" at HttpException.php line 44","syslog_level":"notice"}
+symfony-1  | {"level":"info","ts":1794306891.2062576,"msg":"shutting down apps, then terminating","signal":"SIGTERM"}
+symfony-1  | {"level":"warn","ts":1794306891.2062993,"msg":"exiting; byeee!! 👋","signal":"SIGTERM"}
+symfony-1  | {"level":"info","ts":1794306891.2063127,"logger":"http","msg":"servers shutting down with eternal grace period"}
+symfony-1  | {"level":"info","ts":1794306891.2064133,"logger":"frankenphp","msg":"FrankenPHP stopped 🐘"}
+symfony-1  | {"level":"info","ts":1794306891.2064645,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x2adefa772a80"}
+symfony-1  | {"level":"info","ts":1794306891.2119877,"msg":"shutdown complete","signal":"SIGTERM","exit_code":0}
+mysql-1    | 2026-11-10 10:34:34+00:00 [Note] [Entrypoint]: Stopping temporary server
+mysql-1    | 2026-11-10T10:34:34.302353Z 14 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.4.13).
+mysql-1    | 2026-11-10T10:34:35.633369Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.4.13)  MySQL Community Server - GPL.
+mysql-1    | 2026-11-10T10:34:35.633386Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+mysql-1    | 2026-11-10 10:34:36+00:00 [Note] [Entrypoint]: Temporary server stopped
+mysql-1    | 
+mysql-1    | 2026-11-10 10:34:36+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+mysql-1    | 
+mysql-1    | 2026-11-10T10:34:36.327924Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+mysql-1    | 2026-11-10T10:34:36.557268Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.4.13) starting as process 1
+mysql-1    | 2026-11-10T10:34:36.557272Z 0 [System] [MY-015150] [Server] Server version with update: '8.4.13.0'
+mysql-1    | 2026-11-10T10:34:36.568521Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+mysql-1    | 2026-11-10T10:34:36.943655Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+mysql-1    | 2026-11-10T10:34:37.283575Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+mysql-1    | 2026-11-10T10:34:37.283610Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+mysql-1    | 2026-11-10T10:34:37.289136Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+mysql-1    | 2026-11-10T10:34:37.327676Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.4.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 23306  MySQL Community Server - GPL.

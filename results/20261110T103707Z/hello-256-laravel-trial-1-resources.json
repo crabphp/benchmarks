@@ -1,0 +1,92 @@
+[
+  {
+    "time": 383121.544949078,
+    "laravel": {
+      "cpu_ns": 3089157000,
+      "memory_bytes": 128937984,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 11513369000,
+      "memory_bytes": 555843584,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 22576570000,
+      "memory_bytes": 10084352,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383122.050308395,
+    "laravel": {
+      "cpu_ns": 4023147000,
+      "memory_bytes": 131547136,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 11550196000,
+      "memory_bytes": 556085248,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 22689571000,
+      "memory_bytes": 27508736,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383122.554156437,
+    "laravel": {
+      "cpu_ns": 5023158000,
+      "memory_bytes": 132358144,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 11551241000,
+      "memory_bytes": 556085248,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 22715491000,
+      "memory_bytes": 28033024,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383123.057890789,
+    "laravel": {
+      "cpu_ns": 6024550000,
+      "memory_bytes": 132902912,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 11552256000,
+      "memory_bytes": 555843584,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 22742999000,
+      "memory_bytes": 28516352,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383123.562183132,
+    "laravel": {
+      "cpu_ns": 7028258000,
+      "memory_bytes": 132689920,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 11553167000,
+      "memory_bytes": 555843584,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 22770103000,
+      "memory_bytes": 28340224,
+      "memory_limit": 536870912
+    }
+  }
+]

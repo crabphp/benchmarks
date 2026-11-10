@@ -1,0 +1,2 @@
+# Preserve raw evidence exactly, including upstream console whitespace.
+results/** -text -whitespace

@@ -1,0 +1,28 @@
+laravel-1  | {"level":"info","ts":1794307263.3198102,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+laravel-1  | {"level":"info","ts":1794307263.3198178,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+laravel-1  | {"level":"info","ts":1794307263.3198206,"msg":"using config from file","file":"/srv/app/vendor/laravel/octane/src/Commands/stubs/Caddyfile"}
+laravel-1  | {"level":"info","ts":1794307263.319822,"msg":"adapted config to JSON","adapter":"caddyfile"}
+laravel-1  | {"level":"info","ts":1794307263.3204737,"logger":"admin","msg":"admin endpoint started","address":"localhost:2019","enforce_origin":false,"origins":["//localhost:2019","//[::1]:2019","//127.0.0.1:2019"]}
+laravel-1  | {"level":"info","ts":1794307263.3206747,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x2f29abc2b280"}
+laravel-1  | {"level":"info","ts":1794307263.5007083,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+laravel-1  | {"level":"warn","ts":1794307263.5008185,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"warn","ts":1794307263.5008237,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"info","ts":1794307263.5008261,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+laravel-1  | {"level":"info","ts":1794307263.5012,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+laravel-1  | {"level":"info","ts":1794307263.5012057,"msg":"serving initial configuration"}
+laravel-1  | {"level":"info","ts":1794307263.50684,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/data/caddy"}
+laravel-1  | {"level":"info","ts":1794307263.5100758,"logger":"tls","msg":"finished cleaning storage units"}
+laravel-1  | {"level":"info","ts":1794307298.5446806,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+laravel-1  | {"level":"info","ts":1794307298.54469,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+laravel-1  | {"level":"info","ts":1794307298.5446928,"msg":"using config from file","file":"/srv/app/vendor/laravel/octane/src/Commands/stubs/Caddyfile"}
+laravel-1  | {"level":"info","ts":1794307298.5446944,"msg":"adapted config to JSON","adapter":"caddyfile"}
+laravel-1  | {"level":"info","ts":1794307298.5452127,"logger":"admin","msg":"admin endpoint started","address":"localhost:2019","enforce_origin":false,"origins":["//127.0.0.1:2019","//localhost:2019","//[::1]:2019"]}
+laravel-1  | {"level":"info","ts":1794307298.5454276,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x7bd42868d80"}
+laravel-1  | {"level":"warn","ts":1794307298.5456774,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"warn","ts":1794307298.5456824,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":8080"}
+laravel-1  | {"level":"info","ts":1794307298.5456846,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+laravel-1  | {"level":"info","ts":1794307298.5492887,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/data/caddy","instance":"50f3ffd9-6c32-4b72-97a0-5de8ba5b1df4","try_again":1794393698.5492873,"try_again_in":86399.999999679}
+laravel-1  | {"level":"info","ts":1794307298.5493526,"logger":"tls","msg":"finished cleaning storage units"}
+laravel-1  | {"level":"info","ts":1794307298.7285933,"logger":"frankenphp","msg":"FrankenPHP started 🐘","php_version":"8.5.12","total_threads":4,"worker_threads":2,"max_threads":4,"max_requests":0}
+laravel-1  | {"level":"info","ts":1794307298.728735,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+laravel-1  | {"level":"info","ts":1794307298.7287407,"msg":"serving initial configuration"}

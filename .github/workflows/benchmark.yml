@@ -1,0 +1,35 @@
+name: Reproduce benchmark
+on:
+  workflow_dispatch:
+    inputs:
+      full:
+        description: Run the full five-trial method (about 50 minutes)
+        type: boolean
+        default: false
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  benchmark:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run frozen fixtures
+        shell: bash
+        env:
+          FULL: ${{ inputs.full || false }}
+        run: |
+          if [ "$FULL" = true ]; then
+            ./run.sh
+          else
+            BENCH_WARMUP=1 BENCH_DURATION=2 BENCH_TRIALS=1 ./run.sh
+          fi
+      - name: Retain raw evidence, including failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-results
+          path: results/

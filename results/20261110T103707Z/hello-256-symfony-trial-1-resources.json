@@ -1,0 +1,92 @@
+[
+  {
+    "time": 383109.262782609,
+    "symfony": {
+      "cpu_ns": 2615278000,
+      "memory_bytes": 88338432,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 11174670000,
+      "memory_bytes": 556892160,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 21609697000,
+      "memory_bytes": 10285056,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383109.767950399,
+    "symfony": {
+      "cpu_ns": 3493136000,
+      "memory_bytes": 89755648,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 11212977000,
+      "memory_bytes": 556892160,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 21754417000,
+      "memory_bytes": 28262400,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383110.272127272,
+    "symfony": {
+      "cpu_ns": 4507732000,
+      "memory_bytes": 89485312,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 11214226000,
+      "memory_bytes": 556892160,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 21820193000,
+      "memory_bytes": 28102656,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383110.777797161,
+    "symfony": {
+      "cpu_ns": 5515980000,
+      "memory_bytes": 89083904,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 11215221000,
+      "memory_bytes": 556892160,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 21885187000,
+      "memory_bytes": 28626944,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 383111.281955094,
+    "symfony": {
+      "cpu_ns": 6517379000,
+      "memory_bytes": 90353664,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 11216246000,
+      "memory_bytes": 556892160,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 21946175000,
+      "memory_bytes": 28577792,
+      "memory_limit": 536870912
+    }
+  }
+]

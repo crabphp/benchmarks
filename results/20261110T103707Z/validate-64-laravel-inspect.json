@@ -1,0 +1,282 @@
+{
+  "Id": "2260de86a7fe335996038cc7eba645858757f38a5a5932ee1e31969aa5c105cd",
+  "Created": "2026-11-10T10:41:02.553313576Z",
+  "Path": "/bench/laravel-octane/entrypoint.sh",
+  "Args": [],
+  "State": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 1605255,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-11-10T10:41:02.709107476Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+  },
+  "Image": "sha256:e0ca1f3911444b2bc48820f405a6a450774ab65abb006e06d9bb08d5c43ead1c",
+  "ResolvConfPath": "/home/daudau/.local/share/docker/containers/2260de86a7fe335996038cc7eba645858757f38a5a5932ee1e31969aa5c105cd/resolv.conf",
+  "HostnamePath": "/home/daudau/.local/share/docker/containers/2260de86a7fe335996038cc7eba645858757f38a5a5932ee1e31969aa5c105cd/hostname",
+  "HostsPath": "/home/daudau/.local/share/docker/containers/2260de86a7fe335996038cc7eba645858757f38a5a5932ee1e31969aa5c105cd/hosts",
+  "LogPath": "/home/daudau/.local/share/docker/containers/2260de86a7fe335996038cc7eba645858757f38a5a5932ee1e31969aa5c105cd/2260de86a7fe335996038cc7eba645858757f38a5a5932ee1e31969aa5c105cd-json.log",
+  "Name": "/crab-benchmark-20261110103707-1584962-laravel-1",
+  "RestartCount": 0,
+  "Driver": "overlayfs",
+  "Platform": "linux",
+  "MountLabel": "",
+  "ProcessLabel": "",
+  "AppArmorProfile": "",
+  "ExecIDs": null,
+  "HostConfig": {
+    "Binds": null,
+    "ContainerIDFile": "",
+    "LogConfig": {
+      "Type": "json-file",
+      "Config": {}
+    },
+    "NetworkMode": "crab-benchmark-20261110103707-1584962_default",
+    "PortBindings": {
+      "8080/tcp": [
+        {
+          "HostIp": "127.0.0.1",
+          "HostPort": "23106"
+        }
+      ]
+    },
+    "RestartPolicy": {
+      "Name": "no",
+      "MaximumRetryCount": 0
+    },
+    "AutoRemove": false,
+    "VolumeDriver": "",
+    "VolumesFrom": null,
+    "ConsoleSize": [
+      0,
+      0
+    ],
+    "CapAdd": null,
+    "CapDrop": null,
+    "CgroupnsMode": "private",
+    "Dns": null,
+    "DnsOptions": null,
+    "DnsSearch": null,
+    "ExtraHosts": [],
+    "GroupAdd": null,
+    "IpcMode": "private",
+    "Cgroup": "",
+    "Links": null,
+    "OomScoreAdj": 200,
+    "PidMode": "",
+    "Privileged": false,
+    "PublishAllPorts": false,
+    "ReadonlyRootfs": false,
+    "SecurityOpt": null,
+    "UTSMode": "",
+    "UsernsMode": "",
+    "ShmSize": 67108864,
+    "Runtime": "runc",
+    "Isolation": "",
+    "CpuShares": 0,
+    "Memory": 2147483648,
+    "NanoCpus": 2000000000,
+    "CgroupParent": "",
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": null,
+    "BlkioDeviceReadBps": null,
+    "BlkioDeviceWriteBps": null,
+    "BlkioDeviceReadIOps": null,
+    "BlkioDeviceWriteIOps": null,
+    "CpuPeriod": 0,
+    "CpuQuota": 0,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "CpusetCpus": "",
+    "CpusetMems": "",
+    "Devices": null,
+    "DeviceCgroupRules": null,
+    "DeviceRequests": null,
+    "MemoryReservation": 0,
+    "MemorySwap": 2147483648,
+    "MemorySwappiness": null,
+    "OomKillDisable": null,
+    "PidsLimit": null,
+    "Ulimits": null,
+    "CpuCount": 0,
+    "CpuPercent": 0,
+    "IOMaximumIOps": 0,
+    "IOMaximumBandwidth": 0,
+    "MaskedPaths": [
+      "/proc/acpi",
+      "/proc/asound",
+      "/proc/interrupts",
+      "/proc/kcore",
+      "/proc/keys",
+      "/proc/latency_stats",
+      "/proc/sched_debug",
+      "/proc/scsi",
+      "/proc/timer_list",
+      "/proc/timer_stats",
+      "/sys/devices/virtual/powercap",
+      "/sys/firmware",
+      "/sys/devices/system/cpu/cpu0/thermal_throttle",
+      "/sys/devices/system/cpu/cpu1/thermal_throttle",
+      "/sys/devices/system/cpu/cpu2/thermal_throttle",
+      "/sys/devices/system/cpu/cpu3/thermal_throttle",
+      "/sys/devices/system/cpu/cpu4/thermal_throttle",
+      "/sys/devices/system/cpu/cpu5/thermal_throttle"
+    ],
+    "ReadonlyPaths": [
+      "/proc/bus",
+      "/proc/fs",
+      "/proc/irq",
+      "/proc/sys",
+      "/proc/sysrq-trigger"
+    ]
+  },
+  "Storage": {
+    "RootFS": {
+      "Snapshot": {
+        "Name": "overlayfs"
+      }
+    }
+  },
+  "Mounts": [],
+  "Config": {
+    "Hostname": "2260de86a7fe",
+    "Domainname": "",
+    "User": "",
+    "AttachStdin": false,
+    "AttachStdout": true,
+    "AttachStderr": true,
+    "ExposedPorts": {
+      "2019/tcp": {},
+      "443/tcp": {},
+      "443/udp": {},
+      "80/tcp": {},
+      "8080/tcp": {}
+    },
+    "Tty": false,
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "Env": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkg-config \t\tre2c",
+      "PHP_INI_DIR=/usr/local/etc/php",
+      "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+      "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+      "PHP_LDFLAGS=-Wl,-O1 -pie",
+      "GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5",
+      "PHP_VERSION=8.5.12",
+      "PHP_URL=https://www.php.net/distributions/php-8.5.12.tar.xz",
+      "PHP_ASC_URL=https://www.php.net/distributions/php-8.5.12.tar.xz.asc",
+      "PHP_SHA256=08bc2eba2a588654ade1357174aa646b761556c862dda0678345ee29ed481209",
+      "XDG_CONFIG_HOME=/config",
+      "XDG_DATA_HOME=/data",
+      "GODEBUG=cgocheck=0",
+      "COMPOSER_ALLOW_SUPERUSER=1",
+      "APP_ENV=production",
+      "APP_DEBUG=0",
+      "APP_SECRET=benchmark-secret",
+      "APP_KEY=base64:MDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWY=",
+      "DB_CONNECTION=mysql",
+      "DB_HOST=mysql",
+      "DB_PORT=23306",
+      "DB_DATABASE=benchmark",
+      "DB_USERNAME=bench",
+      "DB_PASSWORD=bench",
+      "DATABASE_URL=mysql://bench:bench@mysql:23306/benchmark",
+      "SESSION_DRIVER=array",
+      "CACHE_STORE=array",
+      "QUEUE_CONNECTION=sync",
+      "LOG_CHANNEL=stderr",
+      "LOG_LEVEL=error"
+    ],
+    "Cmd": null,
+    "Healthcheck": {
+      "Test": [
+        "NONE"
+      ]
+    },
+    "Image": "crab-benchmark-20261110103707-1584962-laravel",
+    "Volumes": null,
+    "WorkingDir": "/srv/app",
+    "Entrypoint": [
+      "/bench/laravel-octane/entrypoint.sh"
+    ],
+    "Labels": {
+      "com.docker.compose.config-hash": "3056fee428cd4e65801d58a3c49898bb01ddd79a85d50d81bdb716f7a21f38b7",
+      "com.docker.compose.container-number": "1",
+      "com.docker.compose.depends_on": "",
+      "com.docker.compose.image": "sha256:e0ca1f3911444b2bc48820f405a6a450774ab65abb006e06d9bb08d5c43ead1c",
+      "com.docker.compose.oneoff": "False",
+      "com.docker.compose.project": "crab-benchmark-20261110103707-1584962",
+      "com.docker.compose.project.config_files": "/home/daudau/Code/crabphp/benchmarks/compose.yaml",
+      "com.docker.compose.project.working_dir": "/home/daudau/Code/crabphp/benchmarks",
+      "com.docker.compose.service": "laravel",
+      "com.docker.compose.version": "5.1.4",
+      "org.opencontainers.image.created": "2026-11-05T10:35:09Z",
+      "org.opencontainers.image.description": "The modern PHP app server",
+      "org.opencontainers.image.licenses": "MIT",
+      "org.opencontainers.image.revision": "a3663e9e2cc4c258018a28ee068e50cc12f3ed2d",
+      "org.opencontainers.image.source": "https://github.com/php/frankenphp",
+      "org.opencontainers.image.title": "FrankenPHP",
+      "org.opencontainers.image.url": "https://frankenphp.dev",
+      "org.opencontainers.image.vendor": "K\u00e9vin Dunglas",
+      "org.opencontainers.image.version": "v1.13.5"
+    },
+    "StopTimeout": 15
+  },
+  "NetworkSettings": {
+    "SandboxID": "f9a42e82c8156d6056832851cb1a099464f09c4db4ce829b4bcaf9b060cc39cf",
+    "SandboxKey": "/run/user/1000/docker/netns/f9a42e82c815",
+    "Ports": {
+      "2019/tcp": null,
+      "443/tcp": null,
+      "443/udp": null,
+      "80/tcp": null,
+      "8080/tcp": [
+        {
+          "HostIp": "127.0.0.1",
+          "HostPort": "23106"
+        }
+      ]
+    },
+    "Networks": {
+      "crab-benchmark-20261110103707-1584962_default": {
+        "IPAMConfig": null,
+        "Links": null,
+        "Aliases": [
+          "crab-benchmark-20261110103707-1584962-laravel-1",
+          "laravel"
+        ],
+        "DriverOpts": null,
+        "GwPriority": 0,
+        "NetworkID": "078acdfe946f123163ce6aad4e9617602c96bf630be34a51601ad9491ef51d22",
+        "EndpointID": "0433c8e3d4ccf3fc87e6f139b00481875218a71021650e056c965fd77fa9227e",
+        "Gateway": "172.21.0.1",
+        "IPAddress": "172.21.0.4",
+        "MacAddress": "5e:78:86:d6:4a:1a",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "DNSNames": [
+          "crab-benchmark-20261110103707-1584962-laravel-1",
+          "laravel",
+          "2260de86a7fe"
+        ]
+      }
+    }
+  },
+  "ImageManifestDescriptor": {
+    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+    "digest": "sha256:258abe50aaed771b11be55880fe1dcc4ac024e91f898568d3452fef910499393",
+    "size": 5800,
+    "platform": {
+      "architecture": "amd64",
+      "os": "linux"
+    }
+  }
+}
