@@ -7,7 +7,7 @@ parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('results',type=Path)
 parser.add_argument('--site',type=Path,required=True)
 args=parser.parse_args()
-audit(args.results,require_full=True)
+verification=audit(args.results,require_full=True)
 metadata=json.loads((args.results/'metadata.json').read_text())
 summary=json.loads((args.results/'summary.json').read_text())
 versions=json.loads((args.results/'versions.json').read_text())
@@ -40,6 +40,14 @@ section=f'''      <section class="section" aria-labelledby="benchmarks">
         </div>
         <p class="faint">Measured {date} on a shared Linux {html.escape(metadata['docker']['Architecture'])} machine with {metadata['docker']['NCPU']} logical CPUs, using Docker. Each application has the same 2-CPU quota and 2 GiB limit; CPU cores are shared. Zero errors across all measured trials and warmups. Small synthetic workloads, not a universal ranking or a capacity estimate. <a href="{url}">Raw results and trial ranges <span aria-hidden="true">↗</span></a> · <a href="https://github.com/crabphp/benchmarks">Methodology and one-command reproduction <span aria-hidden="true">↗</span></a></p>
         <p class="faint">Symfony's database trials ranged from {symfony_db['rps_min']:,.0f} to {symfony_db['rps_max']:,.0f} requests/s. Its median should be read alongside that variability.</p>
+        <details>
+          <summary>Verify the benchmark evidence</summary>
+          <p>{verification['verified_trials']} measured trials and {verification['verified_warmups']} warmups were checked against the retained raw logs. The audit recomputes the medians and records SHA-256 hashes of those logs. It is reproducible with the public script; it is not a third-party certification.</p>
+          <p><a href="{url}/audit.json">Raw-log audit and hashes</a> · <a href="{url}/versions.json">Exact framework and PHP versions</a> · <a href="{url}/metadata.json">Machine and run settings</a> · <a href="{url}/harness">Source snapshot used for this run</a></p>
+          <p>From a clone of <a href="https://github.com/crabphp/benchmarks">crabphp/benchmarks</a>, verify the published data:</p>
+          <p><code>python3 audit.py results/{html.escape(args.results.name)} --require-full</code></p>
+          <p>To run a new benchmark on your machine, use <code>./run.sh</code>. Prerequisites: Docker Compose, Python 3.12+ and Bash. Results will vary with hardware and host activity.</p>
+        </details>
       </section>'''
 p=args.site/'index.html';text=p.read_text();start=text.index('      <section class="section" aria-labelledby="benchmarks">');end=text.index('      </section>',start)+len('      </section>');p.write_text(text[:start]+section+text[end:])
 print('Updated',p)
