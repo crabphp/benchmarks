@@ -1,0 +1,42 @@
+[
+  {
+    "case": "hello-64",
+    "service": "reactphp",
+    "ready_seconds": 1.5221391500090249
+  },
+  {
+    "case": "hello-64",
+    "service": "amphp",
+    "ready_seconds": 0.7619889009511098
+  },
+  {
+    "case": "hello-256",
+    "service": "reactphp",
+    "ready_seconds": 0.7285091090016067
+  },
+  {
+    "case": "hello-256",
+    "service": "amphp",
+    "ready_seconds": 0.9542658249847591
+  },
+  {
+    "case": "db-64",
+    "service": "reactphp",
+    "ready_seconds": 1.5617459659697488
+  },
+  {
+    "case": "db-64",
+    "service": "amphp",
+    "ready_seconds": 0.6721957169938833
+  },
+  {
+    "case": "validate-64",
+    "service": "reactphp",
+    "ready_seconds": 0.7020119160297327
+  },
+  {
+    "case": "validate-64",
+    "service": "amphp",
+    "ready_seconds": 0.7445169650018215
+  }
+]

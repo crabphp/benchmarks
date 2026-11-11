@@ -15,9 +15,9 @@ import urllib.request
 ROOT = Path(__file__).resolve().parent
 OUT = Path(os.environ['BENCH_RESULTS'])
 OUT.mkdir(parents=True, exist_ok=True)
-ALL_SERVICES = ['crab', 'webman', 'hyperf', 'symfony', 'spiral', 'laravel', 'tempest']
+ALL_SERVICES = ['crab', 'webman', 'hyperf', 'symfony', 'spiral', 'laravel', 'tempest', 'reactphp', 'amphp']
 SERVICES = ALL_SERVICES.copy()
-PORTS = dict(zip(SERVICES, range(23101, 23108)))
+PORTS = dict(zip(SERVICES, range(23101, 23101 + len(SERVICES))))
 if os.environ.get('BENCH_SERVICES'):
     requested = os.environ['BENCH_SERVICES'].split(',')
     if set(requested) - set(ALL_SERVICES):
@@ -32,6 +32,13 @@ if os.environ.get('BENCH_CASES'):
     if set(requested) - {'hello', 'db', 'validate'}:
         raise ValueError('Unknown BENCH_CASES: ' + repr(requested))
     CASES = [case for case in CASES if case[0] in requested]
+if os.environ.get('BENCH_CONNECTIONS'):
+    requested = {int(value) for value in os.environ['BENCH_CONNECTIONS'].split(',')}
+    if requested - {64, 256}:
+        raise ValueError('BENCH_CONNECTIONS must select 64 and/or 256.')
+    CASES = [case for case in CASES if case[1] in requested]
+if not CASES:
+    raise ValueError('No cases selected.')
 if min(WARM, DURATION, TRIALS) < 1:
     raise ValueError('Warmup, duration and trials must be positive integers.')
 
@@ -164,6 +171,7 @@ metadata = {'started_utc': dt.datetime.now(dt.timezone.utc).isoformat(), 'host':
             'cpu_affinity': 'not pinned; equal CPU quotas, shared host',
             'sources': json.loads((ROOT / 'sources.json').read_text()),
             'warmup_seconds': WARM, 'duration_seconds': DURATION, 'trials': TRIALS,
+            'services': SERVICES, 'cases': CASES,
             'full_method': WARM == 5 and DURATION == 15 and TRIALS == 5 and len(CASES) == 4 and SERVICES == ALL_SERVICES,
             'images': (ROOT / 'images.env').read_text(),
             'excluded': []}

@@ -7,6 +7,8 @@ def request(path,data=None):
     connection.request('GET' if body is None else 'POST',path,body,headers)
     r=connection.getresponse()
     raw=r.read();media=r.headers.get('Content-Type','').split(';')[0];assert media=='application/json' or media.endswith('+json'),(path,r.status,raw)
+    # Hello's load checker requires identical compact JSON bytes, not only equivalent values.
+    if path.split('?',1)[0]=='/hello':assert raw==b'{"message":"Hello, world"}',(path,r.status,raw)
     return r.status,json.loads(raw)
 assert request('/hello')==(200,{'message':'Hello, world'})
 for i in [1,57,997,10000]:
@@ -28,5 +30,12 @@ assert metadata['opcache']=='1'and metadata['timestamps']=='0',metadata
 if sys.argv[1]=='webman':assert metadata['workers']==2 and metadata['persistent'] and metadata['event']=='3.2.0',metadata
 if sys.argv[1]=='hyperf':assert metadata['workers']==2 and metadata['scan_cacheable'] and metadata['swoole']=='6.2.5',metadata
 if sys.argv[1]=='spiral':assert metadata['workers']==2 and metadata['tokenizer_cache'],metadata
+if sys.argv[1] in ['reactphp', 'amphp']:
+    assert metadata['workers']==2 and metadata['pool_per_worker']==10 and metadata['persistent'],metadata
+    assert metadata['event']=='3.2.0' and metadata['validation']=='explicit PHP checks',metadata
+    if sys.argv[1]=='reactphp':
+        assert metadata['loop']=='React\\EventLoop\\ExtEventLoop' and metadata['database_driver']=='react/mysql',metadata
+    else:
+        assert metadata['loop']=='Revolt\\EventLoop\\Driver\\EventDriver' and metadata['database_driver']=='amphp/mysql',metadata
 connection.close()
 print(json.dumps({'ok':True,'metadata':metadata}))

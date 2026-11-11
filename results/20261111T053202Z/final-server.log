@@ -1,0 +1,50 @@
+mysql-1  | 2026-11-11 05:32:16+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.13-1.el9 started.
+mysql-1  | 2026-11-11 05:32:16+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+mysql-1  | 2026-11-11 05:32:16+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.13-1.el9 started.
+mysql-1  | 2026-11-11 05:32:16+00:00 [Note] [Entrypoint]: Initializing database files
+mysql-1  | 2026-11-11T05:32:16.756620Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+mysql-1  | 2026-11-11T05:32:16.757925Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.4.13) initializing of server in progress as process 80
+mysql-1  | 2026-11-11T05:32:16.757926Z 0 [System] [MY-015150] [Server] Server version with update: '8.4.13.0'
+mysql-1  | 2026-11-11T05:32:16.767475Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+mysql-1  | 2026-11-11T05:32:17.512392Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+mysql-1  | 2026-11-11T05:32:20.103558Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+mysql-1  | 2026-11-11T05:32:23.926592Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+mysql-1  | 2026-11-11 05:32:23+00:00 [Note] [Entrypoint]: Database files initialized
+mysql-1  | 2026-11-11 05:32:23+00:00 [Note] [Entrypoint]: Starting temporary server
+mysql-1  | 2026-11-11T05:32:23.962812Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+mysql-1  | 2026-11-11T05:32:24.193499Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.4.13) starting as process 140
+mysql-1  | 2026-11-11T05:32:24.193502Z 0 [System] [MY-015150] [Server] Server version with update: '8.4.13.0'
+mysql-1  | 2026-11-11T05:32:24.213710Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+mysql-1  | 2026-11-11T05:32:24.701991Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+mysql-1  | 2026-11-11T05:32:25.160420Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+mysql-1  | 2026-11-11T05:32:25.160535Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+mysql-1  | 2026-11-11T05:32:25.169947Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+mysql-1  | 2026-11-11T05:32:25.196091Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.4.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+mysql-1  | 2026-11-11 05:32:25+00:00 [Note] [Entrypoint]: Temporary server started.
+mysql-1  | '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+mysql-1  | 2026-11-11 05:32:26+00:00 [Note] [Entrypoint]: Creating database benchmark
+mysql-1  | 2026-11-11 05:32:26+00:00 [Note] [Entrypoint]: Creating user bench
+mysql-1  | 2026-11-11 05:32:26+00:00 [Note] [Entrypoint]: Giving user bench access to schema benchmark
+mysql-1  | 
+mysql-1  | 2026-11-11 05:32:26+00:00 [Note] [Entrypoint]: /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+mysql-1  | 2026-11-11T05:32:26.723605Z 13 [Warning] [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'
+mysql-1  | 
+mysql-1  | 
+mysql-1  | 2026-11-11 05:32:27+00:00 [Note] [Entrypoint]: Stopping temporary server
+mysql-1  | 2026-11-11T05:32:27.191852Z 14 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.4.13).
+mysql-1  | 2026-11-11T05:32:28.659232Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.4.13)  MySQL Community Server - GPL.
+mysql-1  | 2026-11-11T05:32:28.659242Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+mysql-1  | 2026-11-11 05:32:29+00:00 [Note] [Entrypoint]: Temporary server stopped
+mysql-1  | 
+mysql-1  | 2026-11-11 05:32:29+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+mysql-1  | 
+mysql-1  | 2026-11-11T05:32:29.212632Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+mysql-1  | 2026-11-11T05:32:29.444992Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.4.13) starting as process 1
+mysql-1  | 2026-11-11T05:32:29.444995Z 0 [System] [MY-015150] [Server] Server version with update: '8.4.13.0'
+mysql-1  | 2026-11-11T05:32:29.455037Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+mysql-1  | 2026-11-11T05:32:29.873888Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+mysql-1  | 2026-11-11T05:32:30.361038Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+mysql-1  | 2026-11-11T05:32:30.361072Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+mysql-1  | 2026-11-11T05:32:30.366476Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+mysql-1  | 2026-11-11T05:32:30.385273Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.4.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 23306  MySQL Community Server - GPL.
+mysql-1  | 2026-11-11T05:32:31.068225Z 10 [Warning] [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'

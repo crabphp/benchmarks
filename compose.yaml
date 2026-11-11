@@ -27,7 +27,7 @@ services:
     cpus: 2
     mem_limit: 2g
     memswap_limit: 2g
-    command: ["--port=23306", "--mysqlx=OFF", "--innodb-buffer-pool-size=512M", "--max-connections=100"]
+    command: ["--port=23306", "--mysqlx=OFF", "--mysql-native-password=ON", "--innodb-buffer-pool-size=512M", "--max-connections=100"]
     ports: ["127.0.0.1:23306:23306"]
     environment:
       MYSQL_ROOT_PASSWORD: benchroot
@@ -118,6 +118,26 @@ services:
         COMPOSER_IMAGE: '${COMPOSER_IMAGE}'
         FRANKEN_IMAGE: '${FRANKEN_IMAGE}'
     ports: ["127.0.0.1:23107:8080"]
+  reactphp:
+    <<: *app
+    build:
+      context: ${BENCH_CONTEXT}
+      dockerfile: reactphp/Dockerfile
+      args:
+        BASE: '${PHP_CLI_IMAGE}'
+        COMPOSER_IMAGE: '${COMPOSER_IMAGE}'
+        FRANKEN_IMAGE: '${FRANKEN_IMAGE}'
+    ports: ["127.0.0.1:23108:8080"]
+  amphp:
+    <<: *app
+    build:
+      context: ${BENCH_CONTEXT}
+      dockerfile: amphp/Dockerfile
+      args:
+        BASE: '${PHP_CLI_IMAGE}'
+        COMPOSER_IMAGE: '${COMPOSER_IMAGE}'
+        FRANKEN_IMAGE: '${FRANKEN_IMAGE}'
+    ports: ["127.0.0.1:23109:8080"]
   loadgen:
     cpus: 4
     mem_limit: 512m

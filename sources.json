@@ -1,5 +1,5 @@
 {
-  "resolved_utc": "2026-11-10T10:22:06.175838+00:00",
+  "resolved_utc": "2026-11-11T05:27:39.252829+00:00",
   "apps": {
     "crab": {
       "skeleton": "crabphp/crab",
@@ -63,6 +63,24 @@
       "sha256": "6264d15d1b818c7e66773ba72b8b55979507bbd55ca60939b5a203f7dbf0873f",
       "framework": "tempest/framework",
       "version": "v3.21.0"
+    },
+    "reactphp": {
+      "skeleton": "react/http",
+      "skeleton_version": "v1.12.0",
+      "commit": "37f13159cdcaf2b1387020751aa1ae1882477f78",
+      "archive_url": "https://codeload.github.com/reactphp/http/tar.gz/37f13159cdcaf2b1387020751aa1ae1882477f78",
+      "sha256": "da5f64105fbe5b167e26ba475b57668de64a30815a95776d0ace950000440749",
+      "framework": "react/http",
+      "version": "v1.12.0"
+    },
+    "amphp": {
+      "skeleton": "amphp/http-server",
+      "skeleton_version": "v3.4.8",
+      "commit": "31b004bf1cfd3feed3f0bdf20ddb9bfef935efb8",
+      "archive_url": "https://codeload.github.com/amphp/http-server/tar.gz/31b004bf1cfd3feed3f0bdf20ddb9bfef935efb8",
+      "sha256": "f37490ba42a9102ce5864124f3d98763d20457c1898fa15f0776f8ad63493040",
+      "framework": "amphp/http-server",
+      "version": "v3.4.8"
     }
   }
 }

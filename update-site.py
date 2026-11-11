@@ -12,7 +12,10 @@ metadata=json.loads((args.results/'metadata.json').read_text())
 summary=json.loads((args.results/'summary.json').read_text())
 versions=json.loads((args.results/'versions.json').read_text())
 php_version=versions['crab']['metadata']['php']
-labels={'crab':('Crab','Native server'),'webman':('webman','Workerman'),'hyperf':('Hyperf','Swoole'),'symfony':('Symfony','FrankenPHP'),'spiral':('Spiral','RoadRunner'),'laravel':('Laravel','Octane · FrankenPHP'),'tempest':('Tempest','FrankenPHP')}
+labels={'crab':('Crab','Native server'),'webman':('webman','Workerman'),'hyperf':('Hyperf','Swoole'),'symfony':('Symfony','FrankenPHP'),'spiral':('Spiral','RoadRunner'),'laravel':('Laravel','Octane · FrankenPHP'),'tempest':('Tempest','FrankenPHP'),'reactphp':('ReactPHP HTTP','ext-event · HTTP library'),'amphp':('AMP HTTP Server','Revolt · ext-event · HTTP library')}
+assert set(metadata.get('services', [])) == set(labels), 'Website publication requires a fresh complete nine-contender run'
+# Order every contender by measured Hello throughput, including competitor wins.
+labels = dict(sorted(labels.items(), key=lambda item: -next(r['rps'] for r in summary if (r['case'], r['connections'], r['service']) == ('hello', 64, item[0]))))
 rows=[]
 for service,(label,runtime) in labels.items():
     version=metadata['sources']['apps'][service]['version'].removeprefix('v')
@@ -31,13 +34,14 @@ section=f'''      <section class="section" aria-labelledby="benchmarks">
           <table>
             <caption>Requests per second · PHP {html.escape(php_version)} · 64 connections · median of five runs.</caption>
             <thead>
-              <tr><th scope="col">Framework</th><th scope="col" class="num">Hello</th><th scope="col" class="num">Database</th></tr>
+              <tr><th scope="col">Framework / server</th><th scope="col" class="num">Hello</th><th scope="col" class="num">Database</th></tr>
             </thead>
             <tbody>
 {chr(10).join(rows)}
             </tbody>
           </table>
         </div>
+        <p class="faint">ReactPHP and AMP are HTTP libraries, not full application frameworks. Each uses a router, explicit input validation and its native async MySQL driver.</p>
         <p class="faint">{html.escape(cpu_model)} · 2 CPU / 2 GiB RAM limit per app (shared host). Tested {date}. <a href="{url}">Full results</a> · <a href="https://github.com/crabphp/benchmarks">Run it yourself <span aria-hidden="true">↗</span></a></p>
       </section>'''
 p=args.site/'index.html';text=p.read_text();start=text.index('      <section class="section" aria-labelledby="benchmarks">');end=text.index('      </section>',start)+len('      </section>');p.write_text(text[:start]+section+text[end:])

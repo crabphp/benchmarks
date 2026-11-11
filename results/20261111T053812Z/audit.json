@@ -1,0 +1,24 @@
+{
+  "verified_trials": 8,
+  "verified_warmups": 8,
+  "verified_summary_rows": 8,
+  "full_method": false,
+  "raw_log_sha256": {
+    "hello-64-reactphp-trial-1.log": "425368650a9c9d1d74fae445bf4f5d757ad87fd5dfdf29aa74b23e03199b247c",
+    "hello-64-amphp-trial-1.log": "78921cdc28836c0e8bcdf0cd3b54ca32e34b65dd072641a47570602c84ce8a65",
+    "hello-256-reactphp-trial-1.log": "4d4d71915bb72dbd25ab61b9f545232aeaee289886146523aad9d532ccde4048",
+    "hello-256-amphp-trial-1.log": "91be295a25a281b48a6ede32ff4c2ec1f75dd9c9a189b7364a98977350410c65",
+    "db-64-reactphp-trial-1.log": "6623b4ae0e85fb6e3112233cbeadd5556e0332c681c40937ea072bd539b2f58f",
+    "db-64-amphp-trial-1.log": "2969ae6b1c15588598e4b99388520bde7585f52ff59582fc44c49441833a958f",
+    "validate-64-reactphp-trial-1.log": "56ce204a7ff040a511df0f0b27f4ddaa40a6aa0d6575f264829133110bdba01e",
+    "validate-64-amphp-trial-1.log": "9a4f8a2e9b8d8d084e3c36b7f1b7f194bc4a064bd38eeabd6808732e2976f242",
+    "hello-64-reactphp-warmup-1.log": "f45e0c9732d23b51ce3d527bf37fd11d154e67c65203c64a0922c7a7c773af80",
+    "hello-64-amphp-warmup-1.log": "2e7cb5008b60fa786767597bb845308d5a1b9b9110df161f106969680c410d03",
+    "hello-256-reactphp-warmup-1.log": "fbfe901e7f5d63b616cf325998d3592b8ad8a48cbf361161581696b0cf89b364",
+    "hello-256-amphp-warmup-1.log": "8c572f894ce5d9e585118be83fbad36903a542666c6de91fe57cf8f80bf6cd20",
+    "db-64-reactphp-warmup-1.log": "44486828be6a10a0e15cfd274c706c94b93dd7c0c3780b1cb12c8f565191b134",
+    "db-64-amphp-warmup-1.log": "83bfad566c2cb7d9de9a0af664ab55d6b194b245452fc6c8afed81518bfde9ca",
+    "validate-64-reactphp-warmup-1.log": "90eb0fcd5604c2dc44632e49485de0a0dbf7dbf690bdfcc23a6c1b39b9d73f43",
+    "validate-64-amphp-warmup-1.log": "418504671c4f94d52c6814fab42f862c27c77f55f1e6f5e8379eb8dec4c2a095"
+  }
+}

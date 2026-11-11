@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/daudau/Code/crabphp/benchmarks/runner.py", line 203, in <module>
+    wait_ready(service)
+    ~~~~~~~~~~^^^^^^^^^
+  File "/home/daudau/Code/crabphp/benchmarks/runner.py", line 93, in wait_ready
+    raise RuntimeError('Readiness failed for ' + service + '\n' + compose('logs', service).stdout)
+RuntimeError: Readiness failed for reactphp
+reactphp-1  | PHP Fatal error:  Uncaught RuntimeException: Failed to listen on "tcp://0.0.0.0:8080":  in /srv/app/vendor/react/socket/src/TcpServer.php:188
+reactphp-1  | Stack trace:
+reactphp-1  | #0 /srv/app/vendor/react/socket/src/SocketServer.php(65): React\Socket\TcpServer->__construct()
+reactphp-1  | #1 /srv/app/server.php(62): React\Socket\SocketServer->__construct()
+reactphp-1  | #2 /bench/async.php(18): {closure:/srv/app/server.php:18}()
+reactphp-1  | #3 /srv/app/server.php(18): benchWorkers()
+reactphp-1  | #4 {main}
+reactphp-1  |   thrown in /srv/app/vendor/react/socket/src/TcpServer.php on line 188
+

@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       full:
-        description: Run the full five-trial method (about 50 minutes)
+        description: Run the full five-trial method (about 70 minutes)
         type: boolean
         default: false
   pull_request:
@@ -14,9 +14,11 @@ permissions:
 jobs:
   benchmark:
     runs-on: ubuntu-24.04
-    timeout-minutes: 90
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
+      - name: Test audit and publication guards
+        run: python3 -m unittest discover -s tests -v
       - name: Run frozen fixtures
         shell: bash
         env:

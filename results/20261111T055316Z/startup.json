@@ -1,0 +1,22 @@
+[
+  {
+    "case": "hello-64",
+    "service": "reactphp",
+    "ready_seconds": 1.442298670008313
+  },
+  {
+    "case": "hello-64",
+    "service": "amphp",
+    "ready_seconds": 1.0841500399983488
+  },
+  {
+    "case": "db-64",
+    "service": "reactphp",
+    "ready_seconds": 0.8716471499647014
+  },
+  {
+    "case": "db-64",
+    "service": "amphp",
+    "ready_seconds": 1.43590119399596
+  }
+]

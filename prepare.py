@@ -6,7 +6,7 @@ CONTEXT=Path(os.environ['BENCH_CONTEXT'])
 SOURCES=json.loads((ROOT/'sources.json').read_text())
 if CONTEXT.exists(): shutil.rmtree(CONTEXT)
 CONTEXT.mkdir(parents=True)
-for name in ['common','crab','webman','hyperf','spiral','symfony','laravel','laravel-octane','tempest','loadgen','mysql']:
+for name in ['common','crab','webman','hyperf','spiral','symfony','laravel','laravel-octane','tempest','reactphp','amphp','loadgen','mysql']:
     shutil.copytree(ROOT/name,CONTEXT/name)
 cache=ROOT/'.work/downloads'; cache.mkdir(parents=True,exist_ok=True)
 for name,pin in SOURCES['apps'].items():
@@ -21,6 +21,11 @@ for name,pin in SOURCES['apps'].items():
             if not member.name.startswith(prefix): continue
             member.name=member.name[len(prefix):]
             if member.name: tf.extract(member,dest,filter='data')
+    # HTTP libraries have no application skeleton; our explicit adapters supply it.
+    if name in ['reactphp', 'amphp']:
+        shutil.rmtree(dest)
+        dest.mkdir()
+        shutil.copy2(ROOT/name/'composer.json', dest/'composer.json')
     composer=json.loads((dest/'composer.json').read_text())
     composer.pop('require-dev',None);composer.pop('autoload-dev',None)
     composer['minimum-stability']='dev' if name == 'spiral' else 'stable';composer['prefer-stable']=True

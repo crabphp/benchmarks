@@ -1,0 +1,560 @@
+[
+  {
+    "time": 452772.303508557,
+    "reactphp": {
+      "cpu_ns": 9700756000,
+      "memory_bytes": 35102720,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 106285377000,
+      "memory_bytes": 586481664,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 113774543000,
+      "memory_bytes": 9183232,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452772.808452782,
+    "reactphp": {
+      "cpu_ns": 10499903000,
+      "memory_bytes": 35524608,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 106622722000,
+      "memory_bytes": 587104256,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 113979578000,
+      "memory_bytes": 24465408,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452773.316696779,
+    "reactphp": {
+      "cpu_ns": 11449216000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 106991856000,
+      "memory_bytes": 586653696,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 114118305000,
+      "memory_bytes": 25718784,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452773.821690773,
+    "reactphp": {
+      "cpu_ns": 12395227000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 107360101000,
+      "memory_bytes": 586653696,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 114258288000,
+      "memory_bytes": 26431488,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452774.327474622,
+    "reactphp": {
+      "cpu_ns": 13342605000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 107728135000,
+      "memory_bytes": 586907648,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 114398574000,
+      "memory_bytes": 26873856,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452774.833409796,
+    "reactphp": {
+      "cpu_ns": 14265244000,
+      "memory_bytes": 35958784,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 108108224000,
+      "memory_bytes": 587026432,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 114523266000,
+      "memory_bytes": 28069888,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452775.341366576,
+    "reactphp": {
+      "cpu_ns": 15212923000,
+      "memory_bytes": 35741696,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 108469364000,
+      "memory_bytes": 587005952,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 114666414000,
+      "memory_bytes": 28184576,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452775.847013961,
+    "reactphp": {
+      "cpu_ns": 16152722000,
+      "memory_bytes": 35741696,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 108832541000,
+      "memory_bytes": 586747904,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 114801660000,
+      "memory_bytes": 28708864,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452776.352462221,
+    "reactphp": {
+      "cpu_ns": 17098719000,
+      "memory_bytes": 35741696,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 109192428000,
+      "memory_bytes": 586485760,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 114934258000,
+      "memory_bytes": 28475392,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452776.857350745,
+    "reactphp": {
+      "cpu_ns": 18041074000,
+      "memory_bytes": 35737600,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 109590752000,
+      "memory_bytes": 586481664,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 115073563000,
+      "memory_bytes": 28725248,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452777.362483763,
+    "reactphp": {
+      "cpu_ns": 18986772000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 109955378000,
+      "memory_bytes": 586481664,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 115213450000,
+      "memory_bytes": 28459008,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452777.871567424,
+    "reactphp": {
+      "cpu_ns": 19940777000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 110323972000,
+      "memory_bytes": 586481664,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 115348109000,
+      "memory_bytes": 28221440,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452778.376352067,
+    "reactphp": {
+      "cpu_ns": 20887340000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 110690696000,
+      "memory_bytes": 586481664,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 115482798000,
+      "memory_bytes": 28221440,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452778.881446166,
+    "reactphp": {
+      "cpu_ns": 21833271000,
+      "memory_bytes": 35737600,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 111094036000,
+      "memory_bytes": 586915840,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 115626947000,
+      "memory_bytes": 28454912,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452779.386880193,
+    "reactphp": {
+      "cpu_ns": 22779974000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 111464122000,
+      "memory_bytes": 586711040,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 115764370000,
+      "memory_bytes": 28221440,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452779.893909657,
+    "reactphp": {
+      "cpu_ns": 23730240000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 111835234000,
+      "memory_bytes": 586711040,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 115900502000,
+      "memory_bytes": 28221440,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452780.400258266,
+    "reactphp": {
+      "cpu_ns": 24678405000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 112200265000,
+      "memory_bytes": 586711040,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 116041418000,
+      "memory_bytes": 28483584,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452780.906418063,
+    "reactphp": {
+      "cpu_ns": 25628275000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 112607109000,
+      "memory_bytes": 586854400,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 116180621000,
+      "memory_bytes": 28221440,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452781.411612014,
+    "reactphp": {
+      "cpu_ns": 26574887000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 112973911000,
+      "memory_bytes": 586846208,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 116314873000,
+      "memory_bytes": 28221440,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452781.917197608,
+    "reactphp": {
+      "cpu_ns": 27521137000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 113335233000,
+      "memory_bytes": 586694656,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 116450880000,
+      "memory_bytes": 28725248,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452782.422824049,
+    "reactphp": {
+      "cpu_ns": 28467284000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 113698793000,
+      "memory_bytes": 586481664,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 116593757000,
+      "memory_bytes": 28467200,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452782.928191575,
+    "reactphp": {
+      "cpu_ns": 29414014000,
+      "memory_bytes": 35745792,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 114099649000,
+      "memory_bytes": 586903552,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 116727313000,
+      "memory_bytes": 28454912,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452783.433434221,
+    "reactphp": {
+      "cpu_ns": 30362673000,
+      "memory_bytes": 35737600,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 114464142000,
+      "memory_bytes": 586637312,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 116862597000,
+      "memory_bytes": 28221440,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452783.938704863,
+    "reactphp": {
+      "cpu_ns": 31304126000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 114811057000,
+      "memory_bytes": 586739712,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 117000240000,
+      "memory_bytes": 28774400,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452784.444747004,
+    "reactphp": {
+      "cpu_ns": 32252211000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 115178245000,
+      "memory_bytes": 586485760,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 117136634000,
+      "memory_bytes": 28282880,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452784.950755683,
+    "reactphp": {
+      "cpu_ns": 33199529000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 115583649000,
+      "memory_bytes": 587210752,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 117271749000,
+      "memory_bytes": 28282880,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452785.455900028,
+    "reactphp": {
+      "cpu_ns": 34145770000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 115950020000,
+      "memory_bytes": 586723328,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 117414815000,
+      "memory_bytes": 28545024,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452785.960849578,
+    "reactphp": {
+      "cpu_ns": 35092205000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 116316605000,
+      "memory_bytes": 586485760,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 117552664000,
+      "memory_bytes": 28520448,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452786.466538193,
+    "reactphp": {
+      "cpu_ns": 36040152000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 116682100000,
+      "memory_bytes": 586485760,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 117685740000,
+      "memory_bytes": 28282880,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452786.971692868,
+    "reactphp": {
+      "cpu_ns": 36986656000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 117070215000,
+      "memory_bytes": 588316672,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 117824948000,
+      "memory_bytes": 28282880,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 452787.48022401,
+    "reactphp": {
+      "cpu_ns": 37938820000,
+      "memory_bytes": 35733504,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 117458450000,
+      "memory_bytes": 586657792,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 117964021000,
+      "memory_bytes": 28393472,
+      "memory_limit": 536870912
+    }
+  }
+]

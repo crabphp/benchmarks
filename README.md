@@ -1,10 +1,12 @@
-# PHP framework benchmarks
+# PHP framework and HTTP server benchmarks
 
-A public, independently runnable comparison of the seven frameworks listed on the CrabPHP website. Every PHP runtime is **8.5**. Frameworks use their latest stable releases as of the timestamp in [`sources.json`](sources.json); dependencies stay frozen for repeatability.
+A public, independently runnable comparison of seven frameworks and two async HTTP libraries for the CrabPHP website. Every PHP runtime is **8.5**. Frameworks and libraries use the published stable releases pinned in [`sources.json`](sources.json); dependencies stay frozen for repeatability.
 
 ## Reference results
 
 [Audited reference run: 10 November 2026](results/20261110T104256Z/README.md) — PHP 8.5.12, 140 trials and 140 warmups, zero errors across 44.8 million measured responses. It includes full trial ranges, latency, memory, exact versions, configuration and limitations. Symfony’s database results have substantial variability, disclosed alongside its median.
+
+[Audited ReactPHP/AMP supplement: 11 November 2026](results/20261111T055316Z/README.md) — twenty measured trials and twenty warmups for the two added library rows (Hello and MySQL at 64 connections), zero errors across 5.4 million measured responses. The website retains the original seven framework rows and separately dates and links the additions; these were not one simultaneous comparison.
 
 ## Run
 
@@ -16,7 +18,7 @@ cd benchmarks
 ./run.sh
 ```
 
-First builds download and compile the runtimes. Watch the terminal for progress. The full measurement takes about **50 minutes**, plus builds and server restarts. `results/<UTC timestamp>/summary.md` and `summary.json` contain the report. `Ctrl+C` stops the run and cleans up this run's containers and disposable database volume. Existing containers and databases are not touched. Ports 23101–23107 and 23306 must be free; all host bindings use loopback.
+First builds download and compile the runtimes. Watch the terminal for progress. The full measurement takes about **70 minutes**, plus builds and server restarts. `results/<UTC timestamp>/summary.md` and `summary.json` contain the report. `Ctrl+C` stops the run and cleans up this run's containers and disposable database volume. Existing containers and databases are not touched. Ports 23101–23109 and 23306 must be free; all host bindings use loopback.
 
 For a quick setup check:
 
@@ -24,11 +26,11 @@ For a quick setup check:
 BENCH_WARMUP=1 BENCH_DURATION=2 BENCH_TRIALS=1 ./run.sh
 ```
 
-Smoke runs have `full_method: false` and must not supply the website table. Optional `BENCH_SERVICES=crab,laravel` and `BENCH_CASES=hello,db` select subsets and likewise mark results incomplete. Do not run two copies from the same checkout.
+Smoke runs must not supply the website table. Optional `BENCH_SERVICES=crab,laravel`, `BENCH_CASES=hello,db` and `BENCH_CONNECTIONS=64` select subsets and mark `full_method: false`; they never claim a complete comparison. A five-trial two-library supplement can be published separately as described below. Do not run two copies from the same checkout.
 
 ## What is measured
 
-| Framework | Deployment | Application workers |
+| Framework / server | Deployment | Application workers |
 | --- | --- | ---: |
 | Crab | Native PHP server, select loop, PDO | 2 |
 | webman | Workerman, ext-event, Illuminate database | 2 |
@@ -37,14 +39,18 @@ Smoke runs have `full_method: false` and must not supply the website table. Opti
 | Spiral | RoadRunner, Cycle DBAL | 2 |
 | Laravel | Octane with FrankenPHP, Illuminate database | 2 |
 | Tempest | FrankenPHP worker mode, Tempest database | 2 |
+| ReactPHP HTTP | Native CLI, ext-event, react/mysql | 2 |
+| AMP HTTP Server | Native CLI, Revolt ext-event, amphp/mysql | 2 |
 
-These are **framework plus deployment** comparisons: server, middleware, database access and worker lifecycle differences affect results. They are small synthetic workloads, not a universal framework ranking or an application capacity estimate.
+ReactPHP HTTP and AMP HTTP Server are **HTTP libraries, not full application frameworks**. Their adapters add routing (FastRoute and AMP Router respectively) and explicit PHP validation. Each uses two supervised forked workers with `SO_REUSEPORT`, and up to ten persistent native async MySQL connections per worker (600-second idle timeout). ReactPHP distributes queries round-robin across ten lazy queued connections; AMP uses its native bounded connection pool. Neither uses blocking PDO inside its event loop. The common disposable MySQL account uses `mysql_native_password` because react/mysql 0.6 does not support MySQL 8's default authentication; this applies to every contender, not just ReactPHP. This compatibility setting is not production deployment advice.
+
+These are **framework/server plus deployment** comparisons: server, middleware, database access and worker lifecycle differences affect results. They are small synthetic workloads, not a universal framework ranking or an application capacity estimate.
 
 - `GET /hello`: JSON `{"message":"Hello, world"}`; 64 and 256 persistent connections.
 - `GET /users/{id}`: one indexed MySQL read from a common 10,000-row fixture, returned as JSON; 64 connections.
-- `POST /users`: parse JSON, use each framework's validator for name length 1–100, email format and integer age 18–120, return the input with status 201; 64 connections. This does not write to the database. Explicit strict type checks supplement validators that coerce numeric strings.
+- `POST /users`: parse JSON, use each framework's validator (or explicit checks for HTTP libraries) for name length 1–100, email format and integer age 18–120, return the input with status 201; 64 connections. This does not write to the database. Explicit strict type checks supplement validators that coerce numeric strings.
 
-Requests cycle through 10,000 variants, including request headers and query parameters. No response cache, pipelining, TLS or static hello shortcut is used. Each request traverses the framework router. Preflight verifies exact representative database values, valid and invalid validation boundaries, persistent connections, actual PHP 8.5, OPcache, JIT and production settings. The load generator checks every response status and body; database/validation fields must match the fixture's internally consistent values.
+Requests cycle through 10,000 variants, including request headers and query parameters. No response cache, pipelining, TLS or static hello shortcut is used. Each request traverses a router. Preflight verifies exact representative database values, valid and invalid validation boundaries, persistent connections, actual PHP 8.5, OPcache, JIT and production settings. The load generator checks every response status and body; database/validation fields must match the fixture's internally consistent values.
 
 ## Method and fairness
 
@@ -77,7 +83,19 @@ Recompute the report audit independently:
 python3 audit.py results/<timestamp> --require-full
 ```
 
-`update-site.py results/<timestamp> --site ../crabphp-site` updates the website table only after that audit passes. It requires all seven contenders, all four cases, all five trials and zero errors.
+`update-site.py results/<timestamp> --site ../crabphp-site` replaces the whole table only after that audit passes. It requires all nine contenders, all four cases, all five trials and zero errors. Historical seven-framework runs remain independently auditable.
+
+### Add only the two HTTP libraries
+
+Keep the seven existing framework measurements and measure only the two new table rows (about eight minutes, plus builds):
+
+```sh
+BENCH_SERVICES=reactphp,amphp BENCH_CASES=hello,db BENCH_CONNECTIONS=64 ./run.sh
+python3 audit.py results/<library-timestamp> --require-libraries
+python3 add-libraries.py results/<library-timestamp> --baseline results/20261110T104256Z --site ../crabphp-site
+```
+
+The supplemental audit requires exactly ReactPHP and AMP, Hello and MySQL at 64 connections, five 15-second trials with five-second warmups, complete functional preflights and zero errors. It rejects smoke runs and cannot pass `--require-full`. The updater audits both sources, checks matching PHP/image pins and host/CPU, verifies the existing seven website rows match the baseline, then preserves those rows verbatim. Dates and raw-result links disclose the separate runs rather than presenting them as one simultaneous comparison. The supplemental MySQL account authentication compatibility setting is disclosed above; the historical baseline remains unchanged.
 
 ## Refresh dependencies (maintainers)
 
@@ -95,6 +113,10 @@ Ordinary `./run.sh` uses committed source checksums, image digests and Composer 
 The generated Spiral starter source is committed in `spiral/skeleton/`, so lockfile installs do not need to run its interactive project generator. Adapter code is in `spiral/app/`.
 
 Spiral’s upstream installer requires a prerelease gRPC client dependency; the framework itself remains the latest stable release. Its exact transitive version is visible in the lock and run metadata.
+
+To add or refresh only the HTTP library source pins without changing existing framework versions, run `python3 resolve.py --only reactphp amphp`, then deliberately regenerate their Composer locks. Do not refresh the seven existing graphs just to add contenders.
+
+Run harness regression tests with `python3 -m unittest discover -s tests -v` and validator checks with `php tests/async-validation.php`; fixture integration checks run automatically before measurements.
 
 Runtime extensions and RoadRunner downloads are pinned in Dockerfiles/setup scripts, with RoadRunner checksums for amd64 and arm64. Review those pins when refreshing. Debian OS packages are installed from distribution repositories rather than a dated snapshot; image digests and recorded image/package metadata document that remaining reproducibility limit.
 

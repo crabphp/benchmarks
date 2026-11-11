@@ -1,3 +1,6 @@
+-- react/mysql 0.6 supports mysql_native_password, not caching_sha2_password.
+-- Use the same disposable benchmark account/authentication for every contender.
+ALTER USER 'bench'@'%' IDENTIFIED WITH mysql_native_password BY 'bench';
 CREATE DATABASE IF NOT EXISTS benchmark;
 USE benchmark;
 CREATE TABLE users (id INT UNSIGNED PRIMARY KEY, name VARCHAR(100) NOT NULL, email VARCHAR(254) NOT NULL, age TINYINT UNSIGNED NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

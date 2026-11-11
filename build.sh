@@ -11,7 +11,7 @@ set +a
 python3 prepare.py
 docker compose --progress plain build
 # Freeze actual successful installations, including transitive dependencies.
-for item in 'crab:crab:/srv/crab' 'webman:webman:/srv/app' 'hyperf:hyperf:/srv/app' 'symfony:symfony:/srv/app' 'spiral:spiral:/srv/app' 'laravel:laravel-octane:/srv/app' 'tempest:tempest:/srv/app'; do
+for item in 'crab:crab:/srv/crab' 'webman:webman:/srv/app' 'hyperf:hyperf:/srv/app' 'symfony:symfony:/srv/app' 'spiral:spiral:/srv/app' 'laravel:laravel-octane:/srv/app' 'tempest:tempest:/srv/app' 'reactphp:reactphp:/srv/app' 'amphp:amphp:/srv/app'; do
   IFS=: read -r service folder app <<< "$item"
   # compose images lists created containers; use the built image name directly.
   id=$(docker create "${COMPOSE_PROJECT_NAME}-${service}")

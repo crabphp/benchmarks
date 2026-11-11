@@ -1,0 +1,29 @@
+PREFLIGHT hello-64 reactphp
+PREFLIGHT hello-64 amphp
+RUN hello-64-reactphp-trial-1 2026-11-11T05:33:08.628004+00:00
+DONE hello-64-reactphp-trial-1: 41654 req/s; errors=86878
+RUN hello-64-amphp-trial-1 2026-11-11T05:33:29.123384+00:00
+DONE hello-64-amphp-trial-1: 14360 req/s; errors=0
+PREFLIGHT hello-256 reactphp
+PREFLIGHT hello-256 amphp
+RUN hello-256-reactphp-trial-1 2026-11-11T05:34:23.568576+00:00
+DONE hello-256-reactphp-trial-1: 41019 req/s; errors=85673
+RUN hello-256-amphp-trial-1 2026-11-11T05:34:43.870911+00:00
+DONE hello-256-amphp-trial-1: 14070 req/s; errors=0
+PREFLIGHT db-64 reactphp
+PREFLIGHT db-64 amphp
+RUN db-64-reactphp-trial-1 2026-11-11T05:35:38.616026+00:00
+DONE db-64-reactphp-trial-1: 12498 req/s; errors=0
+RUN db-64-amphp-trial-1 2026-11-11T05:35:58.799302+00:00
+DONE db-64-amphp-trial-1: 4374 req/s; errors=0
+PREFLIGHT validate-64 reactphp
+PREFLIGHT validate-64 amphp
+RUN validate-64-reactphp-trial-1 2026-11-11T05:36:53.920415+00:00
+DONE validate-64-reactphp-trial-1: 24283 req/s; errors=0
+RUN validate-64-amphp-trial-1 2026-11-11T05:37:14.035742+00:00
+DONE validate-64-amphp-trial-1: 11895 req/s; errors=0
+COMPLETE /home/daudau/Code/crabphp/benchmarks/results/20261111T053202Z
+Traceback (most recent call last):
+  File "/home/daudau/Code/crabphp/benchmarks/runner.py", line 279, in <module>
+    raise RuntimeError('Errors occurred; retained results are invalid for publication.')
+RuntimeError: Errors occurred; retained results are invalid for publication.

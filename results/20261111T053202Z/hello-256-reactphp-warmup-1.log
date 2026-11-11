@@ -1,0 +1,14 @@
+Running 1s test @ http://reactphp:8080
+  4 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     7.83ms   12.03ms 175.05ms   96.81%
+    Req/Sec    10.41k     2.59k   20.50k    86.05%
+  Latency Distribution
+     50%    6.03ms
+     75%    7.21ms
+     90%    8.36ms
+     99%   77.36ms
+  44516 requests in 1.09s, 6.88MB read
+Requests/sec:  40920.93
+Transfer/sec:      6.32MB
+BENCH_JSON {"workload":"hello","bad_body":44516,"bad_response":44516,"requests":44516,"duration_us":1087854,"rps":40920.932405,"p50_us":6027.000000,"p99_us":77361.000000,"bad_status":0,"errors":{"connect":0,"read":0,"write":0,"timeout":0,"status":0}}

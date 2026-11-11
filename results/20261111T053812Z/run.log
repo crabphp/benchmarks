@@ -1,0 +1,25 @@
+PREFLIGHT hello-64 reactphp
+PREFLIGHT hello-64 amphp
+RUN hello-64-reactphp-trial-1 2026-11-11T05:39:17.524859+00:00
+DONE hello-64-reactphp-trial-1: 41694 req/s; errors=0
+RUN hello-64-amphp-trial-1 2026-11-11T05:39:38.896127+00:00
+DONE hello-64-amphp-trial-1: 14204 req/s; errors=0
+PREFLIGHT hello-256 reactphp
+PREFLIGHT hello-256 amphp
+RUN hello-256-reactphp-trial-1 2026-11-11T05:40:32.882915+00:00
+DONE hello-256-reactphp-trial-1: 40393 req/s; errors=0
+RUN hello-256-amphp-trial-1 2026-11-11T05:40:53.025297+00:00
+DONE hello-256-amphp-trial-1: 14006 req/s; errors=0
+PREFLIGHT db-64 reactphp
+PREFLIGHT db-64 amphp
+RUN db-64-reactphp-trial-1 2026-11-11T05:41:47.309595+00:00
+DONE db-64-reactphp-trial-1: 13274 req/s; errors=0
+RUN db-64-amphp-trial-1 2026-11-11T05:42:07.650325+00:00
+DONE db-64-amphp-trial-1: 4390 req/s; errors=0
+PREFLIGHT validate-64 reactphp
+PREFLIGHT validate-64 amphp
+RUN validate-64-reactphp-trial-1 2026-11-11T05:43:01.358699+00:00
+DONE validate-64-reactphp-trial-1: 24414 req/s; errors=0
+RUN validate-64-amphp-trial-1 2026-11-11T05:43:21.654438+00:00
+DONE validate-64-amphp-trial-1: 11866 req/s; errors=0
+COMPLETE /home/daudau/Code/crabphp/benchmarks/results/20261111T053812Z

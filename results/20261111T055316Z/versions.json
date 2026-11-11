@@ -1,0 +1,437 @@
+{
+  "mysql": "/usr/sbin/mysqld  Ver 8.4.13 for Linux on x86_64 (MySQL Community Server - GPL)\n",
+  "wrk": "wrk debian/4.1.0-3+b2 [epoll] Copyright (C) 2012 Will Glozer\nUsage: wrk <options> <url>                            \n  Options:                                            \n    -c, --connections <N>  Connections to keep open   \n    -d, --duration    <T>  Duration of test           \n    -t, --threads     <N>  Number of threads to use   \n                                                      \n    -s, --script      <S>  Load Lua script file       \n    -H, --header      <H>  Add header to request      \n        --latency          Print latency statistics   \n        --timeout     <T>  Socket/request timeout     \n    -v, --version          Print version details      \n                                                      \n  Numeric arguments may include a SI unit (1k, 1M, 1G)\n  Time arguments may include a time unit (2s, 2m, 2h)\n",
+  "loadgen_packages": "wrk\t4.1.0-3+b2\n",
+  "reactphp": {
+    "php": "PHP 8.5.12 (cli) (built: Nov  5 2026 07:22:07) (NTS)\nCopyright (c) The PHP Group\nBuilt by https://github.com/docker-library/php\nZend Engine v4.5.12, Copyright (c) Zend Technologies\n    with Zend OPcache v8.5.12, Copyright (c), by Zend Technologies\n",
+    "packages": {
+      "crabphp/benchmark-reactphp": [
+        "1.0.0+no-version-set",
+        null
+      ],
+      "evenement/evenement": [
+        "v3.0.2",
+        "0a16b0d71ab13284339abb99d9d2bd813640efbc"
+      ],
+      "fig/http-message-util": [
+        "1.1.5",
+        "9d94dc0154230ac39e5bf89398b324a86f63f765"
+      ],
+      "nikic/fast-route": [
+        "1.3.1",
+        "7476684f39bb9124b3be69ed3d84b66723920298"
+      ],
+      "psr/http-message": [
+        "2.0",
+        "402d35bcb92c70c026d1a6a9883f06b2ead23d71"
+      ],
+      "react/cache": [
+        "v1.2.0",
+        "d47c472b64aa5608225f47965a484b75c7817d5b"
+      ],
+      "react/dns": [
+        "v1.14.0",
+        "7562c05391f42701c1fccf189c8225fece1cd7c3"
+      ],
+      "react/event-loop": [
+        "v1.6.0",
+        "ba276bda6083df7e0050fd9b33f66ad7a4ac747a"
+      ],
+      "react/http": [
+        "v1.12.0",
+        "37f13159cdcaf2b1387020751aa1ae1882477f78"
+      ],
+      "react/mysql": [
+        "v0.6.0",
+        "914ff50ebc15934a3847a90f032cccaac215146f"
+      ],
+      "react/promise": [
+        "v3.3.0",
+        "23444f53a813a3296c1368bb104793ce8d88f04a"
+      ],
+      "react/promise-stream": [
+        "v1.7.0",
+        "5c7ec3450f558deb779742e33967d837e2db7871"
+      ],
+      "react/promise-timer": [
+        "v1.11.0",
+        "4f70306ed66b8b44768941ca7f142092600fafc1"
+      ],
+      "react/socket": [
+        "v1.17.0",
+        "ef5b17b81f6f60504c539313f94f2d826c5faa08"
+      ],
+      "react/stream": [
+        "v1.4.0",
+        "1e5b0acb8fe55143b5b426817155190eb6f5b18d"
+      ]
+    },
+    "metadata": {
+      "php": "8.5.12",
+      "sapi": "cli",
+      "classmap_authoritative": true,
+      "memory_limit": "256M",
+      "debug": false,
+      "pid": 8,
+      "opcache": "1",
+      "timestamps": "0",
+      "jit": {
+        "enabled": false,
+        "on": false,
+        "kind": 0,
+        "opt_level": 0,
+        "opt_flags": 0,
+        "buffer_size": 0,
+        "buffer_free": 0
+      },
+      "opcache_statistics": {
+        "num_cached_scripts": 132,
+        "num_cached_keys": 246,
+        "max_cached_keys": 32531,
+        "hits": 1,
+        "start_time": 1794376433,
+        "last_restart_time": 0,
+        "oom_restarts": 0,
+        "hash_restarts": 0,
+        "manual_restarts": 0,
+        "misses": 192,
+        "blacklist_misses": 0,
+        "blacklist_miss_ratio": 0,
+        "opcache_hit_rate": 0.5181347150259068
+      },
+      "cache_full": false,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "event": "3.2.0",
+      "loop": "React\\EventLoop\\ExtEventLoop",
+      "database_driver": "react/mysql",
+      "validation": "explicit PHP checks"
+    },
+    "image": {
+      "Id": "sha256:6c542fd813487b02f9c73ec76565646028ec3a1a941ffc76cd8a32a04dcace66",
+      "RepoTags": [
+        "crab-benchmark-20261111055316-2154673-reactphp:latest"
+      ],
+      "RepoDigests": [
+        "crab-benchmark-20261111055316-2154673-reactphp@sha256:6c542fd813487b02f9c73ec76565646028ec3a1a941ffc76cd8a32a04dcace66"
+      ],
+      "Comment": "buildkit.dockerfile.v0",
+      "Created": "2026-11-11T12:44:40.679693398+07:00",
+      "Config": {
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkg-config \t\tre2c",
+          "PHP_INI_DIR=/usr/local/etc/php",
+          "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+          "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+          "PHP_LDFLAGS=-Wl,-O1 -pie",
+          "GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5",
+          "PHP_VERSION=8.5.12",
+          "PHP_URL=https://www.php.net/distributions/php-8.5.12.tar.xz",
+          "PHP_ASC_URL=https://www.php.net/distributions/php-8.5.12.tar.xz.asc",
+          "PHP_SHA256=08bc2eba2a588654ade1357174aa646b761556c862dda0678345ee29ed481209",
+          "COMPOSER_ALLOW_SUPERUSER=1",
+          "APP_ENV=production",
+          "APP_DEBUG=false"
+        ],
+        "Entrypoint": [
+          "php",
+          "server.php"
+        ],
+        "WorkingDir": "/srv/app",
+        "Labels": {
+          "com.docker.compose.project": "crab-benchmark-20261111055316-2154673",
+          "com.docker.compose.service": "reactphp",
+          "com.docker.compose.version": "5.1.4"
+        }
+      },
+      "Architecture": "amd64",
+      "Os": "linux",
+      "Size": 192718268,
+      "RootFS": {
+        "Type": "layers",
+        "Layers": [
+          "sha256:1d7b9dd8778ebc4d9bf2f64436dd358640718cb349f5640b33bebaea4ffd62c2",
+          "sha256:200f7ca4f46dba257f4bc19ef18521bde2b8a01fde6b3e30730893c4cfbe6f7c",
+          "sha256:09386003552f4d10cb213da2afada406f480d4a73e954efb8a892b8c4848d694",
+          "sha256:3d0c6eeb4b5ca83343877134681613f9dff123c9574948c452876ce2a6a20669",
+          "sha256:257430f6a4ddf6d1fa42d60592ab5f091493fd6911fec182f34d4703cc492b25",
+          "sha256:e666f0ded9535128c2ed5d21aab34f2b43d21ee11a13646358499052659bbe8b",
+          "sha256:2f93cd88e8e3de17c940a57b2137654a6e6394d618d31b7851950690b96f051c",
+          "sha256:c07eacf62f4e9d435fdec211f6c8a18470afb2e04baad0692ef120d38638f47d",
+          "sha256:13754f44145edb7a35da16cf5ecc67b02ee7e923e51d5d7e4099e8e3736ff182",
+          "sha256:7805bd0f4ab955b3754ec6024b54e282d3cd7260fbf6faa9a734ad179f3050a2",
+          "sha256:893bf128afa564e1ac2332d89b8b9bc4ddf68a87f51ba0bf180c11751aef4ce3",
+          "sha256:36b9236e29c0312d27e0a00c22e5ec16638d2ac63f4a71a2362aa307a9928fee",
+          "sha256:2875553a1bddfef7b3c2524d3e1d9c764896da178c5d0c81a0cd114ad115fa06",
+          "sha256:aab6415b7f9546444013c3eff997813a49e11c292dbec6b301a07454a7601dbf",
+          "sha256:55bc1edff67488b65f7aa00e2e93390422b5ccfc3cd610874e87922f78e4a550",
+          "sha256:0ab53987f4d34ff8bad6c0f6fccafca0706c40fb2b0aaea4c63477cb9250dc9b",
+          "sha256:f63ea2f6a985e259e65a07ac757dd63b6c9ea942f7f0a942ceadb7821f373e32",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+          "sha256:e3393bb64334fee13efe4abdfc89d8e625e672a9ea5d7afa65384e982dc6833a"
+        ]
+      },
+      "Metadata": {
+        "LastTagTime": "2026-11-11T05:53:25.878605024Z"
+      },
+      "Descriptor": {
+        "mediaType": "application/vnd.oci.image.index.v1+json",
+        "digest": "sha256:6c542fd813487b02f9c73ec76565646028ec3a1a941ffc76cd8a32a04dcace66",
+        "size": 856
+      },
+      "Identity": {
+        "Build": [
+          {
+            "Ref": "noqx82kwwrfv9puc7e51l7dv1",
+            "CreatedAt": "2026-11-11T12:53:26.019139613+07:00"
+          }
+        ]
+      }
+    },
+    "processes": "PID                 PPID                COMMAND\n2156686             2156657             php server.php\n2156793             2156686             php server.php\n2156794             2156686             php server.php\n"
+  },
+  "amphp": {
+    "php": "PHP 8.5.12 (cli) (built: Nov  5 2026 07:22:07) (NTS)\nCopyright (c) The PHP Group\nBuilt by https://github.com/docker-library/php\nZend Engine v4.5.12, Copyright (c) Zend Technologies\n    with Zend OPcache v8.5.12, Copyright (c), by Zend Technologies\n",
+    "packages": {
+      "amphp/amp": [
+        "v3.1.3",
+        "73c38b323ff8d790abf0f76c56fcc892bda4111a"
+      ],
+      "amphp/byte-stream": [
+        "v2.1.3",
+        "1511cdfdf868a706307358bd48f155c3df2c490f"
+      ],
+      "amphp/cache": [
+        "v2.0.1",
+        "46912e387e6aa94933b61ea1ead9cf7540b7797c"
+      ],
+      "amphp/dns": [
+        "v2.4.2",
+        "2e2b4daa214a18b1528919d6781988ea65a9a47d"
+      ],
+      "amphp/hpack": [
+        "v3.2.2",
+        "291da27078e7e149a9bad4d08ff05bf7d81c89f4"
+      ],
+      "amphp/http": [
+        "v2.1.2",
+        "3680d80bd38b5d6f3c2cef2214ca6dd6cef26588"
+      ],
+      "amphp/http-server": [
+        "v3.4.8",
+        "31b004bf1cfd3feed3f0bdf20ddb9bfef935efb8"
+      ],
+      "amphp/http-server-router": [
+        "v2.0.0",
+        "8a166efa10bc3fc887a7a42b8a55c7b16bc9fc61"
+      ],
+      "amphp/mysql": [
+        "v3.1.2",
+        "916d04a2724050cd241aa76a47cdaee498a13c40"
+      ],
+      "amphp/parser": [
+        "v1.1.1",
+        "3cf1f8b32a0171d4b1bed93d25617637a77cded7"
+      ],
+      "amphp/pipeline": [
+        "v1.2.7",
+        "cf2d67696c2015ea7c7fd8f6ec5f8ed7c2d17c17"
+      ],
+      "amphp/process": [
+        "v2.1.2",
+        "acfd64f68df5fa7f2d674c93d1986b2bf5d02770"
+      ],
+      "amphp/serialization": [
+        "v1.1.0",
+        "fdf2834d78cebb0205fb2672676c1b1eb84371f0"
+      ],
+      "amphp/socket": [
+        "v2.4.2",
+        "6e881835c73b75a0a4251a7f58441bc90b9f6c8a"
+      ],
+      "amphp/sql": [
+        "v2.1.1",
+        "258bafe5ecf8a0491d86681f2a2af1dee2933a69"
+      ],
+      "amphp/sql-common": [
+        "v2.0.5",
+        "8b22b3de392fbaf19c060e3bf89d37396a87d7b5"
+      ],
+      "amphp/sync": [
+        "v2.3.1",
+        "2f711b6651270449d59c770ffb518698655022f7"
+      ],
+      "crabphp/benchmark-amphp": [
+        "1.0.0+no-version-set",
+        null
+      ],
+      "daverandom/libdns": [
+        "v2.1.0",
+        "b84c94e8fe6b7ee4aecfe121bfe3b6177d303c8a"
+      ],
+      "kelunik/certificate": [
+        "v1.1.3",
+        "7e00d498c264d5eb4f78c69f41c8bd6719c0199e"
+      ],
+      "league/uri": [
+        "7.10.0",
+        "be89e2382e37acdef232259071ade5180821397b"
+      ],
+      "league/uri-components": [
+        "7.10.0",
+        "2a790e66948d3504a2f2cd42b80d4b8874601540"
+      ],
+      "league/uri-interfaces": [
+        "7.10.0",
+        "ea66240cff4ae9a56ce85d577a04d038b771e51c"
+      ],
+      "nikic/fast-route": [
+        "1.3.1",
+        "7476684f39bb9124b3be69ed3d84b66723920298"
+      ],
+      "psr/http-factory": [
+        "1.1.0",
+        "2b4765fddfe3b508ac62f829e852b1501d3f6e8a"
+      ],
+      "psr/http-message": [
+        "2.0",
+        "402d35bcb92c70c026d1a6a9883f06b2ead23d71"
+      ],
+      "psr/log": [
+        "3.0.2",
+        "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3"
+      ],
+      "revolt/event-loop": [
+        "v1.0.9",
+        "44061cf513e53c6200372fc935ac42271566295d"
+      ]
+    },
+    "metadata": {
+      "php": "8.5.12",
+      "sapi": "cli",
+      "classmap_authoritative": true,
+      "memory_limit": "256M",
+      "debug": false,
+      "pid": 8,
+      "opcache": "1",
+      "timestamps": "0",
+      "jit": {
+        "enabled": false,
+        "on": false,
+        "kind": 0,
+        "opt_level": 0,
+        "opt_flags": 0,
+        "buffer_size": 0,
+        "buffer_free": 0
+      },
+      "opcache_statistics": {
+        "num_cached_scripts": 261,
+        "num_cached_keys": 515,
+        "max_cached_keys": 32531,
+        "hits": 15,
+        "start_time": 1794376435,
+        "last_restart_time": 0,
+        "oom_restarts": 0,
+        "hash_restarts": 0,
+        "manual_restarts": 0,
+        "misses": 345,
+        "blacklist_misses": 0,
+        "blacklist_miss_ratio": 0,
+        "opcache_hit_rate": 4.166666666666666
+      },
+      "cache_full": false,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "event": "3.2.0",
+      "loop": "Revolt\\EventLoop\\Driver\\EventDriver",
+      "database_driver": "amphp/mysql",
+      "validation": "explicit PHP checks"
+    },
+    "image": {
+      "Id": "sha256:5bc6c23fbe2222bf452d2bc44bf99cd5349e7f027b6649a81151c1c4c208ce0f",
+      "RepoTags": [
+        "crab-benchmark-20261111055316-2154673-amphp:latest"
+      ],
+      "RepoDigests": [
+        "crab-benchmark-20261111055316-2154673-amphp@sha256:5bc6c23fbe2222bf452d2bc44bf99cd5349e7f027b6649a81151c1c4c208ce0f"
+      ],
+      "Comment": "buildkit.dockerfile.v0",
+      "Created": "2026-11-11T12:44:41.331510331+07:00",
+      "Config": {
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkg-config \t\tre2c",
+          "PHP_INI_DIR=/usr/local/etc/php",
+          "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+          "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+          "PHP_LDFLAGS=-Wl,-O1 -pie",
+          "GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5",
+          "PHP_VERSION=8.5.12",
+          "PHP_URL=https://www.php.net/distributions/php-8.5.12.tar.xz",
+          "PHP_ASC_URL=https://www.php.net/distributions/php-8.5.12.tar.xz.asc",
+          "PHP_SHA256=08bc2eba2a588654ade1357174aa646b761556c862dda0678345ee29ed481209",
+          "COMPOSER_ALLOW_SUPERUSER=1",
+          "APP_ENV=production",
+          "APP_DEBUG=false"
+        ],
+        "Entrypoint": [
+          "php",
+          "server.php"
+        ],
+        "WorkingDir": "/srv/app",
+        "Labels": {
+          "com.docker.compose.project": "crab-benchmark-20261111055316-2154673",
+          "com.docker.compose.service": "amphp",
+          "com.docker.compose.version": "5.1.4"
+        }
+      },
+      "Architecture": "amd64",
+      "Os": "linux",
+      "Size": 193832679,
+      "RootFS": {
+        "Type": "layers",
+        "Layers": [
+          "sha256:1d7b9dd8778ebc4d9bf2f64436dd358640718cb349f5640b33bebaea4ffd62c2",
+          "sha256:200f7ca4f46dba257f4bc19ef18521bde2b8a01fde6b3e30730893c4cfbe6f7c",
+          "sha256:09386003552f4d10cb213da2afada406f480d4a73e954efb8a892b8c4848d694",
+          "sha256:3d0c6eeb4b5ca83343877134681613f9dff123c9574948c452876ce2a6a20669",
+          "sha256:257430f6a4ddf6d1fa42d60592ab5f091493fd6911fec182f34d4703cc492b25",
+          "sha256:e666f0ded9535128c2ed5d21aab34f2b43d21ee11a13646358499052659bbe8b",
+          "sha256:2f93cd88e8e3de17c940a57b2137654a6e6394d618d31b7851950690b96f051c",
+          "sha256:c07eacf62f4e9d435fdec211f6c8a18470afb2e04baad0692ef120d38638f47d",
+          "sha256:13754f44145edb7a35da16cf5ecc67b02ee7e923e51d5d7e4099e8e3736ff182",
+          "sha256:7805bd0f4ab955b3754ec6024b54e282d3cd7260fbf6faa9a734ad179f3050a2",
+          "sha256:893bf128afa564e1ac2332d89b8b9bc4ddf68a87f51ba0bf180c11751aef4ce3",
+          "sha256:36b9236e29c0312d27e0a00c22e5ec16638d2ac63f4a71a2362aa307a9928fee",
+          "sha256:2875553a1bddfef7b3c2524d3e1d9c764896da178c5d0c81a0cd114ad115fa06",
+          "sha256:aab6415b7f9546444013c3eff997813a49e11c292dbec6b301a07454a7601dbf",
+          "sha256:55bc1edff67488b65f7aa00e2e93390422b5ccfc3cd610874e87922f78e4a550",
+          "sha256:eca65f8b9967f5c1d6112740900bbc2acd940bcf7004a2d33d64a6bab9486d99",
+          "sha256:b7d98655ca0292f467570074a68af25b9ba83d6e9d0902a2972226d04490c2fb",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+          "sha256:a8d243daf1603911a239be44ea3020d75c3555ac6d42e72b441b712646b06b5d"
+        ]
+      },
+      "Metadata": {
+        "LastTagTime": "2026-11-11T05:53:22.805187935Z"
+      },
+      "Descriptor": {
+        "mediaType": "application/vnd.oci.image.index.v1+json",
+        "digest": "sha256:5bc6c23fbe2222bf452d2bc44bf99cd5349e7f027b6649a81151c1c4c208ce0f",
+        "size": 856
+      },
+      "Identity": {
+        "Build": [
+          {
+            "Ref": "nzzq9kulzuychbe0qcqq6upd7",
+            "CreatedAt": "2026-11-11T12:53:23.218631652+07:00"
+          }
+        ]
+      }
+    },
+    "processes": "PID                 PPID                COMMAND\n2157101             2157075             php server.php\n2157178             2157101             php server.php\n2157179             2157101             php server.php\n"
+  }
+}

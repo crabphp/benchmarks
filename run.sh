@@ -4,7 +4,7 @@ cd "$(dirname "$0")"
 for program in docker python3; do
   command -v "$program" >/dev/null || { echo "Install $program first (see README.md)." >&2; exit 1; }
 done
-for folder in crab webman hyperf symfony spiral laravel-octane tempest; do
+for folder in crab webman hyperf symfony spiral laravel-octane tempest reactphp amphp; do
   for filename in composer.json composer.lock; do
     test -f "$folder/$filename" || { echo "Missing $folder/$filename. Maintainers must freeze dependencies with ./build.sh." >&2; exit 1; }
   done

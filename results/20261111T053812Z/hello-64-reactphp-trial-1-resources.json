@@ -1,0 +1,92 @@
+[
+  {
+    "time": 451496.541638424,
+    "reactphp": {
+      "cpu_ns": 2219765000,
+      "memory_bytes": 22077440,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 9954912000,
+      "memory_bytes": 532582400,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 791280000,
+      "memory_bytes": 1331200,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 451497.047464067,
+    "reactphp": {
+      "cpu_ns": 2989447000,
+      "memory_bytes": 22736896,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 9992975000,
+      "memory_bytes": 532660224,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 1098802000,
+      "memory_bytes": 15855616,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 451497.552450704,
+    "reactphp": {
+      "cpu_ns": 3916022000,
+      "memory_bytes": 22708224,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 9994050000,
+      "memory_bytes": 532660224,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 1333442000,
+      "memory_bytes": 17375232,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 451498.056529826,
+    "reactphp": {
+      "cpu_ns": 4817014000,
+      "memory_bytes": 22708224,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 9995092000,
+      "memory_bytes": 532586496,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 1564782000,
+      "memory_bytes": 18558976,
+      "memory_limit": 536870912
+    }
+  },
+  {
+    "time": 451498.560596604,
+    "reactphp": {
+      "cpu_ns": 5754150000,
+      "memory_bytes": 22683648,
+      "memory_limit": 2147483648
+    },
+    "mysql": {
+      "cpu_ns": 9995741000,
+      "memory_bytes": 532586496,
+      "memory_limit": 2147483648
+    },
+    "loadgen": {
+      "cpu_ns": 1794026000,
+      "memory_bytes": 17731584,
+      "memory_limit": 536870912
+    }
+  }
+]

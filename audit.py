@@ -2,15 +2,29 @@
 from pathlib import Path
 import argparse, hashlib, json, math, statistics
 
-def audit(directory: Path, require_full: bool = False):
+def audit(directory: Path, require_full: bool = False, require_libraries: bool = False):
     def read(name):
         return json.loads((directory/name).read_text())
     metadata=read('metadata.json'); trials=read('trials.json'); warmups=read('warmups.json'); summary=read('summary.json')
-    if require_full:
-        assert metadata['full_method'] and metadata['valid'] and metadata['completed_utc'], 'Not a complete valid reference run'
-        services={'crab','webman','hyperf','symfony','spiral','laravel','tempest'}
-        cases={('hello',64),('hello',256),('db',64),('validate',64)}
-        assert len(trials)==140 and len(warmups)==140 and len(summary)==28
+    assert not (require_full and require_libraries), 'Choose one publication scope'
+    if require_full or require_libraries:
+        assert metadata['valid'] and metadata['completed_utc'], 'Not a complete valid reference run'
+        original={'crab','webman','hyperf','symfony','spiral','laravel','tempest'}
+        services=set(metadata.get('services', original))
+        if require_libraries:
+            assert not metadata['full_method'], 'A supplemental run must not claim the full method'
+            assert services == {'reactphp', 'amphp'}, 'Supplement requires exactly the two HTTP libraries'
+            assert services <= set(metadata['sources']['apps']), 'Missing library source pins'
+            cases={('hello',64),('db',64)}
+        else:
+            assert metadata['full_method'], 'Not a complete valid reference run'
+            # Historical seven-contender evidence remains auditable.
+            assert services in [original, original | {'reactphp', 'amphp'}], 'Unknown or incomplete contender set'
+            assert set(metadata['sources']['apps']) == services, 'Sources do not match contenders'
+            cases={('hello',64),('hello',256),('db',64),('validate',64)}
+        assert (metadata['warmup_seconds'], metadata['duration_seconds'], metadata['trials']) == (5, 15, 5)
+        count=len(services)*len(cases)
+        assert len(trials)==count*5 and len(warmups)==count*5 and len(summary)==count
         assert {(r['kind'],r['connections'],r['service'],r['trial']) for r in trials} == {
             (kind,connections,service,trial) for kind,connections in cases for service in services for trial in range(1,6)
         }
@@ -18,7 +32,12 @@ def audit(directory: Path, require_full: bool = False):
             (kind,connections,service) for kind,connections in cases for service in services
         }
         checks=read('preflight.json')
-        assert len(checks)==28 and all(r['ok'] for r in checks)
+        assert len(checks)==count and all(r['ok'] for r in checks)
+        assert {(r['case'], r['service']) for r in checks} == {(f'{kind}-{connections}', service) for kind, connections in cases for service in services}
+        assert {r['label'] for r in warmups} == {
+            f'{kind}-{connections}-{service}-warmup-{trial}'
+            for kind, connections in cases for service in services for trial in range(1, 6)
+        }
         for row in checks:
             assert row['metadata']['php'].startswith('8.5.') and row['metadata']['debug'] is False
             assert not (row['metadata'].get('jit') or {}).get('on', False)
@@ -41,7 +60,7 @@ def audit(directory: Path, require_full: bool = False):
         assert record['requests']>0
         error_count=raw['bad_response']+sum(raw['errors'][k] for k in ['connect','read','write','timeout'])
         assert error_count==record['error_count']
-        if require_full: assert error_count==0,(path,error_count)
+        if require_full or require_libraries: assert error_count==0,(path,error_count)
         hashes[path.name]=hashlib.sha256(path.read_bytes()).hexdigest()
     for row in summary:
         records=[r for r in trials if (r['kind'],r['connections'],r['service'])==(row['case'],row['connections'],row['service'])]
@@ -62,7 +81,9 @@ def audit(directory: Path, require_full: bool = False):
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('directory',type=Path)
-    parser.add_argument('--require-full',action='store_true')
+    scope=parser.add_mutually_exclusive_group()
+    scope.add_argument('--require-full',action='store_true')
+    scope.add_argument('--require-libraries',action='store_true',help='Verify a five-trial, two-library Hello/MySQL supplement at 64 connections.')
     args=parser.parse_args()
-    result=audit(args.directory,args.require_full)
+    result=audit(args.directory,args.require_full,args.require_libraries)
     print(f"Verified {result['verified_trials']} measured trials and {result['verified_warmups']} warmups from raw logs.")

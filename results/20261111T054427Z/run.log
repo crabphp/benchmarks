@@ -1,0 +1,40 @@
+PREFLIGHT hello-64 crab
+PREFLIGHT hello-64 webman
+PREFLIGHT hello-64 hyperf
+PREFLIGHT hello-64 symfony
+PREFLIGHT hello-64 spiral
+PREFLIGHT hello-64 laravel
+PREFLIGHT hello-64 tempest
+PREFLIGHT hello-64 reactphp
+PREFLIGHT hello-64 amphp
+RUN hello-64-crab-trial-1 2026-11-11T05:45:29.997535+00:00
+DONE hello-64-crab-trial-1: 107903 req/s; errors=0
+RUN hello-64-webman-trial-1 2026-11-11T05:45:52.622414+00:00
+DONE hello-64-webman-trial-1: 74506 req/s; errors=0
+RUN hello-64-hyperf-trial-1 2026-11-11T05:46:16.224151+00:00
+DONE hello-64-hyperf-trial-1: 41045 req/s; errors=0
+RUN hello-64-symfony-trial-1 2026-11-11T05:46:39.546825+00:00
+DONE hello-64-symfony-trial-1: 6156 req/s; errors=0
+RUN hello-64-spiral-trial-1 2026-11-11T05:47:02.225145+00:00
+DONE hello-64-spiral-trial-1: 3298 req/s; errors=0
+RUN hello-64-laravel-trial-1 2026-11-11T05:47:25.955783+00:00
+DONE hello-64-laravel-trial-1: 2175 req/s; errors=0
+RUN hello-64-tempest-trial-1 2026-11-11T05:47:48.741648+00:00
+DONE hello-64-tempest-trial-1: 1000 req/s; errors=0
+RUN hello-64-reactphp-trial-1 2026-11-11T05:48:11.444292+00:00
+DONE hello-64-reactphp-trial-1: 40652 req/s; errors=0
+RUN hello-64-amphp-trial-1 2026-11-11T05:48:33.491620+00:00
+DONE hello-64-amphp-trial-1: 14370 req/s; errors=0
+RUN hello-64-webman-trial-2 2026-11-11T05:48:56.309399+00:00
+DONE hello-64-webman-trial-2: 75088 req/s; errors=0
+RUN hello-64-hyperf-trial-2 2026-11-11T05:49:20.018228+00:00
+DONE hello-64-hyperf-trial-2: 41245 req/s; errors=0
+RUN hello-64-symfony-trial-2 2026-11-11T05:49:42.685727+00:00
+DONE hello-64-symfony-trial-2: 6108 req/s; errors=0
+RUN hello-64-spiral-trial-2 2026-11-11T05:50:05.462956+00:00
+DONE hello-64-spiral-trial-2: 3235 req/s; errors=0
+RUN hello-64-laravel-trial-2 2026-11-11T05:50:29.254623+00:00
+DONE hello-64-laravel-trial-2: 2142 req/s; errors=0
+RUN hello-64-tempest-trial-2 2026-11-11T05:50:52.036149+00:00
+DONE hello-64-tempest-trial-2: 988 req/s; errors=0
+RUN hello-64-reactphp-trial-2 2026-11-11T05:51:14.726485+00:00

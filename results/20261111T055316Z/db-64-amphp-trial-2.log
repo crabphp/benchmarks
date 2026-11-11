@@ -1,0 +1,14 @@
+Running 15s test @ http://amphp:8080
+  4 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    15.24ms    2.36ms  21.90ms   59.48%
+    Req/Sec     1.05k    61.78     2.00k    95.02%
+  Latency Distribution
+     50%   15.13ms
+     75%   17.06ms
+     90%   18.48ms
+     99%   19.74ms
+  63250 requests in 15.09s, 14.96MB read
+Requests/sec:   4190.83
+Transfer/sec:      0.99MB
+BENCH_JSON {"workload":"db","bad_body":0,"bad_response":0,"requests":63250,"duration_us":15092475,"rps":4190.830198,"p50_us":15132.000000,"p99_us":19742.000000,"bad_status":0,"errors":{"connect":0,"read":0,"write":0,"timeout":0,"status":0}}

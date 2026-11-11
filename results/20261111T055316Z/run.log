@@ -1,0 +1,45 @@
+PREFLIGHT hello-64 reactphp
+PREFLIGHT hello-64 amphp
+RUN hello-64-reactphp-trial-1 2026-11-11T05:54:03.056750+00:00
+DONE hello-64-reactphp-trial-1: 40998 req/s; errors=0
+RUN hello-64-amphp-trial-1 2026-11-11T05:54:25.635751+00:00
+DONE hello-64-amphp-trial-1: 14001 req/s; errors=0
+RUN hello-64-amphp-trial-2 2026-11-11T05:54:48.191745+00:00
+DONE hello-64-amphp-trial-2: 14062 req/s; errors=0
+RUN hello-64-reactphp-trial-2 2026-11-11T05:55:10.847249+00:00
+DONE hello-64-reactphp-trial-2: 41179 req/s; errors=0
+RUN hello-64-reactphp-trial-3 2026-11-11T05:55:33.588465+00:00
+DONE hello-64-reactphp-trial-3: 41600 req/s; errors=0
+RUN hello-64-amphp-trial-3 2026-11-11T05:55:56.386920+00:00
+DONE hello-64-amphp-trial-3: 13887 req/s; errors=0
+RUN hello-64-amphp-trial-4 2026-11-11T05:56:19.084662+00:00
+DONE hello-64-amphp-trial-4: 13906 req/s; errors=0
+RUN hello-64-reactphp-trial-4 2026-11-11T05:56:41.724191+00:00
+DONE hello-64-reactphp-trial-4: 40461 req/s; errors=0
+RUN hello-64-reactphp-trial-5 2026-11-11T05:57:04.427562+00:00
+DONE hello-64-reactphp-trial-5: 40496 req/s; errors=0
+RUN hello-64-amphp-trial-5 2026-11-11T05:57:27.720907+00:00
+DONE hello-64-amphp-trial-5: 14072 req/s; errors=0
+PREFLIGHT db-64 reactphp
+PREFLIGHT db-64 amphp
+RUN db-64-reactphp-trial-1 2026-11-11T05:57:54.723051+00:00
+DONE db-64-reactphp-trial-1: 12481 req/s; errors=0
+RUN db-64-amphp-trial-1 2026-11-11T05:58:17.383867+00:00
+DONE db-64-amphp-trial-1: 4124 req/s; errors=0
+RUN db-64-amphp-trial-2 2026-11-11T05:58:39.977998+00:00
+DONE db-64-amphp-trial-2: 4191 req/s; errors=0
+RUN db-64-reactphp-trial-2 2026-11-11T05:59:02.641162+00:00
+DONE db-64-reactphp-trial-2: 12757 req/s; errors=0
+RUN db-64-reactphp-trial-3 2026-11-11T05:59:25.331055+00:00
+DONE db-64-reactphp-trial-3: 12513 req/s; errors=0
+RUN db-64-amphp-trial-3 2026-11-11T05:59:48.002431+00:00
+DONE db-64-amphp-trial-3: 4166 req/s; errors=0
+RUN db-64-amphp-trial-4 2026-11-11T06:00:10.658226+00:00
+DONE db-64-amphp-trial-4: 4192 req/s; errors=0
+RUN db-64-reactphp-trial-4 2026-11-11T06:00:33.286758+00:00
+DONE db-64-reactphp-trial-4: 12543 req/s; errors=0
+RUN db-64-reactphp-trial-5 2026-11-11T06:00:55.939176+00:00
+DONE db-64-reactphp-trial-5: 12562 req/s; errors=0
+RUN db-64-amphp-trial-5 2026-11-11T06:01:18.710732+00:00
+DONE db-64-amphp-trial-5: 4160 req/s; errors=0
+COMPLETE /home/daudau/Code/crabphp/benchmarks/results/20261111T055316Z

@@ -1,0 +1,794 @@
+[
+  {
+    "workload": "hello",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 86987,
+    "duration_us": 2086331,
+    "rps": 41693.767672,
+    "p50_us": 1518.0,
+    "p99_us": 2393.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "hello-64-reactphp-trial-1",
+    "command": [
+      "docker",
+      "exec",
+      "ec02879d3ef1335351b6a5e0e8030aa9c36448b993f048663eaf5d5eaa16d2a3",
+      "wrk",
+      "-t4",
+      "-c64",
+      "-d2s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://reactphp:8080",
+      "--",
+      "hello"
+    ],
+    "kind": "hello",
+    "connections": 64,
+    "service": "reactphp",
+    "error_count": 0,
+    "resources": {
+      "reactphp": {
+        "average_cpu_percent": 175.05984199907846,
+        "peak_sampled_memory_bytes": 22736896
+      },
+      "mysql": {
+        "average_cpu_percent": 2.022280619960863,
+        "peak_sampled_memory_bytes": 532660224
+      },
+      "loadgen": {
+        "average_cpu_percent": 49.666506711976176,
+        "peak_sampled_memory_bytes": 18558976
+      }
+    },
+    "container_peak_bytes": 24772608,
+    "container_current_bytes": 23367680,
+    "trial": 1,
+    "runtime_after": {
+      "php": "8.5.12",
+      "sapi": "cli",
+      "classmap_authoritative": true,
+      "memory_limit": "256M",
+      "debug": false,
+      "pid": 8,
+      "opcache": "1",
+      "timestamps": "0",
+      "jit": {
+        "enabled": false,
+        "on": false,
+        "kind": 0,
+        "opt_level": 0,
+        "opt_flags": 0,
+        "buffer_size": 0,
+        "buffer_free": 0
+      },
+      "opcache_statistics": {
+        "num_cached_scripts": 105,
+        "num_cached_keys": 193,
+        "max_cached_keys": 32531,
+        "hits": 29,
+        "start_time": 1794375555,
+        "last_restart_time": 0,
+        "oom_restarts": 0,
+        "hash_restarts": 0,
+        "manual_restarts": 0,
+        "misses": 166,
+        "blacklist_misses": 0,
+        "blacklist_miss_ratio": 0,
+        "opcache_hit_rate": 14.871794871794872
+      },
+      "cache_full": false,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "event": "3.2.0",
+      "loop": "React\\EventLoop\\ExtEventLoop",
+      "database_driver": "react/mysql",
+      "validation": "explicit PHP checks"
+    }
+  },
+  {
+    "workload": "hello",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 29646,
+    "duration_us": 2087092,
+    "rps": 14204.452894,
+    "p50_us": 4427.0,
+    "p99_us": 12873.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "hello-64-amphp-trial-1",
+    "command": [
+      "docker",
+      "exec",
+      "ec02879d3ef1335351b6a5e0e8030aa9c36448b993f048663eaf5d5eaa16d2a3",
+      "wrk",
+      "-t4",
+      "-c64",
+      "-d2s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://amphp:8080",
+      "--",
+      "hello"
+    ],
+    "kind": "hello",
+    "connections": 64,
+    "service": "amphp",
+    "error_count": 0,
+    "resources": {
+      "amphp": {
+        "average_cpu_percent": 175.3525665276288,
+        "peak_sampled_memory_bytes": 27344896
+      },
+      "mysql": {
+        "average_cpu_percent": 1.988042583404932,
+        "peak_sampled_memory_bytes": 533639168
+      },
+      "loadgen": {
+        "average_cpu_percent": 35.53343443651388,
+        "peak_sampled_memory_bytes": 18923520
+      }
+    },
+    "container_peak_bytes": 27627520,
+    "container_current_bytes": 26263552,
+    "trial": 1,
+    "runtime_after": {
+      "php": "8.5.12",
+      "sapi": "cli",
+      "classmap_authoritative": true,
+      "memory_limit": "256M",
+      "debug": false,
+      "pid": 8,
+      "opcache": "1",
+      "timestamps": "0",
+      "jit": {
+        "enabled": false,
+        "on": false,
+        "kind": 0,
+        "opt_level": 0,
+        "opt_flags": 0,
+        "buffer_size": 0,
+        "buffer_free": 0
+      },
+      "opcache_statistics": {
+        "num_cached_scripts": 175,
+        "num_cached_keys": 343,
+        "max_cached_keys": 32531,
+        "hits": 53,
+        "start_time": 1794375576,
+        "last_restart_time": 0,
+        "oom_restarts": 0,
+        "hash_restarts": 0,
+        "manual_restarts": 0,
+        "misses": 268,
+        "blacklist_misses": 0,
+        "blacklist_miss_ratio": 0,
+        "opcache_hit_rate": 16.510903426791277
+      },
+      "cache_full": false,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "event": "3.2.0",
+      "loop": "Revolt\\EventLoop\\Driver\\EventDriver",
+      "database_driver": "amphp/mysql",
+      "validation": "explicit PHP checks"
+    }
+  },
+  {
+    "workload": "hello",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 84402,
+    "duration_us": 2089532,
+    "rps": 40392.776947,
+    "p50_us": 6205.0,
+    "p99_us": 46258.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "hello-256-reactphp-trial-1",
+    "command": [
+      "docker",
+      "exec",
+      "ec02879d3ef1335351b6a5e0e8030aa9c36448b993f048663eaf5d5eaa16d2a3",
+      "wrk",
+      "-t4",
+      "-c256",
+      "-d2s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://reactphp:8080",
+      "--",
+      "hello"
+    ],
+    "kind": "hello",
+    "connections": 256,
+    "service": "reactphp",
+    "error_count": 0,
+    "resources": {
+      "reactphp": {
+        "average_cpu_percent": 179.05949621828879,
+        "peak_sampled_memory_bytes": 27455488
+      },
+      "mysql": {
+        "average_cpu_percent": 2.0265379132559596,
+        "peak_sampled_memory_bytes": 532541440
+      },
+      "loadgen": {
+        "average_cpu_percent": 49.26476612017211,
+        "peak_sampled_memory_bytes": 24244224
+      }
+    },
+    "container_peak_bytes": 28233728,
+    "container_current_bytes": 26796032,
+    "trial": 1,
+    "runtime_after": {
+      "php": "8.5.12",
+      "sapi": "cli",
+      "classmap_authoritative": true,
+      "memory_limit": "256M",
+      "debug": false,
+      "pid": 7,
+      "opcache": "1",
+      "timestamps": "0",
+      "jit": {
+        "enabled": false,
+        "on": false,
+        "kind": 0,
+        "opt_level": 0,
+        "opt_flags": 0,
+        "buffer_size": 0,
+        "buffer_free": 0
+      },
+      "opcache_statistics": {
+        "num_cached_scripts": 105,
+        "num_cached_keys": 193,
+        "max_cached_keys": 32531,
+        "hits": 29,
+        "start_time": 1794375630,
+        "last_restart_time": 0,
+        "oom_restarts": 0,
+        "hash_restarts": 0,
+        "manual_restarts": 0,
+        "misses": 166,
+        "blacklist_misses": 0,
+        "blacklist_miss_ratio": 0,
+        "opcache_hit_rate": 14.871794871794872
+      },
+      "cache_full": false,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "event": "3.2.0",
+      "loop": "React\\EventLoop\\ExtEventLoop",
+      "database_driver": "react/mysql",
+      "validation": "explicit PHP checks"
+    }
+  },
+  {
+    "workload": "hello",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 29235,
+    "duration_us": 2087326,
+    "rps": 14005.957862,
+    "p50_us": 23598.0,
+    "p99_us": 65186.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "hello-256-amphp-trial-1",
+    "command": [
+      "docker",
+      "exec",
+      "ec02879d3ef1335351b6a5e0e8030aa9c36448b993f048663eaf5d5eaa16d2a3",
+      "wrk",
+      "-t4",
+      "-c256",
+      "-d2s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://amphp:8080",
+      "--",
+      "hello"
+    ],
+    "kind": "hello",
+    "connections": 256,
+    "service": "amphp",
+    "error_count": 0,
+    "resources": {
+      "amphp": {
+        "average_cpu_percent": 180.69897152423647,
+        "peak_sampled_memory_bytes": 35753984
+      },
+      "mysql": {
+        "average_cpu_percent": 1.9847588447960034,
+        "peak_sampled_memory_bytes": 532295680
+      },
+      "loadgen": {
+        "average_cpu_percent": 35.25770350027747,
+        "peak_sampled_memory_bytes": 24301568
+      }
+    },
+    "container_peak_bytes": 36691968,
+    "container_current_bytes": 32604160,
+    "trial": 1,
+    "runtime_after": {
+      "php": "8.5.12",
+      "sapi": "cli",
+      "classmap_authoritative": true,
+      "memory_limit": "256M",
+      "debug": false,
+      "pid": 7,
+      "opcache": "1",
+      "timestamps": "0",
+      "jit": {
+        "enabled": false,
+        "on": false,
+        "kind": 0,
+        "opt_level": 0,
+        "opt_flags": 0,
+        "buffer_size": 0,
+        "buffer_free": 0
+      },
+      "opcache_statistics": {
+        "num_cached_scripts": 175,
+        "num_cached_keys": 343,
+        "max_cached_keys": 32531,
+        "hits": 54,
+        "start_time": 1794375651,
+        "last_restart_time": 0,
+        "oom_restarts": 0,
+        "hash_restarts": 0,
+        "manual_restarts": 0,
+        "misses": 268,
+        "blacklist_misses": 0,
+        "blacklist_miss_ratio": 0,
+        "opcache_hit_rate": 16.77018633540373
+      },
+      "cache_full": false,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "event": "3.2.0",
+      "loop": "Revolt\\EventLoop\\Driver\\EventDriver",
+      "database_driver": "amphp/mysql",
+      "validation": "explicit PHP checks"
+    }
+  },
+  {
+    "workload": "db",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 27640,
+    "duration_us": 2082285,
+    "rps": 13273.879416,
+    "p50_us": 3297.0,
+    "p99_us": 22089.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "db-64-reactphp-trial-1",
+    "command": [
+      "docker",
+      "exec",
+      "ec02879d3ef1335351b6a5e0e8030aa9c36448b993f048663eaf5d5eaa16d2a3",
+      "wrk",
+      "-t4",
+      "-c64",
+      "-d2s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://reactphp:8080",
+      "--",
+      "db"
+    ],
+    "kind": "db",
+    "connections": 64,
+    "service": "reactphp",
+    "error_count": 0,
+    "resources": {
+      "reactphp": {
+        "average_cpu_percent": 181.21868112545408,
+        "peak_sampled_memory_bytes": 35295232
+      },
+      "mysql": {
+        "average_cpu_percent": 68.83227532408958,
+        "peak_sampled_memory_bytes": 572092416
+      },
+      "loadgen": {
+        "average_cpu_percent": 30.20643932330364,
+        "peak_sampled_memory_bytes": 20131840
+      }
+    },
+    "container_peak_bytes": 36913152,
+    "container_current_bytes": 35426304,
+    "trial": 1,
+    "runtime_after": {
+      "php": "8.5.12",
+      "sapi": "cli",
+      "classmap_authoritative": true,
+      "memory_limit": "256M",
+      "debug": false,
+      "pid": 8,
+      "opcache": "1",
+      "timestamps": "0",
+      "jit": {
+        "enabled": false,
+        "on": false,
+        "kind": 0,
+        "opt_level": 0,
+        "opt_flags": 0,
+        "buffer_size": 0,
+        "buffer_free": 0
+      },
+      "opcache_statistics": {
+        "num_cached_scripts": 128,
+        "num_cached_keys": 239,
+        "max_cached_keys": 32531,
+        "hits": 37,
+        "start_time": 1794375705,
+        "last_restart_time": 0,
+        "oom_restarts": 0,
+        "hash_restarts": 0,
+        "manual_restarts": 0,
+        "misses": 204,
+        "blacklist_misses": 0,
+        "blacklist_miss_ratio": 0,
+        "opcache_hit_rate": 15.352697095435685
+      },
+      "cache_full": false,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "event": "3.2.0",
+      "loop": "React\\EventLoop\\ExtEventLoop",
+      "database_driver": "react/mysql",
+      "validation": "explicit PHP checks"
+    }
+  },
+  {
+    "workload": "db",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 9158,
+    "duration_us": 2086337,
+    "rps": 4389.511378,
+    "p50_us": 13250.0,
+    "p99_us": 20403.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "db-64-amphp-trial-1",
+    "command": [
+      "docker",
+      "exec",
+      "ec02879d3ef1335351b6a5e0e8030aa9c36448b993f048663eaf5d5eaa16d2a3",
+      "wrk",
+      "-t4",
+      "-c64",
+      "-d2s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://amphp:8080",
+      "--",
+      "db"
+    ],
+    "kind": "db",
+    "connections": 64,
+    "service": "amphp",
+    "error_count": 0,
+    "resources": {
+      "amphp": {
+        "average_cpu_percent": 182.8163872298978,
+        "peak_sampled_memory_bytes": 32960512
+      },
+      "mysql": {
+        "average_cpu_percent": 47.11062881836446,
+        "peak_sampled_memory_bytes": 572735488
+      },
+      "loadgen": {
+        "average_cpu_percent": 17.312438026889414,
+        "peak_sampled_memory_bytes": 17690624
+      }
+    },
+    "container_peak_bytes": 33251328,
+    "container_current_bytes": 31404032,
+    "trial": 1,
+    "runtime_after": {
+      "php": "8.5.12",
+      "sapi": "cli",
+      "classmap_authoritative": true,
+      "memory_limit": "256M",
+      "debug": false,
+      "pid": 7,
+      "opcache": "1",
+      "timestamps": "0",
+      "jit": {
+        "enabled": false,
+        "on": false,
+        "kind": 0,
+        "opt_level": 0,
+        "opt_flags": 0,
+        "buffer_size": 0,
+        "buffer_free": 0
+      },
+      "opcache_statistics": {
+        "num_cached_scripts": 256,
+        "num_cached_keys": 505,
+        "max_cached_keys": 32531,
+        "hits": 58,
+        "start_time": 1794375726,
+        "last_restart_time": 0,
+        "oom_restarts": 0,
+        "hash_restarts": 0,
+        "manual_restarts": 0,
+        "misses": 425,
+        "blacklist_misses": 0,
+        "blacklist_miss_ratio": 0,
+        "opcache_hit_rate": 12.008281573498964
+      },
+      "cache_full": false,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "event": "3.2.0",
+      "loop": "Revolt\\EventLoop\\Driver\\EventDriver",
+      "database_driver": "amphp/mysql",
+      "validation": "explicit PHP checks"
+    }
+  },
+  {
+    "workload": "validate",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 50830,
+    "duration_us": 2081998,
+    "rps": 24414.048428,
+    "p50_us": 2596.0,
+    "p99_us": 4666.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "validate-64-reactphp-trial-1",
+    "command": [
+      "docker",
+      "exec",
+      "ec02879d3ef1335351b6a5e0e8030aa9c36448b993f048663eaf5d5eaa16d2a3",
+      "wrk",
+      "-t4",
+      "-c64",
+      "-d2s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://reactphp:8080",
+      "--",
+      "validate"
+    ],
+    "kind": "validate",
+    "connections": 64,
+    "service": "reactphp",
+    "error_count": 0,
+    "resources": {
+      "reactphp": {
+        "average_cpu_percent": 185.28762573705586,
+        "peak_sampled_memory_bytes": 34082816
+      },
+      "mysql": {
+        "average_cpu_percent": 2.002269376147175,
+        "peak_sampled_memory_bytes": 571170816
+      },
+      "loadgen": {
+        "average_cpu_percent": 41.63238535768349,
+        "peak_sampled_memory_bytes": 30662656
+      }
+    },
+    "container_peak_bytes": 35856384,
+    "container_current_bytes": 35897344,
+    "trial": 1,
+    "runtime_after": {
+      "php": "8.5.12",
+      "sapi": "cli",
+      "classmap_authoritative": true,
+      "memory_limit": "256M",
+      "debug": false,
+      "pid": 7,
+      "opcache": "1",
+      "timestamps": "0",
+      "jit": {
+        "enabled": false,
+        "on": false,
+        "kind": 0,
+        "opt_level": 0,
+        "opt_flags": 0,
+        "buffer_size": 0,
+        "buffer_free": 0
+      },
+      "opcache_statistics": {
+        "num_cached_scripts": 112,
+        "num_cached_keys": 206,
+        "max_cached_keys": 32531,
+        "hits": 31,
+        "start_time": 1794375779,
+        "last_restart_time": 0,
+        "oom_restarts": 0,
+        "hash_restarts": 0,
+        "manual_restarts": 0,
+        "misses": 178,
+        "blacklist_misses": 0,
+        "blacklist_miss_ratio": 0,
+        "opcache_hit_rate": 14.832535885167463
+      },
+      "cache_full": false,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "event": "3.2.0",
+      "loop": "React\\EventLoop\\ExtEventLoop",
+      "database_driver": "react/mysql",
+      "validation": "explicit PHP checks"
+    }
+  },
+  {
+    "workload": "validate",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 24698,
+    "duration_us": 2081474,
+    "rps": 11865.629837,
+    "p50_us": 4784.0,
+    "p99_us": 16530.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "validate-64-amphp-trial-1",
+    "command": [
+      "docker",
+      "exec",
+      "ec02879d3ef1335351b6a5e0e8030aa9c36448b993f048663eaf5d5eaa16d2a3",
+      "wrk",
+      "-t4",
+      "-c64",
+      "-d2s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://amphp:8080",
+      "--",
+      "validate"
+    ],
+    "kind": "validate",
+    "connections": 64,
+    "service": "amphp",
+    "error_count": 0,
+    "resources": {
+      "amphp": {
+        "average_cpu_percent": 182.27644221434772,
+        "peak_sampled_memory_bytes": 28889088
+      },
+      "mysql": {
+        "average_cpu_percent": 1.9372089167896984,
+        "peak_sampled_memory_bytes": 572649472
+      },
+      "loadgen": {
+        "average_cpu_percent": 35.16809761347254,
+        "peak_sampled_memory_bytes": 30113792
+      }
+    },
+    "container_peak_bytes": 29048832,
+    "container_current_bytes": 27602944,
+    "trial": 1,
+    "runtime_after": {
+      "php": "8.5.12",
+      "sapi": "cli",
+      "classmap_authoritative": true,
+      "memory_limit": "256M",
+      "debug": false,
+      "pid": 7,
+      "opcache": "1",
+      "timestamps": "0",
+      "jit": {
+        "enabled": false,
+        "on": false,
+        "kind": 0,
+        "opt_level": 0,
+        "opt_flags": 0,
+        "buffer_size": 0,
+        "buffer_free": 0
+      },
+      "opcache_statistics": {
+        "num_cached_scripts": 184,
+        "num_cached_keys": 361,
+        "max_cached_keys": 32531,
+        "hits": 55,
+        "start_time": 1794375800,
+        "last_restart_time": 0,
+        "oom_restarts": 0,
+        "hash_restarts": 0,
+        "manual_restarts": 0,
+        "misses": 285,
+        "blacklist_misses": 0,
+        "blacklist_miss_ratio": 0,
+        "opcache_hit_rate": 16.176470588235293
+      },
+      "cache_full": false,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "event": "3.2.0",
+      "loop": "Revolt\\EventLoop\\Driver\\EventDriver",
+      "database_driver": "amphp/mysql",
+      "validation": "explicit PHP checks"
+    }
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "case": "hello-64",
+    "service": "crab",
+    "ready_seconds": 1.2722356960293837
+  },
+  {
+    "case": "hello-64",
+    "service": "webman",
+    "ready_seconds": 1.419223440985661
+  },
+  {
+    "case": "hello-64",
+    "service": "hyperf",
+    "ready_seconds": 1.267761679016985
+  },
+  {
+    "case": "hello-64",
+    "service": "symfony",
+    "ready_seconds": 1.5016865299548954
+  },
+  {
+    "case": "hello-64",
+    "service": "spiral",
+    "ready_seconds": 1.6079329650383443
+  },
+  {
+    "case": "hello-64",
+    "service": "laravel",
+    "ready_seconds": 1.516249637992587
+  },
+  {
+    "case": "hello-64",
+    "service": "tempest",
+    "ready_seconds": 1.5940358810476027
+  },
+  {
+    "case": "hello-64",
+    "service": "reactphp",
+    "ready_seconds": 1.9367491760058329
+  },
+  {
+    "case": "hello-64",
+    "service": "amphp",
+    "ready_seconds": 1.4013243039953522
+  }
+]
