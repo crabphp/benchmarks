@@ -1,0 +1,792 @@
+[
+  {
+    "workload": "hello",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 54154,
+    "duration_us": 15094183,
+    "rps": 3587.739727,
+    "p50_us": 14851.0,
+    "p99_us": 62789.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "hello-64-nextjs-trial-1",
+    "command": [
+      "docker",
+      "exec",
+      "d5b4dde893e914ab7308def52ab79e3580f86bc417b5bafe11cb25e9df0de5d6",
+      "wrk",
+      "-t4",
+      "-c64",
+      "-d15s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://nextjs:8080",
+      "--",
+      "hello"
+    ],
+    "kind": "hello",
+    "connections": 64,
+    "service": "nextjs",
+    "error_count": 0,
+    "resources": {
+      "nextjs": {
+        "average_cpu_percent": 199.16315462296984,
+        "peak_sampled_memory_bytes": 399917056
+      },
+      "mysql": {
+        "average_cpu_percent": 2.0409237417755737,
+        "peak_sampled_memory_bytes": 530771968
+      },
+      "loadgen": {
+        "average_cpu_percent": 11.395949885791525,
+        "peak_sampled_memory_bytes": 21852160
+      }
+    },
+    "container_peak_bytes": 402112512,
+    "container_current_bytes": 400560128,
+    "trial": 1,
+    "runtime_after": {
+      "node": "24.22.3",
+      "v8": "13.6.233.17-node.63",
+      "next": "16.4.6",
+      "mysql2": "3.24.6",
+      "node_env": "production",
+      "debug": false,
+      "pid": 13,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "server": "next standalone server.js under node:cluster",
+      "database_driver": "mysql2/promise pool",
+      "validation": "explicit JavaScript checks",
+      "memory": {
+        "rss": 245948416,
+        "heapTotal": 120254464,
+        "heapUsed": 69358712,
+        "external": 4269945,
+        "arrayBuffers": 225351
+      }
+    }
+  },
+  {
+    "workload": "hello",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 54672,
+    "duration_us": 15095772,
+    "rps": 3621.676321,
+    "p50_us": 14746.0,
+    "p99_us": 66148.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "hello-64-nextjs-trial-2",
+    "command": [
+      "docker",
+      "exec",
+      "d5b4dde893e914ab7308def52ab79e3580f86bc417b5bafe11cb25e9df0de5d6",
+      "wrk",
+      "-t4",
+      "-c64",
+      "-d15s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://nextjs:8080",
+      "--",
+      "hello"
+    ],
+    "kind": "hello",
+    "connections": 64,
+    "service": "nextjs",
+    "error_count": 0,
+    "resources": {
+      "nextjs": {
+        "average_cpu_percent": 199.3111684365301,
+        "peak_sampled_memory_bytes": 402472960
+      },
+      "mysql": {
+        "average_cpu_percent": 2.0803408954841003,
+        "peak_sampled_memory_bytes": 530112512
+      },
+      "loadgen": {
+        "average_cpu_percent": 11.668594754794414,
+        "peak_sampled_memory_bytes": 21577728
+      }
+    },
+    "container_peak_bytes": 406302720,
+    "container_current_bytes": 401612800,
+    "trial": 2,
+    "runtime_after": {
+      "node": "24.22.3",
+      "v8": "13.6.233.17-node.63",
+      "next": "16.4.6",
+      "mysql2": "3.24.6",
+      "node_env": "production",
+      "debug": false,
+      "pid": 14,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "server": "next standalone server.js under node:cluster",
+      "database_driver": "mysql2/promise pool",
+      "validation": "explicit JavaScript checks",
+      "memory": {
+        "rss": 244498432,
+        "heapTotal": 119992320,
+        "heapUsed": 65419648,
+        "external": 4268437,
+        "arrayBuffers": 223843
+      }
+    }
+  },
+  {
+    "workload": "hello",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 53719,
+    "duration_us": 15089850,
+    "rps": 3559.94261,
+    "p50_us": 14986.0,
+    "p99_us": 64792.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "hello-64-nextjs-trial-3",
+    "command": [
+      "docker",
+      "exec",
+      "d5b4dde893e914ab7308def52ab79e3580f86bc417b5bafe11cb25e9df0de5d6",
+      "wrk",
+      "-t4",
+      "-c64",
+      "-d15s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://nextjs:8080",
+      "--",
+      "hello"
+    ],
+    "kind": "hello",
+    "connections": 64,
+    "service": "nextjs",
+    "error_count": 0,
+    "resources": {
+      "nextjs": {
+        "average_cpu_percent": 199.45883593646914,
+        "peak_sampled_memory_bytes": 396947456
+      },
+      "mysql": {
+        "average_cpu_percent": 2.077239812156282,
+        "peak_sampled_memory_bytes": 529256448
+      },
+      "loadgen": {
+        "average_cpu_percent": 11.518299539431247,
+        "peak_sampled_memory_bytes": 21217280
+      }
+    },
+    "container_peak_bytes": 403369984,
+    "container_current_bytes": 396136448,
+    "trial": 3,
+    "runtime_after": {
+      "node": "24.22.3",
+      "v8": "13.6.233.17-node.63",
+      "next": "16.4.6",
+      "mysql2": "3.24.6",
+      "node_env": "production",
+      "debug": false,
+      "pid": 13,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "server": "next standalone server.js under node:cluster",
+      "database_driver": "mysql2/promise pool",
+      "validation": "explicit JavaScript checks",
+      "memory": {
+        "rss": 244293632,
+        "heapTotal": 119992320,
+        "heapUsed": 52836160,
+        "external": 4263913,
+        "arrayBuffers": 219319
+      }
+    }
+  },
+  {
+    "workload": "hello",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 54078,
+    "duration_us": 15092584,
+    "rps": 3583.084249,
+    "p50_us": 14857.0,
+    "p99_us": 63036.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "hello-64-nextjs-trial-4",
+    "command": [
+      "docker",
+      "exec",
+      "d5b4dde893e914ab7308def52ab79e3580f86bc417b5bafe11cb25e9df0de5d6",
+      "wrk",
+      "-t4",
+      "-c64",
+      "-d15s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://nextjs:8080",
+      "--",
+      "hello"
+    ],
+    "kind": "hello",
+    "connections": 64,
+    "service": "nextjs",
+    "error_count": 0,
+    "resources": {
+      "nextjs": {
+        "average_cpu_percent": 199.38174154788294,
+        "peak_sampled_memory_bytes": 399298560
+      },
+      "mysql": {
+        "average_cpu_percent": 2.34897524771099,
+        "peak_sampled_memory_bytes": 529002496
+      },
+      "loadgen": {
+        "average_cpu_percent": 11.405760363826452,
+        "peak_sampled_memory_bytes": 21450752
+      }
+    },
+    "container_peak_bytes": 402747392,
+    "container_current_bytes": 399142912,
+    "trial": 4,
+    "runtime_after": {
+      "node": "24.22.3",
+      "v8": "13.6.233.17-node.63",
+      "next": "16.4.6",
+      "mysql2": "3.24.6",
+      "node_env": "production",
+      "debug": false,
+      "pid": 14,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "server": "next standalone server.js under node:cluster",
+      "database_driver": "mysql2/promise pool",
+      "validation": "explicit JavaScript checks",
+      "memory": {
+        "rss": 243904512,
+        "heapTotal": 119468032,
+        "heapUsed": 36344832,
+        "external": 4262509,
+        "arrayBuffers": 217915
+      }
+    }
+  },
+  {
+    "workload": "hello",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 54545,
+    "duration_us": 15093535,
+    "rps": 3613.798888,
+    "p50_us": 15066.0,
+    "p99_us": 68289.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "hello-64-nextjs-trial-5",
+    "command": [
+      "docker",
+      "exec",
+      "d5b4dde893e914ab7308def52ab79e3580f86bc417b5bafe11cb25e9df0de5d6",
+      "wrk",
+      "-t4",
+      "-c64",
+      "-d15s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://nextjs:8080",
+      "--",
+      "hello"
+    ],
+    "kind": "hello",
+    "connections": 64,
+    "service": "nextjs",
+    "error_count": 0,
+    "resources": {
+      "nextjs": {
+        "average_cpu_percent": 199.24188999009124,
+        "peak_sampled_memory_bytes": 392302592
+      },
+      "mysql": {
+        "average_cpu_percent": 2.055035333541749,
+        "peak_sampled_memory_bytes": 529158144
+      },
+      "loadgen": {
+        "average_cpu_percent": 11.705791561347711,
+        "peak_sampled_memory_bytes": 21442560
+      }
+    },
+    "container_peak_bytes": 395079680,
+    "container_current_bytes": 392392704,
+    "trial": 5,
+    "runtime_after": {
+      "node": "24.22.3",
+      "v8": "13.6.233.17-node.63",
+      "next": "16.4.6",
+      "mysql2": "3.24.6",
+      "node_env": "production",
+      "debug": false,
+      "pid": 14,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "server": "next standalone server.js under node:cluster",
+      "database_driver": "mysql2/promise pool",
+      "validation": "explicit JavaScript checks",
+      "memory": {
+        "rss": 240254976,
+        "heapTotal": 119468032,
+        "heapUsed": 40060848,
+        "external": 4263913,
+        "arrayBuffers": 219319
+      }
+    }
+  },
+  {
+    "workload": "db",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 44247,
+    "duration_us": 15095406,
+    "rps": 2931.156671,
+    "p50_us": 19168.0,
+    "p99_us": 71568.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "db-64-nextjs-trial-1",
+    "command": [
+      "docker",
+      "exec",
+      "d5b4dde893e914ab7308def52ab79e3580f86bc417b5bafe11cb25e9df0de5d6",
+      "wrk",
+      "-t4",
+      "-c64",
+      "-d15s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://nextjs:8080",
+      "--",
+      "db"
+    ],
+    "kind": "db",
+    "connections": 64,
+    "service": "nextjs",
+    "error_count": 0,
+    "resources": {
+      "nextjs": {
+        "average_cpu_percent": 199.71396132389364,
+        "peak_sampled_memory_bytes": 423518208
+      },
+      "mysql": {
+        "average_cpu_percent": 19.953383158949993,
+        "peak_sampled_memory_bytes": 571367424
+      },
+      "loadgen": {
+        "average_cpu_percent": 11.39187942414313,
+        "peak_sampled_memory_bytes": 20697088
+      }
+    },
+    "container_peak_bytes": 427728896,
+    "container_current_bytes": 423342080,
+    "trial": 1,
+    "runtime_after": {
+      "node": "24.22.3",
+      "v8": "13.6.233.17-node.63",
+      "next": "16.4.6",
+      "mysql2": "3.24.6",
+      "node_env": "production",
+      "debug": false,
+      "pid": 13,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "server": "next standalone server.js under node:cluster",
+      "database_driver": "mysql2/promise pool",
+      "validation": "explicit JavaScript checks",
+      "memory": {
+        "rss": 267882496,
+        "heapTotal": 136683520,
+        "heapUsed": 67670248,
+        "external": 4443906,
+        "arrayBuffers": 399312
+      }
+    }
+  },
+  {
+    "workload": "db",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 44101,
+    "duration_us": 15093152,
+    "rps": 2921.921147,
+    "p50_us": 19202.0,
+    "p99_us": 69297.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "db-64-nextjs-trial-2",
+    "command": [
+      "docker",
+      "exec",
+      "d5b4dde893e914ab7308def52ab79e3580f86bc417b5bafe11cb25e9df0de5d6",
+      "wrk",
+      "-t4",
+      "-c64",
+      "-d15s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://nextjs:8080",
+      "--",
+      "db"
+    ],
+    "kind": "db",
+    "connections": 64,
+    "service": "nextjs",
+    "error_count": 0,
+    "resources": {
+      "nextjs": {
+        "average_cpu_percent": 199.16761545570637,
+        "peak_sampled_memory_bytes": 422580224
+      },
+      "mysql": {
+        "average_cpu_percent": 20.219064300246554,
+        "peak_sampled_memory_bytes": 570007552
+      },
+      "loadgen": {
+        "average_cpu_percent": 11.424212851478858,
+        "peak_sampled_memory_bytes": 20832256
+      }
+    },
+    "container_peak_bytes": 424300544,
+    "container_current_bytes": 422854656,
+    "trial": 2,
+    "runtime_after": {
+      "node": "24.22.3",
+      "v8": "13.6.233.17-node.63",
+      "next": "16.4.6",
+      "mysql2": "3.24.6",
+      "node_env": "production",
+      "debug": false,
+      "pid": 14,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "server": "next standalone server.js under node:cluster",
+      "database_driver": "mysql2/promise pool",
+      "validation": "explicit JavaScript checks",
+      "memory": {
+        "rss": 242798592,
+        "heapTotal": 137994240,
+        "heapUsed": 72447896,
+        "external": 4450106,
+        "arrayBuffers": 405512
+      }
+    }
+  },
+  {
+    "workload": "db",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 44364,
+    "duration_us": 15079431,
+    "rps": 2942.020823,
+    "p50_us": 19145.0,
+    "p99_us": 70528.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "db-64-nextjs-trial-3",
+    "command": [
+      "docker",
+      "exec",
+      "d5b4dde893e914ab7308def52ab79e3580f86bc417b5bafe11cb25e9df0de5d6",
+      "wrk",
+      "-t4",
+      "-c64",
+      "-d15s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://nextjs:8080",
+      "--",
+      "db"
+    ],
+    "kind": "db",
+    "connections": 64,
+    "service": "nextjs",
+    "error_count": 0,
+    "resources": {
+      "nextjs": {
+        "average_cpu_percent": 199.15738880513217,
+        "peak_sampled_memory_bytes": 435179520
+      },
+      "mysql": {
+        "average_cpu_percent": 20.040800539813954,
+        "peak_sampled_memory_bytes": 570142720
+      },
+      "loadgen": {
+        "average_cpu_percent": 11.236073911046837,
+        "peak_sampled_memory_bytes": 20606976
+      }
+    },
+    "container_peak_bytes": 438202368,
+    "container_current_bytes": 435380224,
+    "trial": 3,
+    "runtime_after": {
+      "node": "24.22.3",
+      "v8": "13.6.233.17-node.63",
+      "next": "16.4.6",
+      "mysql2": "3.24.6",
+      "node_env": "production",
+      "debug": false,
+      "pid": 14,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "server": "next standalone server.js under node:cluster",
+      "database_driver": "mysql2/promise pool",
+      "validation": "explicit JavaScript checks",
+      "memory": {
+        "rss": 257413120,
+        "heapTotal": 136421376,
+        "heapUsed": 63974416,
+        "external": 4416278,
+        "arrayBuffers": 371684
+      }
+    }
+  },
+  {
+    "workload": "db",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 44565,
+    "duration_us": 15098040,
+    "rps": 2951.707639,
+    "p50_us": 18939.0,
+    "p99_us": 75070.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "db-64-nextjs-trial-4",
+    "command": [
+      "docker",
+      "exec",
+      "d5b4dde893e914ab7308def52ab79e3580f86bc417b5bafe11cb25e9df0de5d6",
+      "wrk",
+      "-t4",
+      "-c64",
+      "-d15s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://nextjs:8080",
+      "--",
+      "db"
+    ],
+    "kind": "db",
+    "connections": 64,
+    "service": "nextjs",
+    "error_count": 0,
+    "resources": {
+      "nextjs": {
+        "average_cpu_percent": 199.65567007556584,
+        "peak_sampled_memory_bytes": 404918272
+      },
+      "mysql": {
+        "average_cpu_percent": 20.337258030284673,
+        "peak_sampled_memory_bytes": 571580416
+      },
+      "loadgen": {
+        "average_cpu_percent": 11.486056916088213,
+        "peak_sampled_memory_bytes": 20566016
+      }
+    },
+    "container_peak_bytes": 405983232,
+    "container_current_bytes": 404475904,
+    "trial": 4,
+    "runtime_after": {
+      "node": "24.22.3",
+      "v8": "13.6.233.17-node.63",
+      "next": "16.4.6",
+      "mysql2": "3.24.6",
+      "node_env": "production",
+      "debug": false,
+      "pid": 14,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "server": "next standalone server.js under node:cluster",
+      "database_driver": "mysql2/promise pool",
+      "validation": "explicit JavaScript checks",
+      "memory": {
+        "rss": 228061184,
+        "heapTotal": 136159232,
+        "heapUsed": 72239832,
+        "external": 4456267,
+        "arrayBuffers": 411673
+      }
+    }
+  },
+  {
+    "workload": "db",
+    "bad_body": 0,
+    "bad_response": 0,
+    "requests": 44110,
+    "duration_us": 15099615,
+    "rps": 2921.266536,
+    "p50_us": 19147.0,
+    "p99_us": 74071.0,
+    "bad_status": 0,
+    "errors": {
+      "connect": 0,
+      "read": 0,
+      "write": 0,
+      "timeout": 0,
+      "status": 0
+    },
+    "label": "db-64-nextjs-trial-5",
+    "command": [
+      "docker",
+      "exec",
+      "d5b4dde893e914ab7308def52ab79e3580f86bc417b5bafe11cb25e9df0de5d6",
+      "wrk",
+      "-t4",
+      "-c64",
+      "-d15s",
+      "--timeout",
+      "5s",
+      "--latency",
+      "-s",
+      "/bench/workload.lua",
+      "http://nextjs:8080",
+      "--",
+      "db"
+    ],
+    "kind": "db",
+    "connections": 64,
+    "service": "nextjs",
+    "error_count": 0,
+    "resources": {
+      "nextjs": {
+        "average_cpu_percent": 199.29809028915884,
+        "peak_sampled_memory_bytes": 433991680
+      },
+      "mysql": {
+        "average_cpu_percent": 20.181701797379926,
+        "peak_sampled_memory_bytes": 571551744
+      },
+      "loadgen": {
+        "average_cpu_percent": 11.242556296966995,
+        "peak_sampled_memory_bytes": 20852736
+      }
+    },
+    "container_peak_bytes": 437448704,
+    "container_current_bytes": 432521216,
+    "trial": 5,
+    "runtime_after": {
+      "node": "24.22.3",
+      "v8": "13.6.233.17-node.63",
+      "next": "16.4.6",
+      "mysql2": "3.24.6",
+      "node_env": "production",
+      "debug": false,
+      "pid": 14,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "server": "next standalone server.js under node:cluster",
+      "database_driver": "mysql2/promise pool",
+      "validation": "explicit JavaScript checks",
+      "memory": {
+        "rss": 263024640,
+        "heapTotal": 137605120,
+        "heapUsed": 54522808,
+        "external": 4395803,
+        "arrayBuffers": 351209
+      }
+    }
+  }
+]

@@ -6,10 +6,14 @@ CONTEXT=Path(os.environ['BENCH_CONTEXT'])
 SOURCES=json.loads((ROOT/'sources.json').read_text())
 if CONTEXT.exists(): shutil.rmtree(CONTEXT)
 CONTEXT.mkdir(parents=True)
-for name in ['common','crab','webman','hyperf','spiral','symfony','laravel','laravel-octane','tempest','reactphp','amphp','loadgen','mysql']:
+for name in ['common','crab','webman','hyperf','spiral','symfony','laravel','laravel-octane','tempest','reactphp','amphp','nextjs','loadgen','mysql']:
     shutil.copytree(ROOT/name,CONTEXT/name)
 cache=ROOT/'.work/downloads'; cache.mkdir(parents=True,exist_ok=True)
 for name,pin in SOURCES['apps'].items():
+    # npm contenders are pinned by their committed package-lock.json integrity hashes.
+    if pin.get('registry')=='npm':
+        print('Prepared',name,pin['version'],'(npm lock)',flush=True)
+        continue
     archive=cache/(pin['sha256']+'.tar.gz')
     if not archive.exists(): archive.write_bytes(urllib.request.urlopen(pin['archive_url'],timeout=60).read())
     data=archive.read_bytes()

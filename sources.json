@@ -81,6 +81,13 @@
       "sha256": "f37490ba42a9102ce5864124f3d98763d20457c1898fa15f0776f8ad63493040",
       "framework": "amphp/http-server",
       "version": "v3.4.8"
+    },
+    "nextjs": {
+      "registry": "npm",
+      "framework": "next",
+      "version": "16.4.6",
+      "runtime": "node 24.22.3",
+      "package_lock_sha256": "38dab42371eca1fb29722777660a1db0b7740ef733d6b01159f8ddb77551ac02"
     }
   }
 }

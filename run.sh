@@ -9,6 +9,7 @@ for folder in crab webman hyperf symfony spiral laravel-octane tempest reactphp 
     test -f "$folder/$filename" || { echo "Missing $folder/$filename. Maintainers must freeze dependencies with ./build.sh." >&2; exit 1; }
   done
 done
+test -f nextjs/package-lock.json || { echo "Missing nextjs/package-lock.json." >&2; exit 1; }
 docker compose version >/dev/null
 docker info >/dev/null
 export BENCH_CONTEXT="$PWD/.work/context"
@@ -30,6 +31,7 @@ trap cleanup EXIT
 trap 'exit 130' INT TERM
 python3 -I prepare.py
 docker compose config > "$BENCH_RESULTS/compose-resolved.yaml"
-docker compose --progress plain build 2>&1 | tee "$BENCH_RESULTS/build.log"
+# A subset run builds only its contenders, never touching the other images.
+docker compose --progress plain build ${BENCH_SERVICES:+${BENCH_SERVICES//,/ } loadgen} 2>&1 | tee "$BENCH_RESULTS/build.log"
 python3 -I runner.py 2>&1 | tee "$BENCH_RESULTS/run.log"
 python3 -I audit.py "$BENCH_RESULTS"

@@ -1,0 +1,56 @@
+[
+  {
+    "case": "hello-64",
+    "service": "nextjs",
+    "ok": true,
+    "metadata": {
+      "node": "24.22.3",
+      "v8": "13.6.233.17-node.63",
+      "next": "16.4.6",
+      "mysql2": "3.24.6",
+      "node_env": "production",
+      "debug": false,
+      "pid": 14,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "server": "next standalone server.js under node:cluster",
+      "database_driver": "mysql2/promise pool",
+      "validation": "explicit JavaScript checks",
+      "memory": {
+        "rss": 111816704,
+        "heapTotal": 66707456,
+        "heapUsed": 35826232,
+        "external": 4274747,
+        "arrayBuffers": 223340
+      }
+    }
+  },
+  {
+    "case": "db-64",
+    "service": "nextjs",
+    "ok": true,
+    "metadata": {
+      "node": "24.22.3",
+      "v8": "13.6.233.17-node.63",
+      "next": "16.4.6",
+      "mysql2": "3.24.6",
+      "node_env": "production",
+      "debug": false,
+      "pid": 13,
+      "workers": 2,
+      "pool_per_worker": 10,
+      "persistent": true,
+      "server": "next standalone server.js under node:cluster",
+      "database_driver": "mysql2/promise pool",
+      "validation": "explicit JavaScript checks",
+      "memory": {
+        "rss": 111792128,
+        "heapTotal": 66707456,
+        "heapUsed": 35825696,
+        "external": 4274747,
+        "arrayBuffers": 223340
+      }
+    }
+  }
+]

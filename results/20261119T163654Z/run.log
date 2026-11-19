@@ -1,0 +1,23 @@
+PREFLIGHT hello-64 nextjs
+RUN hello-64-nextjs-trial-1 2026-11-19T16:37:16.750837+00:00
+DONE hello-64-nextjs-trial-1: 3588 req/s; errors=0
+RUN hello-64-nextjs-trial-2 2026-11-19T16:37:38.800801+00:00
+DONE hello-64-nextjs-trial-2: 3622 req/s; errors=0
+RUN hello-64-nextjs-trial-3 2026-11-19T16:38:00.900281+00:00
+DONE hello-64-nextjs-trial-3: 3560 req/s; errors=0
+RUN hello-64-nextjs-trial-4 2026-11-19T16:38:22.953003+00:00
+DONE hello-64-nextjs-trial-4: 3583 req/s; errors=0
+RUN hello-64-nextjs-trial-5 2026-11-19T16:38:45.012135+00:00
+DONE hello-64-nextjs-trial-5: 3614 req/s; errors=0
+PREFLIGHT db-64 nextjs
+RUN db-64-nextjs-trial-1 2026-11-19T16:39:08.957005+00:00
+DONE db-64-nextjs-trial-1: 2931 req/s; errors=0
+RUN db-64-nextjs-trial-2 2026-11-19T16:39:30.980508+00:00
+DONE db-64-nextjs-trial-2: 2922 req/s; errors=0
+RUN db-64-nextjs-trial-3 2026-11-19T16:39:52.991141+00:00
+DONE db-64-nextjs-trial-3: 2942 req/s; errors=0
+RUN db-64-nextjs-trial-4 2026-11-19T16:40:15.609843+00:00
+DONE db-64-nextjs-trial-4: 2952 req/s; errors=0
+RUN db-64-nextjs-trial-5 2026-11-19T16:40:37.622487+00:00
+DONE db-64-nextjs-trial-5: 2921 req/s; errors=0
+COMPLETE /home/daudau/Code/crabphp/benchmarks/results/20261119T163654Z

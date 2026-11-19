@@ -16,13 +16,15 @@ ROOT = Path(__file__).resolve().parent
 OUT = Path(os.environ['BENCH_RESULTS'])
 OUT.mkdir(parents=True, exist_ok=True)
 ALL_SERVICES = ['crab', 'webman', 'hyperf', 'symfony', 'spiral', 'laravel', 'tempest', 'reactphp', 'amphp']
+# Non-PHP supplements are selectable explicitly and never part of the full PHP method.
+SUPPLEMENTS = ['nextjs']
 SERVICES = ALL_SERVICES.copy()
-PORTS = dict(zip(SERVICES, range(23101, 23101 + len(SERVICES))))
+PORTS = dict(zip(ALL_SERVICES + SUPPLEMENTS, range(23101, 23101 + len(ALL_SERVICES + SUPPLEMENTS))))
 if os.environ.get('BENCH_SERVICES'):
     requested = os.environ['BENCH_SERVICES'].split(',')
-    if set(requested) - set(ALL_SERVICES):
+    if set(requested) - set(ALL_SERVICES + SUPPLEMENTS):
         raise ValueError('Unknown BENCH_SERVICES: ' + repr(requested))
-    SERVICES = [name for name in SERVICES if name in requested]
+    SERVICES = [name for name in ALL_SERVICES + SUPPLEMENTS if name in requested]
 WARM = int(os.environ.get('BENCH_WARMUP', '5'))
 DURATION = int(os.environ.get('BENCH_DURATION', '15'))
 TRIALS = int(os.environ.get('BENCH_TRIALS', '5'))
@@ -220,6 +222,17 @@ for kind, connections in CASES:
         assert actual['HostConfig']['Memory'] == 2 * 1024**3
         assert actual['HostConfig']['MemorySwap'] == 2 * 1024**3
         save(case + '-' + service + '-inspect.json', actual)
+        if service == 'nextjs' and service not in versions:
+            lock = json.loads((ROOT / 'nextjs/package-lock.json').read_text())['packages']
+            versions[service] = {'node': command(['docker', 'exec', IDS[service], 'node', '--version']).stdout,
+                                 'packages': {name.removeprefix('node_modules/'): [value['version'], value.get('integrity')]
+                                              for name, value in lock.items() if name.startswith('node_modules/')},
+                                 'metadata': checks[-1]['metadata'],
+                                 'image': json.loads(command(['docker', 'image', 'inspect', actual['Image']]).stdout)[0],
+                                 'processes': command(['docker', 'top', IDS[service], '-eo', 'pid,ppid,args']).stdout}
+            source = metadata['sources']['apps'][service]
+            assert checks[-1]['metadata']['next'] == source['version'] == versions[service]['packages']['next'][0], (checks[-1], source)
+            save('versions.json', versions)
         if service not in versions:
             app = '/srv/crab' if service == 'crab' else '/srv/app'
             php = 'require "' + app + '/vendor/autoload.php"; $out=[]; foreach(Composer\\InstalledVersions::getInstalledPackages() as $p) {$out[$p]=[Composer\\InstalledVersions::getPrettyVersion($p),Composer\\InstalledVersions::getReference($p)];} echo json_encode($out);'

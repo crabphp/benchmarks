@@ -21,6 +21,13 @@ for data in [{},dict(valid,name=''),dict(valid,name='x'*101),dict(valid,name=' '
     status,body=request('/users',data)
     assert status==422,(data,status,body)
 status,metadata=request('/__bench');assert status==200
+if sys.argv[1]=='nextjs':
+    assert metadata['node'].startswith('24.') and metadata['node_env']=='production' and metadata['debug'] is False,metadata
+    assert metadata['workers']==2 and metadata['pool_per_worker']==10 and metadata['persistent'],metadata
+    assert metadata['database_driver']=='mysql2/promise pool' and metadata['validation']=='explicit JavaScript checks',metadata
+    connection.close()
+    print(json.dumps({'ok':True,'metadata':metadata}))
+    sys.exit(0)
 assert metadata['php'].startswith('8.5.'),metadata
 assert metadata['debug'] is False,metadata
 assert metadata['classmap_authoritative'],metadata

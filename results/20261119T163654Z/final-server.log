@@ -1,0 +1,110 @@
+nextjs-1  | ▲ Next.js 16.4.6
+nextjs-1  | ▲ Next.js 16.4.6
+nextjs-1  | - Local:         http://localhost:8080
+nextjs-1  | - Network:       http://0.0.0.0:8080
+nextjs-1  | - Local:         http://localhost:8080
+nextjs-1  | - Network:       http://0.0.0.0:8080
+nextjs-1  | ✓ Ready in 0ms
+nextjs-1  | ✓ Ready in 0ms
+nextjs-1  | ✓ Running next.config took 1.3ms
+nextjs-1  | ✓ Running next.config took 1.1ms
+nextjs-1  | ▲ Next.js 16.4.6
+nextjs-1  | - Local:         http://localhost:8080
+nextjs-1  | - Network:       http://0.0.0.0:8080
+nextjs-1  | ✓ Ready in 0ms
+nextjs-1  | ✓ Running next.config took 1.2ms
+nextjs-1  | ▲ Next.js 16.4.6
+nextjs-1  | - Local:         http://localhost:8080
+nextjs-1  | - Network:       http://0.0.0.0:8080
+nextjs-1  | ✓ Ready in 0ms
+nextjs-1  | ✓ Running next.config took 1.6ms
+nextjs-1  | ▲ Next.js 16.4.6
+nextjs-1  | - Local:         http://localhost:8080
+nextjs-1  | - Network:       http://0.0.0.0:8080
+nextjs-1  | ✓ Ready in 0ms
+nextjs-1  | ▲ Next.js 16.4.6
+nextjs-1  | - Local:         http://localhost:8080
+nextjs-1  | - Network:       http://0.0.0.0:8080
+nextjs-1  | ✓ Ready in 0ms
+nextjs-1  | ✓ Running next.config took 1.2ms
+nextjs-1  | ✓ Running next.config took 1.2ms
+nextjs-1  | ▲ Next.js 16.4.6
+nextjs-1  | ▲ Next.js 16.4.6
+nextjs-1  | - Local:         http://localhost:8080
+nextjs-1  | - Local:         http://localhost:8080
+nextjs-1  | - Network:       http://0.0.0.0:8080
+nextjs-1  | - Network:       http://0.0.0.0:8080
+nextjs-1  | ✓ Ready in 0ms
+nextjs-1  | ✓ Ready in 0ms
+nextjs-1  | ✓ Running next.config took 1.3ms
+nextjs-1  | ✓ Running next.config took 1.9ms
+nextjs-1  | ▲ Next.js 16.4.6
+nextjs-1  | - Local:         http://localhost:8080
+nextjs-1  | - Network:       http://0.0.0.0:8080
+nextjs-1  | ✓ Ready in 0ms
+nextjs-1  | ▲ Next.js 16.4.6
+nextjs-1  | - Local:         http://localhost:8080
+nextjs-1  | - Network:       http://0.0.0.0:8080
+nextjs-1  | ✓ Ready in 0ms
+nextjs-1  | ✓ Running next.config took 1.2ms
+nextjs-1  | ✓ Running next.config took 1.1ms
+nextjs-1  | ▲ Next.js 16.4.6
+nextjs-1  | - Local:         http://localhost:8080
+nextjs-1  | - Network:       http://0.0.0.0:8080
+nextjs-1  | ✓ Ready in 0ms
+nextjs-1  | ✓ Running next.config took 1.3ms
+nextjs-1  | ▲ Next.js 16.4.6
+nextjs-1  | - Local:         http://localhost:8080
+nextjs-1  | - Network:       http://0.0.0.0:8080
+nextjs-1  | ✓ Ready in 0ms
+nextjs-1  | ✓ Running next.config took 27ms
+mysql-1   | 2026-11-19 16:36:57+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.13-1.el9 started.
+mysql-1   | 2026-11-19 16:36:57+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+mysql-1   | 2026-11-19 16:36:57+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.13-1.el9 started.
+mysql-1   | 2026-11-19 16:36:57+00:00 [Note] [Entrypoint]: Initializing database files
+mysql-1   | 2026-11-19T16:36:57.499863Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+mysql-1   | 2026-11-19T16:36:57.501169Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.4.13) initializing of server in progress as process 80
+mysql-1   | 2026-11-19T16:36:57.501171Z 0 [System] [MY-015150] [Server] Server version with update: '8.4.13.0'
+mysql-1   | 2026-11-19T16:36:57.510682Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+mysql-1   | 2026-11-19T16:36:58.004482Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+mysql-1   | 2026-11-19T16:36:59.612857Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+mysql-1   | 2026-11-19T16:37:02.180097Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+mysql-1   | 2026-11-19 16:37:02+00:00 [Note] [Entrypoint]: Database files initialized
+mysql-1   | 2026-11-19 16:37:02+00:00 [Note] [Entrypoint]: Starting temporary server
+mysql-1   | 2026-11-19T16:37:02.229821Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+mysql-1   | 2026-11-19T16:37:02.460872Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.4.13) starting as process 133
+mysql-1   | 2026-11-19T16:37:02.460876Z 0 [System] [MY-015150] [Server] Server version with update: '8.4.13.0'
+mysql-1   | 2026-11-19T16:37:02.482700Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+mysql-1   | 2026-11-19T16:37:02.828562Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+mysql-1   | 2026-11-19T16:37:03.139302Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+mysql-1   | 2026-11-19T16:37:03.139325Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+mysql-1   | 2026-11-19T16:37:03.143647Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+mysql-1   | 2026-11-19T16:37:03.170671Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.4.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+mysql-1   | 2026-11-19 16:37:03+00:00 [Note] [Entrypoint]: Temporary server started.
+mysql-1   | '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+mysql-1   | 2026-11-19 16:37:04+00:00 [Note] [Entrypoint]: Creating database benchmark
+mysql-1   | 2026-11-19 16:37:04+00:00 [Note] [Entrypoint]: Creating user bench
+mysql-1   | 2026-11-19 16:37:04+00:00 [Note] [Entrypoint]: Giving user bench access to schema benchmark
+mysql-1   | 
+mysql-1   | 2026-11-19 16:37:04+00:00 [Note] [Entrypoint]: /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+mysql-1   | 2026-11-19T16:37:04.427918Z 13 [Warning] [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'
+mysql-1   | 
+mysql-1   | 
+mysql-1   | 2026-11-19 16:37:04+00:00 [Note] [Entrypoint]: Stopping temporary server
+mysql-1   | 2026-11-19T16:37:04.782026Z 14 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.4.13).
+mysql-1   | 2026-11-19T16:37:05.608803Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.4.13)  MySQL Community Server - GPL.
+mysql-1   | 2026-11-19T16:37:05.608815Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+mysql-1   | 2026-11-19 16:37:05+00:00 [Note] [Entrypoint]: Temporary server stopped
+mysql-1   | 
+mysql-1   | 2026-11-19 16:37:05+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+mysql-1   | 
+mysql-1   | 2026-11-19T16:37:05.799791Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+mysql-1   | 2026-11-19T16:37:06.032097Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.4.13) starting as process 1
+mysql-1   | 2026-11-19T16:37:06.032101Z 0 [System] [MY-015150] [Server] Server version with update: '8.4.13.0'
+mysql-1   | 2026-11-19T16:37:06.042271Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+mysql-1   | 2026-11-19T16:37:06.384360Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+mysql-1   | 2026-11-19T16:37:06.639880Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+mysql-1   | 2026-11-19T16:37:06.639902Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+mysql-1   | 2026-11-19T16:37:06.645456Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+mysql-1   | 2026-11-19T16:37:06.678657Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.4.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 23306  MySQL Community Server - GPL.
+mysql-1   | 2026-11-19T16:37:07.491873Z 10 [Warning] [MY-013360] [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'

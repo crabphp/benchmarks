@@ -1,0 +1,12 @@
+[
+  {
+    "case": "hello-64",
+    "service": "nextjs",
+    "ready_seconds": 1.6102584099862725
+  },
+  {
+    "case": "db-64",
+    "service": "nextjs",
+    "ready_seconds": 0.8001569788902998
+  }
+]

@@ -97,6 +97,18 @@ python3 add-libraries.py results/<library-timestamp> --baseline results/20261110
 
 The supplemental audit requires exactly ReactPHP and AMP, Hello and MySQL at 64 connections, five 15-second trials with five-second warmups, complete functional preflights and zero errors. It rejects smoke runs and cannot pass `--require-full`. The updater audits both sources, checks matching PHP/image pins and host/CPU, verifies the existing seven website rows match the baseline, then preserves those rows verbatim. Dates and raw-result links disclose the separate runs rather than presenting them as one simultaneous comparison. The supplemental MySQL account authentication compatibility setting is disclosed above; the historical baseline remains unchanged.
 
+### Add only Next.js
+
+Next.js 16.4.6 runs as the standalone production server on Node.js 24 (pinned `NODE_IMAGE`), two `node:cluster` workers, App Router route handlers with `force-dynamic`, a `mysql2` pool of ten connections per worker and explicit JavaScript validation. Dependencies are frozen by `nextjs/package-lock.json`. It is a separately dated supplement and never part of the PHP full method:
+
+```sh
+BENCH_SERVICES=nextjs BENCH_CASES=hello,db BENCH_CONNECTIONS=64 ./run.sh
+python3 audit.py results/<nextjs-timestamp> --require-nextjs
+python3 add-nextjs.py results/<nextjs-timestamp> --baseline results/20261110T104256Z --site ../crabphp-site
+```
+
+[Audited Next.js supplement: 19 November 2026](results/20261119T163654Z/) — Hello 3,588 [3,560–3,622] and MySQL 2,931 [2,921–2,952] requests/s, zero errors.
+
 ## Refresh dependencies (maintainers)
 
 Ordinary `./run.sh` uses committed source checksums, image digests and Composer locks. It never updates packages. The initial source comparison was adapted from `crabphp/framework/benchmarks/frameworks` (MIT); the old PHP 8.4 measurements are not reused.

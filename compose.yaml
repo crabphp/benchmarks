@@ -138,6 +138,21 @@ services:
         COMPOSER_IMAGE: '${COMPOSER_IMAGE}'
         FRANKEN_IMAGE: '${FRANKEN_IMAGE}'
     ports: ["127.0.0.1:23109:8080"]
+  nextjs:
+    <<: *app
+    environment:
+      NODE_ENV: production
+      DB_HOST: mysql
+      DB_PORT: "23306"
+      DB_DATABASE: benchmark
+      DB_USERNAME: bench
+      DB_PASSWORD: bench
+    build:
+      context: ${BENCH_CONTEXT}
+      dockerfile: nextjs/Dockerfile
+      args:
+        NODE_IMAGE: '${NODE_IMAGE}'
+    ports: ["127.0.0.1:23110:8080"]
   loadgen:
     cpus: 4
     mem_limit: 512m

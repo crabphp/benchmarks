@@ -1,0 +1,34 @@
+[
+  {
+    "case": "hello",
+    "connections": 64,
+    "service": "nextjs",
+    "runs": 5,
+    "rps": 3587.739727,
+    "rps_min": 3559.94261,
+    "rps_max": 3621.676321,
+    "p50_ms": 14.857,
+    "p99_ms": 64.792,
+    "errors": 0,
+    "peak_mib": 387.48046875,
+    "app_cpu_percent": 199.3111684365301,
+    "db_cpu_percent": 2.077239812156282,
+    "generator_cpu_percent": 11.518299539431247
+  },
+  {
+    "case": "db",
+    "connections": 64,
+    "service": "nextjs",
+    "runs": 5,
+    "rps": 2931.156671,
+    "rps_min": 2921.266536,
+    "rps_max": 2951.707639,
+    "p50_ms": 19.147,
+    "p99_ms": 71.568,
+    "errors": 0,
+    "peak_mib": 417.90234375,
+    "app_cpu_percent": 199.29809028915884,
+    "db_cpu_percent": 20.181701797379926,
+    "generator_cpu_percent": 11.39187942414313
+  }
+]

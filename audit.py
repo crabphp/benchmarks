@@ -2,19 +2,21 @@
 from pathlib import Path
 import argparse, hashlib, json, math, statistics
 
-def audit(directory: Path, require_full: bool = False, require_libraries: bool = False):
+def audit(directory: Path, require_full: bool = False, require_libraries: bool = False, require_nextjs: bool = False):
     def read(name):
         return json.loads((directory/name).read_text())
     metadata=read('metadata.json'); trials=read('trials.json'); warmups=read('warmups.json'); summary=read('summary.json')
-    assert not (require_full and require_libraries), 'Choose one publication scope'
-    if require_full or require_libraries:
+    assert require_full + require_libraries + require_nextjs <= 1, 'Choose one publication scope'
+    require_supplement = require_libraries or require_nextjs
+    if require_full or require_supplement:
         assert metadata['valid'] and metadata['completed_utc'], 'Not a complete valid reference run'
         original={'crab','webman','hyperf','symfony','spiral','laravel','tempest'}
         services=set(metadata.get('services', original))
-        if require_libraries:
+        if require_supplement:
             assert not metadata['full_method'], 'A supplemental run must not claim the full method'
-            assert services == {'reactphp', 'amphp'}, 'Supplement requires exactly the two HTTP libraries'
-            assert services <= set(metadata['sources']['apps']), 'Missing library source pins'
+            expected = {'nextjs'} if require_nextjs else {'reactphp', 'amphp'}
+            assert services == expected, 'Supplement requires exactly ' + ', '.join(sorted(expected))
+            assert services <= set(metadata['sources']['apps']), 'Missing supplement source pins'
             cases={('hello',64),('db',64)}
         else:
             assert metadata['full_method'], 'Not a complete valid reference run'
@@ -39,6 +41,10 @@ def audit(directory: Path, require_full: bool = False, require_libraries: bool =
             for kind, connections in cases for service in services for trial in range(1, 6)
         }
         for row in checks:
+            if row['service'] == 'nextjs':
+                assert row['metadata']['node'].startswith('24.') and row['metadata']['node_env'] == 'production'
+                assert row['metadata']['debug'] is False and row['metadata']['workers'] == 2
+                continue
             assert row['metadata']['php'].startswith('8.5.') and row['metadata']['debug'] is False
             assert not (row['metadata'].get('jit') or {}).get('on', False)
 
@@ -60,7 +66,7 @@ def audit(directory: Path, require_full: bool = False, require_libraries: bool =
         assert record['requests']>0
         error_count=raw['bad_response']+sum(raw['errors'][k] for k in ['connect','read','write','timeout'])
         assert error_count==record['error_count']
-        if require_full or require_libraries: assert error_count==0,(path,error_count)
+        if require_full or require_supplement: assert error_count==0,(path,error_count)
         hashes[path.name]=hashlib.sha256(path.read_bytes()).hexdigest()
     for row in summary:
         records=[r for r in trials if (r['kind'],r['connections'],r['service'])==(row['case'],row['connections'],row['service'])]
@@ -84,6 +90,7 @@ if __name__=='__main__':
     scope=parser.add_mutually_exclusive_group()
     scope.add_argument('--require-full',action='store_true')
     scope.add_argument('--require-libraries',action='store_true',help='Verify a five-trial, two-library Hello/MySQL supplement at 64 connections.')
+    scope.add_argument('--require-nextjs',action='store_true',help='Verify a five-trial Next.js Hello/MySQL supplement at 64 connections.')
     args=parser.parse_args()
-    result=audit(args.directory,args.require_full,args.require_libraries)
+    result=audit(args.directory,args.require_full,args.require_libraries,args.require_nextjs)
     print(f"Verified {result['verified_trials']} measured trials and {result['verified_warmups']} warmups from raw logs.")

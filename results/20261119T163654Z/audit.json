@@ -1,0 +1,28 @@
+{
+  "verified_trials": 10,
+  "verified_warmups": 10,
+  "verified_summary_rows": 2,
+  "full_method": false,
+  "raw_log_sha256": {
+    "hello-64-nextjs-trial-1.log": "8af265bee6afb17ff2b722fe0449c09038faaef2afe1c7282ecc222ab56b61ea",
+    "hello-64-nextjs-trial-2.log": "d5b3ff25e5d0567f447b3a673d12a655125e9b5c4c162db98c2b3cdd71fc5ae5",
+    "hello-64-nextjs-trial-3.log": "be7e00c14ad97bc1cdfaf60d6b8a1d05450378f657877e4339aa2940643a07c2",
+    "hello-64-nextjs-trial-4.log": "4da598010e0c707f10cad61ba4de610de8f345907aaaecadc7c349404d8593d8",
+    "hello-64-nextjs-trial-5.log": "396370148d6db67d34f4a559753f488543a2d167e27e61db5b86d24ec6b4dca5",
+    "db-64-nextjs-trial-1.log": "192fcf096603eb1c34b9dda35a6c02647e706a09e66819b5800073e5e5eac266",
+    "db-64-nextjs-trial-2.log": "6e8101d7af77b41e58d8419ae152031e2ceffd40aba1abbfc1e6b29f842c5da6",
+    "db-64-nextjs-trial-3.log": "709ed3178226b23b7aa54588b0fabe7328cee20c031e77195006584e040e555e",
+    "db-64-nextjs-trial-4.log": "f10b6bb55c616c304769966c6387b68d609da7663475761fc60b1daccefb084f",
+    "db-64-nextjs-trial-5.log": "f8539955f1072170024f7fef401c1884118d8a4fbf8e0ceaef986ccc2514899a",
+    "hello-64-nextjs-warmup-1.log": "f00ef43325f61186185627a5af98a3423e2e39f745ee307fa0ee397697d2e9b0",
+    "hello-64-nextjs-warmup-2.log": "90ba7b7e5edcd9755886b6047d8a54fbf16b11254ee97e4bcf2323f72795d718",
+    "hello-64-nextjs-warmup-3.log": "b8b86109006024bc19b61e71fd7d757708f60f5fe359f3d69c1c78b26fbde024",
+    "hello-64-nextjs-warmup-4.log": "44ffc544a7944e422cd82a455b815c14517b6291834a1afcdd768ccc023a6362",
+    "hello-64-nextjs-warmup-5.log": "b9cdf107704fcbc6bcd851fd481dda26198c20f0cb806e53d54c392c77a45dad",
+    "db-64-nextjs-warmup-1.log": "70e89349d32e18160d6674bd628278d28f3216e8183501bc7d0e975869b85f5e",
+    "db-64-nextjs-warmup-2.log": "1a0360e69c167c8be631f128cc3638ae82e431d7b036991565d051c0a9ed342e",
+    "db-64-nextjs-warmup-3.log": "c1deb888e6b12f766f9c11004965465f16f6d65d6d5c616b77ee6e04987ee115",
+    "db-64-nextjs-warmup-4.log": "7baeaac771ca480427a5857e83f120d2ed8414e99c30850d9ae2836a98140260",
+    "db-64-nextjs-warmup-5.log": "1fde6cf4588a7a34918dbc32ffe34a6664ece683890b164419fd2eeb02804963"
+  }
+}

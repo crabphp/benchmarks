@@ -1,0 +1,14 @@
+Running 5s test @ http://nextjs:8080
+  4 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    36.28ms   40.88ms 509.30ms   94.47%
+    Req/Sec   546.06    165.27   780.00     66.84%
+  Latency Distribution
+     50%   24.53ms
+     75%   35.94ms
+     90%   54.78ms
+     99%  263.59ms
+  10700 requests in 5.09s, 3.41MB read
+Requests/sec:   2102.87
+Transfer/sec:    685.46KB
+BENCH_JSON {"workload":"db","bad_body":0,"bad_response":0,"requests":10700,"duration_us":5088275,"rps":2102.873764,"p50_us":24534.000000,"p99_us":263586.000000,"bad_status":0,"errors":{"connect":0,"read":0,"write":0,"timeout":0,"status":0}}
